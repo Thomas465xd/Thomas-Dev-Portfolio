@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        
+        <!-- Primary Meta Tags -->
+        <title>Portal SPT</title>
+        <meta name="title" content="My Website">
+        <meta name="description" content="Add your website Description here.">
+        <meta name="keywords" content="Add your website Keywords here.">
+        <meta name="author" content="Your Name">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.yourwebsite.com">
+        
+        <!-- Favicon and App Icons -->
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.yourwebsite.com">
+        <meta property="og:title" content="Add your website Title here.">
+        <meta property="og:description" content="Add your website Description here.">
+        <meta property="og:image" content="https://www.yourwebsite.com/og-image.jpg">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://www.yourwebsite.com">
+        <meta property="twitter:title" content="Add your website Title here.">
+        <meta property="twitter:description" content="Add your website Description here.">">
+        <meta property="twitter:image" content="https://www.yourwebsite.com/twitter-image.jpg">
+        
+        <!-- Preload Critical Resources -->
+        <link rel="preload" href="/dist/styles.css" as="style">
+        <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml">
+        <link rel="preload" href="/src/main.tsx" as="script">
+        <link rel="preload" href="/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+        
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "My Website",
+                "applicationCategory": "WebApplication",
+                "operatingSystem": "All",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "description": "Add your website Description here.",
+                "url": "https://www.yourwebsite.com"
+            }
+        </script>
+        
+        <!-- Styles -->
+        <link href="/dist/styles.css" rel="stylesheet">
+        
+        <!-- DNS Prefetch and Preconnect -->
+        <link rel="preconnect" href="https://api.yourwebsite.com">
+        <link rel="dns-prefetch" href="https://api.yourwebsite.com">
+        
+        <!-- Mobile Web App Capability -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div id="root"></div>
+        <!-- Application Entry Point -->
+        <script type="module" src="/src/main.tsx"></script>
+        <!-- Inline Critical JS for Performance (optional) -->
+        <script>
+            // Performance optimization: Detect user preferences
+            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.body.classList.toggle('dark-theme', prefersDarkMode);
+        </script>
+    </body>
+</html>
