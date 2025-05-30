@@ -1,9 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Footer from "../components/ui/Footer";
 import DarkMode from "../components/ui/DarkMode";
 
 export default function AppLayout() {
+
+    const location = useLocation();
+    const currentPage = location.pathname; 
+
     return (
         <div className="flex flex-col min-h-screen dark:bg-slate-950">
             {/* Header */}
@@ -16,7 +20,7 @@ export default function AppLayout() {
                                 className="flex items-center gap-2 text-2xl font-bold text-gray-900 dark:text-white"
                             >
                             <picture>
-                                <img src="/src/assets/logo.jpg" alt="Dev Logo" className="w-10 h-10 dark:border-slate-500 border-blue-500 border rounded-full" />
+                                <img src="/src/assets/logo.jpg" alt="Dev Logo" className="w-10 h-10 border-blue-500 border rounded-full" />
                             </picture>
 
                             </Link>
@@ -24,27 +28,30 @@ export default function AppLayout() {
                         <div className="flex gap-4 items-center">
                             <Link 
                                 to="/"
-                                className="px-3 py-2 rounded-lg dark:text-gray-400 
-                                        dark:hover:bg-slate-500 hover:bg-gray-200  dark:hover:text-gray-300
-                                        transition-colors duration-200"
+                                className={`px-4 py-2 rounded-md tracking-wide transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500
+                                    ${currentPage === "/" 
+                                    ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
+                                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                             >
                                 Home
                             </Link>
 
                             <Link 
                                 to="/projects"
-                                className="px-3 py-2 rounded-lg dark:text-gray-400 
-                                        dark:hover:bg-slate-500 hover:bg-gray-200  dark:hover:text-gray-300
-                                        transition-colors duration-200"
+                                className={`px-4 py-2 rounded-md tracking-wide transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500
+                                    ${currentPage === "/projects" 
+                                    ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
+                                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                             >
                                 Projects
                             </Link>
 
                             <Link 
                                 to="/about"
-                                className="px-3 py-2 rounded-lg dark:text-gray-400 
-                                        dark:hover:bg-slate-500 hover:bg-gray-200  dark:hover:text-gray-300
-                                        transition-colors duration-200"
+                                className={`px-4 py-2 rounded-md tracking-wide transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500
+                                    ${currentPage === "/about" 
+                                    ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
+                                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                             >
                                 About
                             </Link>

@@ -1,7 +1,15 @@
 import PresentationCard from "../../components/home/PresentationCard";
+import ProjectsList from "../../components/home/ProjectsList";
+import ResumeCard from "../../components/home/ResumeCard";
+import TechnologyList from "../../components/home/TechnologyList";
 
 export default function HomeView() {
     return (
-        <PresentationCard />
+        <div className="mb-20">
+            <PresentationCard />
+            <ResumeCard />
+            <ProjectsList />
+            <TechnologyList />
+        </div>
     )
 }

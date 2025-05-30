@@ -10,6 +10,7 @@ export default function Router() {
                 <Route element={<AppLayout />}>
                     <Route path="/" element={<HomeView />} />
                     <Route path="/projects" element={<ProjectsView />} />
+                    <Route path="/about" element={<ProjectsView />} />
                 </Route>
             </Routes>
         </BrowserRouter>
