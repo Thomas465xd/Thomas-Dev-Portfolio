@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function PresentationCard() {
     return (
         <div className="w-full max-w-6xl mx-auto p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg border dark:border-gray-600 border-gray-200">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-4 mb-4">
                 <NotebookPen size={15}  className="hover:animate-pulse "/>
                 <h2 className="uppercase">About Me</h2>
             </div>
@@ -22,7 +22,7 @@ export default function PresentationCard() {
                 style={{ fontSize: '2em', display: 'inline-block' }}
                 repeat={Infinity}
             />
-            <div className="grid grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="">
                     <p className="text-gray-600 dark:text-gray-400">
                         I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.

@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function ResumeCard() {
     return (
-        <div className="grid grid-cols-2 gap-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
             <div className="">
                 <h2 className="text-2xl font-bold flex items-center gap-2">
                     <CodeXml /> My History<span className="font-black text-yellow-500">.</span>
@@ -19,7 +19,7 @@ export default function ResumeCard() {
                     As i went deeper & deeper, i started focusing heavily in the React.js ecosystem. Now i specialize in building Modern Aplications using Next.js or MERN Stack. 
                 </p>
 
-                <div className="flex items-center gap-4 mt-4">
+                <div className="flex flex-col items-baseline md:flex-row md:items-center gap-4 mt-4 truncate">
                     <button
                         className="bg-blue-600 p-2 rounded-md text-white flex items-center gap-2 hover:bg-blue-700 transition-colors duration-300"
                     >
