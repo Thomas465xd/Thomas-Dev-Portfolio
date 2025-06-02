@@ -1,5 +1,9 @@
+import ProjectsList from "../../components/home/ProjectsList";
+
 export default function ProjectsView() {
     return (
-        <div>ProjectsView</div>
+        <div className="mb-20">
+            <ProjectsList />
+        </div>
     )
 }

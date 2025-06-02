@@ -34,7 +34,7 @@ export default function ResumeCard() {
                 </div>
             </div>
 
-            <div className="p-[2px] rounded-lg bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-300">    
+            <div className="p-[2px] rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-800">    
 
             </div>
         </div>
