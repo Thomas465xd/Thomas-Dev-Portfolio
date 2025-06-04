@@ -1,5 +1,6 @@
 import { CodeXml } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 type FooterProps = {
     dark?: boolean; 
@@ -13,23 +14,87 @@ export default function Footer({ dark }: FooterProps) {
     }, []);
 
     return (
-        <footer className={`${dark ? "bg-gray-900 border-t-2 border-gray-700" : "bg-gray-100 border-gray-300 dark:bg-gray-900 border-t-2 dark:border-gray-700"} flex justify-between`}>
-            <p className={`text-center p-4 ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-400"}`}>
-                Thomas Schrödinger Dev Portfolio - Copyright &copy; {year ?? '----'}
-            </p>
-            <p className={`text-center p-4 ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-400"} text-sm flex items-center justify-center gap-2`}>
-                <CodeXml size={18}/>
-                Developed by{' '}
-                <a
-                    className={`${dark ? "text-gray-400 hover:text-amber-500" : "hover:text-gray-900 dark:hover:text-yellow-500 "} font-semibold transition-colors duration-300`}
-                    href="https://github.csom/Thomas465xd"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Thomas Schrödinger GitHub Profile"
-                >
-                    Thomas Schrödinger
-                </a>
-            </p>
+        <footer className={`w-full max-w-4xl  mx-auto border-t-2 dark:border-gray-700 border-gray-300 mb-16`}>
+            <div className="flex justify-between items-center">
+                <p className={`text-center py-4 ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"}`}>
+                    Thomas Schrödinger Dev Portfolio - Copyright &copy; {year ?? '----'}
+                </p>
+                <p className={`text-center ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"} text-sm flex items-center justify-center gap-2`}>
+                    <CodeXml size={18}/>
+                    Developed by{' '}
+                    <a
+                        className={`${dark ? "text-gray-700 hover:text-amber-500" : "text-gray-500 dark:text-gray-500 hover:text-blue-500 dark:hover:text-yellow-500 hover:underline "} font-semibold transition-colors duration-300`}
+                        href="https://github.csom/Thomas465xd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Thomas Schrödinger GitHub Profile"
+                    >
+                        Thomas Schrödinger
+                    </a>
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                    <h3 className='font-bold'>Important Links</h3>
+
+                    <div className="flex flex-col gap-2">
+                        <Link
+                            to="/"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Home
+                        </Link>
+
+                        <Link
+                            to="/projects"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Projects
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="space-y-2">
+                    <h3 className='font-bold'>My Social Media</h3>
+
+                    <div className="flex flex-col gap-2">
+                        <Link
+                            to="/"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            GitHub
+                        </Link>
+
+                        <Link
+                            to="/"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Instagram
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="space-y-2">
+                    <h3 className='font-bold'>Other</h3>
+
+                    <div className="flex flex-col gap-2">
+                        <Link
+                            to="/"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Contact
+                        </Link>
+
+                        <Link
+                            to="/"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Photography
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </footer>
     );
 }

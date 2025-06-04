@@ -74,11 +74,12 @@ export default function TechnologyList() {
                     Here are some of the technologies that i use in my stack: 
                 </p>
             </div>
+
             <h2 className="text-2xl font-bold">
                 Frontend<span className="font-black text-yellow-500">:</span>
             </h2>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {frontendTechs.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -94,7 +95,7 @@ export default function TechnologyList() {
                 Backend<span className="font-black text-indigo-500">:</span>
             </h2>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {backendTechs.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -110,7 +111,7 @@ export default function TechnologyList() {
                 Databases<span className="font-black text-blue-500">:</span>
             </h2>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {databases.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -126,7 +127,7 @@ export default function TechnologyList() {
                 Tools that i use<span className="font-black text-blue-500">:</span>
             </h2>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {otherTools.map((tech, index) => (
                     <TechnologyCard
                         key={index}

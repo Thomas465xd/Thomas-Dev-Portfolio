@@ -6,7 +6,7 @@ import TechnologyList from "../../components/home/TechnologyList";
 
 export default function HomeView() {
     return (
-        <div className="mb-20">
+        <div className="mb-20 max-w-6xl">
             <PresentationCard />
             <ResumeCard />
             <ProjectsList />
