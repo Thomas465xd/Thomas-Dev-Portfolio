@@ -54,7 +54,7 @@ export default function ProjectCard({ title, date, description, image, account, 
                 )}
             </div>
 
-            <div className="w-full max-w-6xl mx-auto p-50 rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-800">
+            <div className="w-full max-w-6xl mx-auto py-50 sm:py-40 md:py-50 lg:py-70 xl:py-70 rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-800">
                 { image }
             </div>
 
@@ -67,7 +67,7 @@ export default function ProjectCard({ title, date, description, image, account, 
                 ))}
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex justify-center md:justify-start flex-wrap gap-4">
                 <div className="group border border-gray-600 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-orange-500 dark:hover:bg-gray-800 dark:hover:border-orange-400 hover:shadow-lg transition-all duration-300 mb-8">
                     <a
                         href={url}

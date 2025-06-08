@@ -1,7 +1,11 @@
 import { ArrowRight, AtSign, Send } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 export default function ContactSection() {
+
+    const form = useRef<HTMLFormElement>(null);
 
     const [name, setName] = useState("") 
     const [email, setEmail] = useState("") 
@@ -23,9 +27,34 @@ export default function ContactSection() {
         return name && isEmailValid(email) && message && characters < 650;
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); 
-    }
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+            .sendForm('service_gcnshhj', 'template_lbf0o2p', form.current, {
+                publicKey: 'Egwo5MvqZT-kt5DuA',
+            })
+            .then(
+                () => {
+                    toast.success("Email sent Successfully! 📧")
+
+                    // Reset form values
+                    form.current?.reset()
+
+                    // Clear states
+                    setName("")
+                    setEmail("")
+                    setMessage("")
+                },
+                (error) => {
+                    toast.error(error.text + "❌")
+                },
+            );
+        } else {
+            console.error('Form reference is null.');
+        }
+    };
 
     return (
         <div className="mt-20 space-y-4">
@@ -41,7 +70,8 @@ export default function ContactSection() {
             <form 
                 className="mx-auto border dark:border-gray-600 border-gray-300 shadow-lg p-10 rounded-md dark:bg-gray-950 bg-gray-50 space-y-4"
                 noValidate
-                onSubmit={ handleSubmit }
+                ref={form}
+                onSubmit={ sendEmail }
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="flex flex-col">
@@ -53,6 +83,7 @@ export default function ContactSection() {
                         <input 
                             id="name"
                             type="text"
+                            name="name"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter your Name (Ex. Thomas)"
                             maxLength={60}
@@ -70,6 +101,7 @@ export default function ContactSection() {
                         <input 
                             id="email"
                             type="email"
+                            name="email"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter your Email (Ex. john@doe.com) "
                             maxLength={40}
@@ -96,6 +128,9 @@ export default function ContactSection() {
                         />
                     </div>
                 </div>
+
+                <input id="year" name="year" value={new Date().getFullYear()} type="hidden" />
+                <input id="time" name="time" value={new Date().getTime()} type="hidden" />
                 
                 <div className="flex justify-between">
                     <p className={`text-xs font-bold ${characters === 650 ? "text-red-400 opacity-50" : "text-gray-500"}`}>
@@ -105,6 +140,7 @@ export default function ContactSection() {
                     <button 
                         disabled={!isFormValid()}
                         className={`flex items-center gap-2 group text-white bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-neutral-800`}
+                        type="submit" 
                     >
                         <Send className="group-hover:scale-105 transition-all duration-300" />Send
                     </button>
