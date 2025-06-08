@@ -13,6 +13,7 @@ import {
     SiApollographql,
     SiNextdotjs,
     SiRender,
+    SiGithub,
 } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
 
@@ -129,6 +130,29 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
                     />
                 ))}
             </div>
+
+            {allProjects && (
+                <div className="flex justify-center">
+                    <div className="flex flex-col items-center gap-2 text-center">
+                        <p className="text-gray-400">
+                            More Projects coming soon!!!
+                        </p>
+                        <div className="group border border-blue-800 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-blue-500 dark:hover:bg-gray-800 dark:hover:border-blue-600 hover:shadow-lg transition-all duration-300 mb-8">
+                            <a
+                                href="https://github.com/Thomas465xd"
+                                rel="author"
+                                target="_blank"
+                                type="website"
+                                className="flex justify-between items-center gap-2 dark:text-white truncate"
+                            >
+                                <SiGithub className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
+                                Github Profile
+                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {!allProjects && (
                 <div className="flex justify-center">

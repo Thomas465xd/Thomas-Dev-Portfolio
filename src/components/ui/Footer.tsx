@@ -14,12 +14,12 @@ export default function Footer({ dark }: FooterProps) {
     }, []);
 
     return (
-        <footer className={`w-full max-w-4xl  mx-auto border-t-2 dark:border-gray-700 border-gray-300 mb-16`}>
-            <div className="flex justify-between items-center">
-                <p className={`text-center py-4 ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"}`}>
+        <footer className={`w-full max-w-[480px] sm:max-w-xl md:max-w-4xl xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t-2 dark:border-gray-700 border-gray-300 mb-16`}>
+            <div className="flex flex-col md:flex-row justify-between items-center">
+                <p className={`text-center md:truncate py-4 ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"}`}>
                     Thomas Schrödinger Dev Portfolio - Copyright &copy; {year ?? '----'}
                 </p>
-                <p className={`text-center ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"} text-sm flex items-center justify-center gap-2`}>
+                <p className={`text-center md:truncate ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"} text-sm flex items-center justify-center gap-2`}>
                     <CodeXml size={18}/>
                     Developed by{' '}
                     <a
@@ -34,7 +34,7 @@ export default function Footer({ dark }: FooterProps) {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                 <div className="space-y-2">
                     <h3 className='font-bold'>Important Links</h3>
 

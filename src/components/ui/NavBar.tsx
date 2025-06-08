@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import DarkMode from "./DarkMode";
 import { SiGithub } from "react-icons/si";
-import { ChevronRight, Globe } from "lucide-react";
+import LanguageMenu from "./LanguageMenu";
 
 export default function NavBar() {
     
@@ -54,18 +54,7 @@ export default function NavBar() {
                 </Link>
             </div>
 
-            <button 
-                className="group flex items-center gap-2 dark:hover:bg-slate-900 p-2 rounded-md text-sm transition-colors duration-300"
-            >
-                <Globe 
-                    size={20}
-                /> 
-                EN 
-                <ChevronRight 
-                    size={20} 
-                    className="group-hover:rotate-[90deg] transition-all"
-                />
-            </button>
+            <LanguageMenu />
 
             <div className="flex items-center">
                 <DarkMode />
