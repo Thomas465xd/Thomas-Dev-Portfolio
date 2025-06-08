@@ -63,11 +63,11 @@ export default function TechnologyList() {
     const otherTools = technologies.filter(tech => tech.type === "Other");
 
     return (
-        <div className="space-y-10">
+        <section className="space-y-10">
 
             <div className="">
                 <h1 className="text-3xl font-bold">
-                    Technologies I use<span className="font-black text-neutral-400">:</span>
+                    Technologies I use<span className="font-black dark:text-neutral-400 text-indigo-700">:</span>
                 </h1>
                 <p className="mt-4 dark:text-neutral-300 text-gray-600">
                     Over time, I have worked with a variety of technologies accomodating to the needs of every single project.
@@ -138,6 +138,6 @@ export default function TechnologyList() {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     )
 }

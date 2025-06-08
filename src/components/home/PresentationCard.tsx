@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function PresentationCard() {
 
     return (
-        <div 
+        <section
             className="w-full mx-auto p-6 bg-white dark:bg-slate-800 rounded-2xl 
                 shadow-[10px_10px_#00000020] dark:shadow-[10px_10px_#ffffff30] 
                 border dark:border-gray-600 border-gray-200"
@@ -40,6 +40,6 @@ export default function PresentationCard() {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }

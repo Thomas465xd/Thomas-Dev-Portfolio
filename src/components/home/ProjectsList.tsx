@@ -96,15 +96,29 @@ const projects = [
 export default function ProjectsList({ allProjects } : ProjectsListProps) {
 
     return (
-        <div className="my-20 space-y-10">
+        <div className="my-10 space-y-10">
             <div className="">
-                <h2 className="text-2xl font-bold">
-                    My Projects<span className="font-black text-yellow-500">.</span>
-                </h2>
+                {allProjects ? (
+                    <>
+                        <h2 className="text-3xl font-bold">
+                            My Projects<span className="font-black text-yellow-500">.</span>
+                        </h2>
 
-                <p className="text-gray-600 dark:text-gray-400 my-4">
-                    Explore some of my Projects. For more details, visit my GitHub Profile.
-                </p>
+                        <p className="text-gray-600 dark:text-gray-400 my-4">
+                            I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.
+                        </p>
+                    </>
+                ) : (
+                    <>
+                        <h2 className="text-3xl font-bold">
+                            My Recent Projects<span className="font-black text-yellow-500">.</span>
+                        </h2>
+
+                        <p className="text-gray-600 dark:text-gray-400 my-4">
+                            Explore some of my Projects. For more details, visit my GitHub Profile.
+                        </p>
+                    </>
+                )}
             </div>
 
             <div className="grid grid-cols-1 gap-8">

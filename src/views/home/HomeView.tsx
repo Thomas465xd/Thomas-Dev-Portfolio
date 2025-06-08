@@ -1,4 +1,5 @@
 import ContactSection from "../../components/home/ContactSection";
+import ExperienceList from "../../components/home/ExperienceList";
 import PresentationCard from "../../components/home/PresentationCard";
 import ProjectsList from "../../components/home/ProjectsList";
 import ResumeCard from "../../components/home/ResumeCard";
@@ -10,6 +11,7 @@ export default function HomeView() {
             <PresentationCard />
             <ResumeCard />
             <ProjectsList />
+            <ExperienceList />
             <TechnologyList />
             <ContactSection />
         </div>

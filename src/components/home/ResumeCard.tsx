@@ -3,13 +3,13 @@ import { FaGithub } from "react-icons/fa";
 
 export default function ResumeCard() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-20 mx-auto">
             <div className="">
-                <h2 className="text-2xl font-bold flex items-center gap-2">
+                <h2 className="text-3xl font-bold flex items-center gap-2">
                     <CodeXml /> My History<span className="font-black text-yellow-500">.</span>
                 </h2>
 
-                <p className="text-gray-600 mt-4">
+                <p className="text-gray-400 mt-4">
                     I have been coding for 2 years, starting my journey doing online courses on how to build simple websites with HTML, CSS, JavaScript & PHP. 
                     <br />
                     <br />
