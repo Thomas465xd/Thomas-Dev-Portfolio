@@ -3,12 +3,28 @@ import { useState } from "react";
 
 export default function ContactSection() {
 
+    const [name, setName] = useState("") 
+    const [email, setEmail] = useState("") 
+    const [message, setMessage] = useState("") 
+
     const [characters, setCharacters] = useState(0); 
 
     const handleMessage = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const message = e.target.value
         const messageLength = e.target.value.length
 
+        setMessage(message)
         setCharacters(messageLength)
+    }
+
+    const isEmailValid = (email: string) => /\S+@\S+\.\S+/.test(email);
+
+    const isFormValid = () => {
+        return name && isEmailValid(email) && message && characters < 650;
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault(); 
     }
 
     return (
@@ -17,7 +33,7 @@ export default function ContactSection() {
                 Contact Me<span className="text-yellow-500">.</span>
             </h1>
 
-            <p className="text-gray-600">
+            <p className="dark:text-gray-400 text-gray-700">
                 I'm always in search of new opportunities and ready to embark on exciting new projects.
                 If you have an idea in mind or something you'd like to share, feel free to reach out to me!
             </p>
@@ -25,19 +41,23 @@ export default function ContactSection() {
             <form 
                 className="mx-auto border dark:border-gray-600 border-gray-300 shadow-lg p-10 rounded-md dark:bg-gray-950 bg-gray-50 space-y-4"
                 noValidate
+                onSubmit={ handleSubmit }
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="flex flex-col">
                         <label 
                             htmlFor="name"
                         >
-                            Name
+                            Name<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <input 
                             id="name"
                             type="text"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter your Name (Ex. Thomas)"
+                            maxLength={60}
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                         />
                     </div>
 
@@ -45,13 +65,16 @@ export default function ContactSection() {
                         <label 
                             htmlFor="email"
                         >
-                            Email
+                            Email<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <input 
                             id="email"
                             type="email"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             placeholder="Enter your Email (Ex. john@doe.com) "
+                            maxLength={40}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
 
@@ -59,13 +82,14 @@ export default function ContactSection() {
                         <label 
                             htmlFor="message"
                         >
-                            Message
+                            Message<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <textarea
                             id="message"
                             name="message"
                             rows={5}
                             maxLength={650}
+                            value={message}
                             onChange={handleMessage}
                             className={`border border-gray-600 rounded-lg px-4 py-2 dark:bg-neutral-950 dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 ${characters === 650 ? "text-red-400 border-red-400" : "dark:text-white"}`}
                             placeholder="Hey there, i was wondering if there was any possibility that you..."
@@ -75,11 +99,11 @@ export default function ContactSection() {
                 
                 <div className="flex justify-between">
                     <p className={`text-xs font-bold ${characters === 650 ? "text-red-400 opacity-50" : "text-gray-500"}`}>
-                        {characters}/650 characters left
+                        {characters}/650 characters
                     </p>
 
                     <button 
-                        disabled={characters === 650}
+                        disabled={!isFormValid()}
                         className={`flex items-center gap-2 group text-white bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-neutral-800`}
                     >
                         <Send className="group-hover:scale-105 transition-all duration-300" />Send

@@ -2,8 +2,13 @@ import { NotebookPen } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function PresentationCard() {
+
     return (
-        <div className="w-full mx-auto p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border dark:border-gray-600 border-gray-200">
+        <div 
+            className="w-full mx-auto p-6 bg-white dark:bg-slate-800 rounded-2xl 
+                shadow-[10px_10px_#00000020] dark:shadow-[10px_10px_#ffffff30] 
+                border dark:border-gray-600 border-gray-200"
+        >
             <div className="flex items-center gap-4 mb-4">
                 <NotebookPen size={15}  className="hover:animate-pulse "/>
                 <h2 className="uppercase">About Me</h2>

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
 import HomeView from "./views/home/HomeView";
 import ProjectsView from "./views/home/ProjectsView";
+import BlogView from "./views/home/BlogView";
 
 export default function Router() {
     return (
@@ -10,7 +11,7 @@ export default function Router() {
                 <Route element={<AppLayout />}>
                     <Route path="/" element={<HomeView />} />
                     <Route path="/projects" element={<ProjectsView />} />
-                    <Route path="/about" element={<ProjectsView />} />
+                    <Route path="/blog" element={<BlogView />} />
                 </Route>
             </Routes>
         </BrowserRouter>
