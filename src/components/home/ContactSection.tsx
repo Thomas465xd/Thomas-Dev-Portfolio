@@ -57,7 +57,7 @@ export default function ContactSection() {
     };
 
     return (
-        <div className="mt-20 space-y-4">
+        <section className="mt-20 space-y-4">
             <h1 className="text-3xl font-bold">
                 Contact Me<span className="text-yellow-500">.</span>
             </h1>
@@ -161,6 +161,6 @@ export default function ContactSection() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-all duration-500" />
                 </a>
             </div>
-        </div>
+        </section>
     )
 }

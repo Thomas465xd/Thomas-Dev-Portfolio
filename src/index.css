@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @plugin "tailwind-scrollbar";
 
 @theme {
-    --color-scrollbar-thumb: #ff0088;
-    --color-scrollbar-track: #f0f0f0;
+	--color-scrollbar-thumb: #ff0088;
+	--color-scrollbar-track: #f0f0f0;
 }
 
 /* Opcional: regla directa si no instalas el plugin */
 @layer utilities {
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 8px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: var(--color-scrollbar-thumb);
-        border-radius: 9999px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background-color: var(--color-scrollbar-track);
-    }
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 8px;
+	}
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: var(--color-scrollbar-thumb);
+		border-radius: 9999px;
+	}
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background-color: var(--color-scrollbar-track);
+	}
 }
 
 :root {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
 
-    /* 👇 optional fallback */
-    --font-mono: 'JetBrains Mono', monospace;
+	/* 👇 optional fallback */
+	--font-mono: "JetBrains Mono", monospace;
 }
 
 .dark {
@@ -36,14 +36,41 @@
 }
 
 .light {
-    --background: #ffffff;
-    --foreground: #000000;
+	--background: #ffffff;
+	--foreground: #000000;
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
 
-    /* 👇 use the custom font var */
-    font-family: var(--font-mono);
+	/* 👇 use the custom font var */
+	font-family: var(--font-mono);
+}
+
+/* Change default color of bullets */
+.swiper-pagination-bullet {
+	background-color: #94a3b8; /* slate-400 */
+	opacity: 1;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+	background-color: #a200ff !important; /* blue-500 */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #e2e8f0; /* default color */
+	transition: color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	color: rgb(25, 0, 255);
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+	color: #e47429;
 }

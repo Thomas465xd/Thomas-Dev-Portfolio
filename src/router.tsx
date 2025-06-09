@@ -3,6 +3,8 @@ import AppLayout from "./layouts/AppLayout";
 import HomeView from "./views/home/HomeView";
 import ProjectsView from "./views/home/ProjectsView";
 import BlogView from "./views/home/BlogView";
+import ContactView from "./views/home/ContactView";
+import PhotographyView from "./views/home/PhotographyView";
 
 export default function Router() {
     return (
@@ -12,6 +14,9 @@ export default function Router() {
                     <Route path="/" element={<HomeView />} />
                     <Route path="/projects" element={<ProjectsView />} />
                     <Route path="/blog" element={<BlogView />} />
+
+                    <Route path="/contact" element={<ContactView />} />
+                    <Route path="/photography" element={<PhotographyView />} />
                 </Route>
             </Routes>
         </BrowserRouter>

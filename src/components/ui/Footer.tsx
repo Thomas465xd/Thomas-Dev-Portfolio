@@ -52,6 +52,13 @@ export default function Footer({ dark }: FooterProps) {
                         >
                             Projects
                         </Link>
+
+                        <Link
+                            to="/blog"
+                            className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
+                        >
+                            Blog
+                        </Link>
                     </div>
                 </div>
 
@@ -80,7 +87,7 @@ export default function Footer({ dark }: FooterProps) {
 
                     <div className="flex flex-col gap-2">
                         <Link
-                            to="/"
+                            to="/contact"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             Contact

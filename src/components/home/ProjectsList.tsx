@@ -26,7 +26,11 @@ const projects = [
         title: "UpTask", 
         date: "January 22, 2025 - Now", 
         description: "A Task Management App with teams functionality", 
-        image: "", 
+        images: [
+            { name: "uptask1" }, 
+            { name: "uptask2" }, 
+            { name: "uptask3" }
+        ], 
         account: {
             email: "test@test.com",
             password: "password", 
@@ -50,7 +54,11 @@ const projects = [
         title: "NextCRM", 
         date: "May 23, 2025 - Now", 
         description: "A client management app with analytics", 
-        image: "", 
+        images: [
+            { name: "nextcrm1" }, 
+            { name: "nextcrm2" }, 
+            { name: "nextcrm3" }
+        ], 
         account: {
             email: "test@test.com", 
             password: "password", 
@@ -76,7 +84,11 @@ const projects = [
         title: "Portal SPT", 
         date: "March 17, 2025 - Now", 
         description: "A private B2B Partner Portal", 
-        image: "", 
+        images: [
+            { name: "portalspt1" }, 
+            { name: "portalspt2" }, 
+            { name: "portalspt3" }
+        ], 
         technologies: [
             { name: "React", icon: SiReact, color: "#61DAFB" },
             { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },

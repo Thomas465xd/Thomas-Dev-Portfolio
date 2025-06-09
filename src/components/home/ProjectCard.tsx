@@ -1,7 +1,17 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/swiper-bundle.css';
+
 import { motion } from "framer-motion";
 import { ArrowRight, Link } from "lucide-react";
 import type { ElementType } from "react";
 import { SiGithub } from "react-icons/si";
+
 
 type Technology = {
     name: string;
@@ -9,11 +19,15 @@ type Technology = {
     color: string;
 };
 
+type Image = {
+    name: string; 
+}
+
 type ProjectCardProps = {
     title: string;
     date: string;
     description: string; 
-    image: string;
+    images: Image[];
     account?: {
         email: string, 
         password: string, 
@@ -24,7 +38,7 @@ type ProjectCardProps = {
     backend_repo?: string; 
 }
 
-export default function ProjectCard({ title, date, description, image, account, technologies, url, frontend_repo, backend_repo} : ProjectCardProps) {
+export default function ProjectCard({ title, date, description, images, account, technologies, url, frontend_repo, backend_repo} : ProjectCardProps) {
     return (
         <motion.div 
             className="space-y-4"
@@ -54,8 +68,36 @@ export default function ProjectCard({ title, date, description, image, account, 
                 )}
             </div>
 
-            <div className="w-full max-w-6xl mx-auto py-50 sm:py-40 md:py-50 lg:py-70 xl:py-70 rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-800">
-                { image }
+            {/* Fixed image container */}
+            <div className="relative w-full max-w-6xl mx-auto rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-800 overflow-hidden group cursor-pointer">
+                <div className="relative w-full max-w-6xl mx-auto rounded-2xl overflow-visible z-10">
+                    <Swiper
+                        // install Swiper modules
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ type: 'bullets', clickable: true }}
+                        scrollbar={{ draggable: true }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        {images.map((img, index) => (
+                            <SwiperSlide
+                                key={index}
+                            >
+                                <img 
+                                    src={`/website/${img.name}.png`} 
+                                    alt="Website Photo" 
+                                    className="w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-75 group-hover:scale-105"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    {/* Optional overlay for better hover effect
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    */}
+                </div>
             </div>
 
             <div className="flex flex-wrap gap-2 mt-4">
@@ -96,19 +138,21 @@ export default function ProjectCard({ title, date, description, image, account, 
                     </a>
                 </div>
 
-                <div className="group border border-purple-800 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-purple-500 dark:hover:bg-gray-800 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 mb-8">
-                    <a
-                        href={backend_repo}
-                        rel="author"
-                        target="_blank"
-                        type="website"
-                        className="flex justify-between items-center gap-2 dark:text-white truncate"
-                    >
-                        <SiGithub className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
-                        Backend Repo
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
-                    </a>
-                </div>
+                {backend_repo && (
+                    <div className="group border border-purple-800 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-purple-500 dark:hover:bg-gray-800 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 mb-8">
+                        <a
+                            href={backend_repo}
+                            rel="author"
+                            target="_blank"
+                            type="website"
+                            className="flex justify-between items-center gap-2 dark:text-white truncate"
+                        >
+                            <SiGithub className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
+                            Backend Repo
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
+                        </a>
+                    </div>
+                )}
             </div>
         </motion.div>
     )
