@@ -1,0 +1,72 @@
+{
+    "nav": {
+        "home": "Home", 
+        "projects": "Projects", 
+        "blog": "Blog"
+    }, 
+
+    "presentation": {
+        "subtitle": "About Me",
+        "heading-1": "Hello, I'm Thomas 👋",
+        "heading-2": "Welcome to my Portfolio",
+        "p-1": "I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.",
+        "p-2": "With a focus on both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
+    }, 
+
+    "resume": {
+        "heading": "My History", 
+        "p-1": "I have been coding for 2 years, starting my journey doing online courses on how to build simple websites with HTML, CSS, JavaScript & PHP.", 
+        "p-2": "My love for Web Development started with a simple HTML & CSS website when i saw how some weird words translated into actual things. Since then, i just couldn't stop.", 
+        "p-3": "As i went deeper & deeper, i started focusing heavily in the React.js ecosystem. Now i specialize in building Modern Aplications using Next.js or MERN Stack.",
+        "button-1": "View my Github", 
+        "button-2": "Contact Me"
+    }, 
+
+    "projects": {
+        "heading": "My Recent Projects", 
+        "subheading": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
+        "above-button": "Want to see more?",
+        "button-1": "View all Projects"
+    }, 
+
+    "experiences": {
+        "above-heading": "Experiences", 
+        "heading": "Milestones", 
+        "subheading": "My experiences working as a solo-dev"
+    },
+
+    "technologies": {
+        "heading": "Technologies I use", 
+        "subheading": "Over time, I have worked with a variety of technologies accomodating to the needs of every single project. Here are some of the technologies that i use in my stack:", 
+        "databases": "Databases", 
+        "other": "Tools that i use"
+    }, 
+
+    "contact": {
+        "heading": "Contact Me", 
+        "subheading": "I'm always in search of new opportunities and ready to embark on exciting new projects. If you have an idea in mind or something you'd like to share, feel free to reach out to me!", 
+        "label-1": "Name", 
+        "placeholder-1": "Enter your Name (Ex. Thomas)", 
+        "label-2": "Email", 
+        "placeholder-2": "Enter your Email (Ex. john@doe.com)", 
+        "label-3": "Message", 
+        "placeholder-3": "Hey there, i was wondering if there was any possibility that you...", 
+        "limit": "characters", 
+        "button-1": "Send", 
+        "option": "Or you can also contact me via..."
+    }, 
+
+    "footer": {
+        "name": "Thomas Schrödinger", 
+        "links-1": "Important Links", 
+        "link-home": "Home", 
+        "link-projects": "Projects", 
+        "link-blog": "Blog",
+        "links-2": "My Social Media", 
+        "link-github": "GitHub", 
+        "link-instagram": "Instagram", 
+        "links-3": "Other", 
+        "link-contact": "Contact", 
+        "link-photography": "Photography"
+    }
+}
