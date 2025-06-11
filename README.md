@@ -1,2 +1,2 @@
-# MERN Vite Frontend App Template
+# thomas Schrödinger Dev Portfolio
 
