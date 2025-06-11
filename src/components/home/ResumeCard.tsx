@@ -8,21 +8,20 @@ export default function ResumeCard() {
     const { t } = useTranslation() 
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-20 mx-auto">
-            <div className="">
-                <h2 className="text-3xl font-bold flex items-center gap-2">
-                    <CodeXml /> {t("resume.heading")}<span className="font-black text-yellow-500">.</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-20 mx-auto max-w-6xl">
+            {/* Left Content Section */}
+            <div className="space-y-8">
+                <h2 className="text-2xl lg:text-4xl font-bold flex items-center gap-3">
+                    <CodeXml className="text-blue-500" /> 
+                    {t("resume.heading")}
+                    <span className="font-black text-yellow-500">.</span>
                 </h2>
 
-                <p className="text-gray-400 mt-4">
-                    {t("resume.p-1")}
-                    <br />
-                    <br />
-                    {t("resume.p-2")}
-                    <br />
-                    <br />
-                    {t("resume.p-3")}
-                </p>
+                <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p>{t("resume.p-1")}</p>
+                    <p>{t("resume.p-2")}</p>
+                    <p>{t("resume.p-3")}</p>
+                </div>
 
                 <div className="flex flex-col items-baseline lg:flex-row lg:items-center gap-4 mt-4 truncate">
                     <Link
@@ -44,58 +43,75 @@ export default function ResumeCard() {
                 </div>
             </div>
 
-            <div className="p-[2px] rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-300 
-                shadow-[10px_10px_#000000] dark:shadow-[10px_10px_#ffffff30] 
-                dark:border-gray-600"
-            >    
-                <div className="p-8 space-y-4">
-                    <div className="flex items-center gap-4 ">
-                        <GraduationCap className="text-white bg-blue-600 p-2 rounded-md" size={36}/>
-                        <p className="uppercase font-semibold">My Studio</p>
+            {/* Right Card Section */}
+            <div className="relative group">
+                {/* Gradient border wrapper */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-300 blur-sm group-hover:blur-none"></div>
+                
+                <div className="relative bg-white dark:bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 space-y-6 hover:shadow-2xl transition-all duration-300">
+                    
+                    {/* Header */}
+                    <div className="flex items-center gap-4">
+                        <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-xl shadow-lg">
+                            <GraduationCap className="text-white" size={28}/>
+                        </div>
+                        <div>
+                            <p className="uppercase font-bold text-sm tracking-wider text-gray-500 dark:text-gray-400">My Studio</p>
+                            <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-1"></div>
+                        </div>
                     </div>
 
-                    <div className="space-y-8">
-                        <p className="text-lg">
-                            thomas.dev is more than just a portfolios; it's a window into my own world, where passion meets purpose. 
-                            Discover my journey and my work.
-                        </p>
+                    {/* Description */}
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                        thomas.dev is more than just a portfolio; it's a window into my own world, where passion meets purpose. 
+                        Discover my journey and my work.
+                    </p>
 
-                        <div className="flex justify-between items-center">
-                            <a
-                                href="/files/resume.pdf"
-                                download
-                                className="px-4 py-2 border border-gray-300 dark:border-gray-700 dark:bg-neutral-900 rounded-full text-sm hover:bg-gray-100 hover:border-blue-500 dark:hover:border-indigo-500 dark:hover:bg-neutral-950 transition-colors duration-200"
-                            >
-                                Download CV
-                            </a>
+                    {/* Action Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <a
+                            href="/files/resume.pdf"
+                            download
+                            className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 rounded-xl text-center transition-all duration-300 hover:border-blue-400 hover:shadow-md transform hover:scale-105"
+                        >
+                            <span className="font-medium">Download CV</span>
+                        </a>
 
-                            <Link
-                                to="/blog"
-                                className="px-4 py-2 border border-gray-300 dark:border-gray-700 dark:bg-neutral-900 rounded-full text-sm hover:bg-gray-100 hover:border-blue-500 dark:hover:border-indigo-500 dark:hover:bg-neutral-950 transition-colors duration-200"
-                            >
-                                View my Blog
-                            </Link>
-                        </div>
+                        <Link
+                            to="/blog"
+                            className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-purple-50 hover:to-cyan-50 dark:hover:from-purple-900/20 dark:hover:to-cyan-900/20 rounded-xl text-center transition-all duration-300 hover:border-purple-400 hover:shadow-md transform hover:scale-105"
+                        >
+                            <span className="font-medium">View my Blog</span>
+                        </Link>
+                    </div>
 
-                        <div className="flex flex-col space-y-4 lg:flex-row justify-between lg:space-y-0 lg:space-x-4">
-                            <div className="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-lg space-y-2 dark:bg-slate-900 dark:hover:border-indigo-500 hover:scale-101 transition-all duration-300">
-                                <GitCompareArrows className="text-orange-600"/>
-                                <h3 className="font-bold text-sm">
+                    {/* Skills Cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div className="group/card relative overflow-hidden bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/10 dark:to-red-900/10 border border-orange-200 dark:border-orange-800/30 rounded-xl p-5 hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:border-orange-400">
+                            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-400/20 to-red-400/20 rounded-full -translate-y-8 translate-x-8"></div>
+                            <div className="relative space-y-3">
+                                <div className="bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-lg w-fit">
+                                    <GitCompareArrows className="text-white" size={20}/>
+                                </div>
+                                <h3 className="font-bold text-gray-800 dark:text-gray-200">
                                     Web Development
                                 </h3>
-
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                                     Delivering fast, scalable, and SEO-optimized web apps with clean code.
                                 </p>
                             </div>
+                        </div>
 
-                            <div className="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-lg space-y-2 dark:bg-slate-900 dark:hover:border-indigo-500 hover:scale-101 transition-all duration-300">
-                                <Container className="text-[#1D63ED]"/>
-                                <h3 className="font-bold text-sm">
+                        <div className="group/card relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/10 dark:to-cyan-900/10 border border-blue-200 dark:border-blue-800/30 rounded-xl p-5 hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:border-blue-400">
+                            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full -translate-y-8 translate-x-8"></div>
+                            <div className="relative space-y-3">
+                                <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-2 rounded-lg w-fit">
+                                    <Container className="text-white" size={20}/>
+                                </div>
+                                <h3 className="font-bold text-gray-800 dark:text-gray-200">
                                     DevOps
                                 </h3>
-
-                                <p className="text-gray-500 text-sm">
+                                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                                     Building robust infrastructure and dockerized apps for efficient delivery.
                                 </p>
                             </div>

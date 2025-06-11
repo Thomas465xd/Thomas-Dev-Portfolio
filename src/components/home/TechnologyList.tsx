@@ -65,13 +65,14 @@ export default function TechnologyList() {
     return (
         <section className="space-y-10">
 
-            <div className="">
-                <h1 className="text-3xl font-bold">
-                    Technologies I use<span className="font-black dark:text-neutral-400 text-indigo-700">:</span>
+            <div className="space-y-4">
+                <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+                    Technologies I use
+                    <span className="font-black text-indigo-600 dark:text-indigo-400">.</span>
                 </h1>
-                <p className="mt-4 dark:text-neutral-300 text-gray-600">
-                    Over time, I have worked with a variety of technologies accomodating to the needs of every single project.
-                    Here are some of the technologies that i use in my stack: 
+                <p className="text-gray-600 dark:text-gray-300 max-w-3xl leading-relaxed">
+                    Over time, I have worked with a variety of technologies, adapting to the needs of every project. 
+                    Here's my current tech stack that I use to build modern, scalable applications.
                 </p>
             </div>
 
