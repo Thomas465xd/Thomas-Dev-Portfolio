@@ -1,6 +1,8 @@
 import { Popover, PopoverButton, PopoverPanel, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useState } from 'react';
 import { ChevronRight, Globe, Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 interface Language {
     code: string;
@@ -21,11 +23,18 @@ export default function LanguageMenu({
 }: LanguageMenuProps) {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [currentLanguage, setCurrentLanguage] = useState<string>(defaultLanguage);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+
+    //! Translations (i18next) 
+    const { i18n, t } = useTranslation();
     
     const languages: Language[] = [
-        { code: 'EN', name: 'English', flag: '🇺🇸' },
-        { code: 'ES', name: 'Spanish', flag: '🇪🇸' },
-        { code: 'DE', name: 'German', flag: '🇩🇪' }
+        { code: 'en', name: 'English', flag: '🇺🇸' },
+        { code: 'es', name: 'Spanish', flag: '🇪🇸' },
+        { code: 'de', name: 'German', flag: '🇩🇪' }
     ];
 
     // Handle body overflow when menu is open
@@ -43,26 +52,14 @@ export default function LanguageMenu({
         setMenuOpen(false);
         onLanguageChange?.(languageCode);
 
-        if(languageCode === "EN") {
-            //!SET English
-            localStorage.removeItem("ES")
-            localStorage.removeItem("DE")
+        i18n.changeLanguage(languageCode);
 
-            localStorage.setItem("LANGUAGE", "EN")
-        } else if (languageCode === "ES") {
-            //?SET Spanish
-            localStorage.removeItem("EN")
-            localStorage.removeItem("DE")
-
-            localStorage.setItem("LANGUAGE", "ES")
-        } else {
-            //^SET German
-            localStorage.removeItem("ES")
-            localStorage.removeItem("EN")
-
-            localStorage.setItem("LANGUAGE", "DE")
-        }
+        // Update query param in URL
+        const params = new URLSearchParams(location.search);
+        params.set('lang', languageCode.toLowerCase());
+        navigate(`${location.pathname}?${params.toString()}`, { replace: true });
     };
+
 
     return (
         <Popover className={`relative ${className}`}>
@@ -79,7 +76,7 @@ export default function LanguageMenu({
                         />
                         
                         <span className="text-slate-700 dark:text-slate-300 min-w-[24px] transition-colors duration-200">
-                            {currentLanguage}
+                            {currentLanguage.toUpperCase()}
                         </span>
                         
                         <ChevronRight
@@ -107,7 +104,7 @@ export default function LanguageMenu({
                                 <div className='px-4 py-3 border-b border-slate-200 dark:border-slate-700/50 bg-slate-50/50 dark:bg-slate-800/30'>
                                     <p className='text-sm font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2'>
                                         <Globe size={16} className="text-blue-500 dark:text-blue-400" />
-                                        Change Language
+                                        { t ("nav.language")}
                                     </p>
                                 </div>
                                 
@@ -144,7 +141,7 @@ export default function LanguageMenu({
                                                         {language.name}
                                                     </div>
                                                     <div className='text-xs text-slate-500 dark:text-slate-400'>
-                                                        ({language.code})
+                                                        ({language.code.toUpperCase()})
                                                     </div>
                                                 </div>
                                             </div>

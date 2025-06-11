@@ -16,6 +16,7 @@ import {
     SiGithub,
 } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type ProjectsListProps = {
     allProjects?: boolean;
@@ -108,27 +109,29 @@ const projects = [
 
 export default function ProjectsList({ allProjects } : ProjectsListProps) {
 
+    const { t } = useTranslation(); 
+
     return (
         <div className="my-10 space-y-10">
             <div className="">
                 {allProjects ? (
                     <>
                         <h2 className="text-3xl font-bold">
-                            My Projects<span className="font-black text-yellow-500">.</span>
+                            { t("projects.heading-1") }<span className="font-black text-yellow-500">.</span>
                         </h2>
 
                         <p className="text-gray-600 dark:text-gray-400 my-4">
-                            I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.
+                            { t("projects.p-1")}
                         </p>
                     </>
                 ) : (
                     <>
                         <h2 className="text-3xl font-bold">
-                            My Recent Projects<span className="font-black text-yellow-500">.</span>
+                            { t("projects.heading-2") }<span className="font-black text-yellow-500">.</span>
                         </h2>
 
                         <p className="text-gray-600 dark:text-gray-400 my-4">
-                            Explore some of my Projects. For more details, visit my GitHub Profile.
+                            { t("projects.p-2") }
                         </p>
                     </>
                 )}
@@ -147,7 +150,7 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
                 <div className="flex justify-center">
                     <div className="flex flex-col items-center gap-2 text-center">
                         <p className="text-gray-400">
-                            More Projects coming soon!!!
+                            { t("projects.above-button-1")}
                         </p>
                         <div className="group border border-blue-800 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-blue-500 dark:hover:bg-gray-800 dark:hover:border-blue-600 hover:shadow-lg transition-all duration-300 mb-8">
                             <a
@@ -170,13 +173,13 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
                 <div className="flex justify-center">
                     <div className="flex flex-col items-center gap-2 text-center">
                         <p className="text-gray-400">
-                            Want to see more?
+                            { t("projects.above-button-2")}
                         </p>
                         <Link
                             to="/projects"
                             className="group bg-gradient-to-r from-indigo-800 via-purple-800 to-blue-900 bg-[length:200%_200%] bg-[position:0%_50%] hover:bg-[position:100%_50%] transition-all duration-500 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                         >
-                            View all Projects <ArrowRight className="group-hover:translate-x-1 transition-all duration-500" size={16} />
+                            { t("projects.button-1") } <ArrowRight className="group-hover:translate-x-1 transition-all duration-500" size={16} />
                         </Link>
                     </div>
                 </div>

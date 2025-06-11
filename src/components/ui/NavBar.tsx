@@ -2,8 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 import DarkMode from "./DarkMode";
 import { SiGithub } from "react-icons/si";
 import LanguageMenu from "./LanguageMenu";
+import { useTranslation } from "react-i18next";
 
 export default function NavBar() {
+
+    const { t } = useTranslation() 
     
     const location = useLocation();
     const currentPage = location.pathname;
@@ -30,7 +33,7 @@ export default function NavBar() {
                         ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
                         : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                 >
-                    Home
+                    {t("nav.home")}
                 </Link>
 
                 <Link 
@@ -40,7 +43,7 @@ export default function NavBar() {
                         ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
                         : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                 >
-                    Projects
+                    {t("nav.projects")}
                 </Link>
 
                 <Link 
@@ -50,7 +53,7 @@ export default function NavBar() {
                         ? "bg-gray-200 dark:bg-slate-900 text-black dark:text-gray-300" 
                         : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"}`}
                 >
-                    Blog
+                    {t("nav.blog")}
                 </Link>
             </div>
 

@@ -2,13 +2,14 @@
     "nav": {
         "home": "Home", 
         "projects": "Projects", 
-        "blog": "Blog"
+        "blog": "Blog", 
+        "language": "Change Language"
     }, 
 
     "presentation": {
         "subtitle": "About Me",
         "heading-1": "Hello, I'm Thomas 👋",
-        "heading-2": "Welcome to my Portfolio",
+        "heading-2": "Welcome to my Portfolio 📋",
         "p-1": "I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.",
         "p-2": "With a focus on both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
     }, 
@@ -23,10 +24,14 @@
     }, 
 
     "projects": {
-        "heading": "My Recent Projects", 
-        "subheading": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
-        "above-button": "Want to see more?",
-        "button-1": "View all Projects"
+        "heading-1": "My Projects",
+        "heading-2": "My Recent Projects", 
+        "p-1": "I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.",
+        "p-2": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
+        "above-button-1": "More Projects coming soon!!!", 
+        "above-button-2": "Want to see more?",
+        "button-1": "View all Projects", 
+        "button-2": "GitHub Profile"
     }, 
 
     "experiences": {

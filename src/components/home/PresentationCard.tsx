@@ -1,7 +1,17 @@
 import { NotebookPen } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 
 export default function PresentationCard() {
+
+    const { t, i18n } = useTranslation();
+    const [key, setKey] = useState(0);
+
+    // Actualiza la animación cada vez que el idioma cambia
+    useEffect(() => {
+        setKey(prev => prev + 1);
+    }, [i18n.language]);
 
     return (
         <section
@@ -11,15 +21,16 @@ export default function PresentationCard() {
         >
             <div className="flex items-center gap-4 mb-4">
                 <NotebookPen size={15}  className="hover:animate-pulse "/>
-                <h2 className="uppercase">About Me</h2>
+                <h2 className="uppercase">{ t("presentation.subtitle") }</h2>
             </div>
 
             <TypeAnimation
+                key={key} // ← esto reinicia el componente al cambiar idioma
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    "Hello, I'm Thomas 👋",
+                    `${ t("presentation.heading-1") }`,
                     3000,
-                    "Welcome to my Portfolio 📋",
+                    `${ t("presentation.heading-2") }`,
                     5000,
                 ]}
                 wrapper="span"
@@ -30,12 +41,12 @@ export default function PresentationCard() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="">
                     <p className="text-gray-600 dark:text-gray-400">
-                        I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.
+                        { t("presentation.p-1") }
                         <br />
                         <br />
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
-                        With a focus on both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals.
+                        { t("presentation.p-2") }
                     </p>
                 </div>
             </div>

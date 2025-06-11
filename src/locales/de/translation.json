@@ -1,0 +1,75 @@
+{
+	"nav": {
+		"home": "Startseite",
+		"projects": "Projekte",
+		"blog": "Blog", 
+        "language": "Ändern Sprache"
+	},
+
+	"presentation": {
+		"subtitle": "Über mich",
+		"heading-1": "Hallo, ich bin Thomas 👋",
+		"heading-2": "Willkommen in meinem Portfolio 📋",
+		"p-1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler aus Chile, spezialisiert auf die Erstellung robuster und skalierbarer Anwendungen, die den Best Practices der Softwareentwicklung folgen.",
+		"p-2": "Mit einem Fokus auf Frontend- und Backend-Technologien strebe ich danach, hochwertige Lösungen zu liefern, die den Benutzerbedürfnissen und Geschäftsanforderungen entsprechen."
+	},
+
+	"resume": {
+		"heading": "Meine Geschichte",
+		"p-1": "Ich programmiere seit 2 Jahren. Ich begann mit Online-Kursen, um einfache Webseiten mit HTML, CSS, JavaScript und PHP zu erstellen.",
+		"p-2": "Meine Leidenschaft für Webentwicklung begann mit einer einfachen HTML- und CSS-Seite, als ich sah, wie sich komische Wörter in echte Dinge verwandelten. Seitdem konnte ich nicht mehr aufhören.",
+		"p-3": "Je tiefer ich einstieg, desto mehr konzentrierte ich mich auf das React.js-Ökosystem. Heute spezialisiere ich mich auf moderne Anwendungen mit Next.js oder dem MERN-Stack.",
+		"button-1": "Meinen Github ansehen",
+		"button-2": "Kontaktieren Sie mich"
+	},
+
+	"projects": {
+        "heading-1": "Meine Projekte",
+        "heading-2": "Meine aktuellen Projekte",
+		"p-2": "Entdecke einige meiner Projekte. Für mehr Details besuche mein GitHub-Profil.",
+		"above-button": "Willst du mehr sehen?",
+		"button-1": "Alle Projekte ansehen", 
+        "button-2": "GitHub Profile"
+	},
+
+	"experiences": {
+		"above-heading": "Erfahrungen",
+		"heading": "Meilensteine",
+		"subheading": "Meine Erfahrungen als unabhängiger Entwickler"
+	},
+
+	"technologies": {
+		"heading": "Technologien, die ich verwende",
+		"subheading": "Im Laufe der Zeit habe ich mit verschiedenen Technologien gearbeitet, um mich an die Anforderungen jedes Projekts anzupassen. Hier sind einige der Technologien, die ich in meinem Stack verwende:",
+		"databases": "Datenbanken",
+		"other": "Tools, die ich benutze"
+	},
+
+	"contact": {
+		"heading": "Kontaktiere mich",
+		"subheading": "Ich bin immer auf der Suche nach neuen Möglichkeiten und bereit, spannende Projekte zu starten. Wenn du eine Idee hast oder etwas teilen möchtest, zögere nicht, mich zu kontaktieren!",
+		"label-1": "Name",
+		"placeholder-1": "Gib deinen Namen ein (z. B. Thomas)",
+		"label-2": "E-Mail",
+		"placeholder-2": "Gib deine E-Mail ein (z. B. john@doe.com)",
+		"label-3": "Nachricht",
+		"placeholder-3": "Hallo, ich wollte fragen, ob es eine Möglichkeit gäbe, dass du...",
+		"limit": "Zeichen",
+		"button-1": "Senden",
+		"option": "Oder du kannst mich auch kontaktieren über..."
+	},
+
+	"footer": {
+		"name": "Thomas Schrödinger",
+		"links-1": "Wichtige Links",
+		"link-home": "Startseite",
+		"link-projects": "Projekte",
+		"link-blog": "Blog",
+		"links-2": "Meine sozialen Netzwerke",
+		"link-github": "GitHub",
+		"link-instagram": "Instagram",
+		"links-3": "Sonstiges",
+		"link-contact": "Kontakt",
+		"link-photography": "Fotografie"
+	}
+}

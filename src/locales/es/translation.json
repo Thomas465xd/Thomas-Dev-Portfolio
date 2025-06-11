@@ -1,0 +1,75 @@
+{
+	"nav": {
+		"home": "Inicio",
+		"projects": "Proyectos",
+		"blog": "Blog", 
+        "language": "Cambiar Idioma"
+	},
+
+	"presentation": {
+		"subtitle": "Sobre mí",
+		"heading-1": "Hola, soy Thomas 👋",
+		"heading-2": "Bienvenido a mi Portafolio",
+		"p-1": "Soy un apasionado Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables que siguen las mejores prácticas del desarrollo de software.",
+		"p-2": "Con un enfoque tanto en tecnologías front-end como back-end, me esfuerzo por ofrecer soluciones de alta calidad que satisfagan las necesidades del usuario y los objetivos del negocio."
+	},
+
+	"resume": {
+		"heading": "Mi Historia",
+		"p-1": "Llevo 2 años programando, comenzando mi camino con cursos en línea sobre cómo construir sitios web simples con HTML, CSS, JavaScript y PHP.",
+		"p-2": "Mi amor por el Desarrollo Web comenzó con un sitio simple en HTML y CSS cuando vi cómo unas palabras extrañas se traducían en cosas reales. Desde entonces, no pude parar.",
+		"p-3": "A medida que me fui adentrando, comencé a enfocarme fuertemente en el ecosistema de React.js. Ahora me especializo en construir Aplicaciones Modernas usando Next.js o el stack MERN.",
+		"button-1": "Ver mi Github",
+		"button-2": "Contáctame"
+	},
+
+	"projects": {
+        "heading-1": "Mis Proyectos",
+        "heading-2": "Mis Proyectos Recientes", 
+		"p-2": "Explora algunos de mis proyectos. Para más detalles, visita mi perfil de GitHub.",
+        "above-button-1": "", 
+		"above-button-2": "¿Quieres ver más?",
+		"button-1": "Ver todos los Proyectos"
+	},
+
+	"experiences": {
+		"above-heading": "Experiencias",
+		"heading": "Hitos",
+		"subheading": "Mis experiencias trabajando como desarrollador independiente"
+	},
+
+	"technologies": {
+		"heading": "Tecnologías que uso",
+		"subheading": "Con el tiempo, he trabajado con una variedad de tecnologías adaptándome a las necesidades de cada proyecto. Estas son algunas de las tecnologías que utilizo en mi stack:",
+		"databases": "Bases de Datos",
+		"other": "Herramientas que uso"
+	},
+
+	"contact": {
+		"heading": "Contáctame",
+		"subheading": "Siempre estoy en búsqueda de nuevas oportunidades y listo para comenzar proyectos emocionantes. Si tienes una idea o algo que te gustaría compartir, ¡no dudes en contactarme!",
+		"label-1": "Nombre",
+		"placeholder-1": "Ingresa tu Nombre (Ej. Thomas)",
+		"label-2": "Correo",
+		"placeholder-2": "Ingresa tu Correo (Ej. john@doe.com)",
+		"label-3": "Mensaje",
+		"placeholder-3": "Hola, me preguntaba si habría alguna posibilidad de que tú...",
+		"limit": "caracteres",
+		"button-1": "Enviar",
+		"option": "O también puedes contactarme a través de..."
+	},
+
+	"footer": {
+		"name": "Thomas Schrödinger",
+		"links-1": "Enlaces Importantes",
+		"link-home": "Inicio",
+		"link-projects": "Proyectos",
+		"link-blog": "Blog",
+		"links-2": "Mis Redes Sociales",
+		"link-github": "GitHub",
+		"link-instagram": "Instagram",
+		"links-3": "Otros",
+		"link-contact": "Contacto",
+		"link-photography": "Fotografía"
+	}
+}
