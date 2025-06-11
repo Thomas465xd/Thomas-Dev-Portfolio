@@ -94,7 +94,7 @@ export default function Footer({ dark }: FooterProps) {
                         </Link>
 
                         <Link
-                            to="/"
+                            to="/photography"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             Photography
