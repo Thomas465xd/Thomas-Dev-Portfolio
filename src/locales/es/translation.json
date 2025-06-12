@@ -2,70 +2,89 @@
 	"nav": {
 		"home": "Inicio",
 		"projects": "Proyectos",
-		"blog": "Blog", 
-        "language": "Cambiar Idioma"
+		"blog": "Blog",
+		"language": "Cambiar Idioma", 
+        "spanish": "Español", 
+        "english": "Ingles", 
+        "german": "Alemán"
 	},
-
 	"presentation": {
-		"subtitle": "Sobre mí",
+		"subtitle": "Sobre Mí",
+		"title": "Desarrollador Web Full Stack",
 		"heading-1": "Hola, soy Thomas 👋",
-		"heading-2": "Bienvenido a mi Portafolio",
-		"p-1": "Soy un apasionado Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables que siguen las mejores prácticas del desarrollo de software.",
-		"p-2": "Con un enfoque tanto en tecnologías front-end como back-end, me esfuerzo por ofrecer soluciones de alta calidad que satisfagan las necesidades del usuario y los objetivos del negocio."
+		"heading-2": "Bienvenido a mi Portafolio 📋",
+		"p-1": "Soy un apasionado Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables siguiendo las mejores prácticas del desarrollo de software.",
+		"p-2": "Con un enfoque tanto en tecnologías frontend como backend, me esfuerzo por entregar soluciones de alta calidad que cumplan con las necesidades del usuario y los objetivos del negocio."
 	},
-
 	"resume": {
 		"heading": "Mi Historia",
-		"p-1": "Llevo 2 años programando, comenzando mi camino con cursos en línea sobre cómo construir sitios web simples con HTML, CSS, JavaScript y PHP.",
-		"p-2": "Mi amor por el Desarrollo Web comenzó con un sitio simple en HTML y CSS cuando vi cómo unas palabras extrañas se traducían en cosas reales. Desde entonces, no pude parar.",
-		"p-3": "A medida que me fui adentrando, comencé a enfocarme fuertemente en el ecosistema de React.js. Ahora me especializo en construir Aplicaciones Modernas usando Next.js o el stack MERN.",
+		"heading-2": "Mi Estudio",
+		"p-1": "Llevo 2 años programando, comenzando con cursos en línea sobre cómo crear sitios web simples con HTML, CSS, JavaScript y PHP.",
+		"p-2": "Mi amor por el desarrollo web comenzó con un sitio hecho en HTML y CSS, cuando vi cómo palabras extrañas se convertían en cosas reales. Desde entonces, no pude parar.",
+		"p-3": "A medida que profundizaba, comencé a enfocarme en el ecosistema de React.js. Ahora me especializo en construir Aplicaciones Modernas usando Next.js o MERN Stack.",
+		"p-resume": "thomas.dev es más que un portafolio; es una ventana a mi mundo, donde la pasión se encuentra con el propósito. Descubre mi viaje y mi trabajo.",
+		"p-web": "Entregando aplicaciones web rápidas, escalables y optimizadas para SEO con código limpio.",
+		"p-devops": "Construyendo infraestructura robusta y aplicaciones dockerizadas para una entrega eficiente.",
 		"button-1": "Ver mi Github",
-		"button-2": "Contáctame"
+		"button-2": "Contáctame",
+		"button-resume": "Descargar CV",
+		"button-blog": "Ver mi Blog"
 	},
-
 	"projects": {
-        "heading-1": "Mis Proyectos",
-        "heading-2": "Mis Proyectos Recientes", 
+		"heading-1": "Mis Proyectos",
+		"heading-2": "Mis Proyectos Recientes",
+		"p-1": "He estado programando durante 2 años y he trabajado en muchos proyectos. A continuación se muestran algunos de los más recientes; para más detalles, visita mi perfil de GitHub.",
 		"p-2": "Explora algunos de mis proyectos. Para más detalles, visita mi perfil de GitHub.",
-        "above-button-1": "", 
+		"above-button-1": "¡Más proyectos muy pronto!",
 		"above-button-2": "¿Quieres ver más?",
-		"button-1": "Ver todos los Proyectos"
+		"button-1": "Ver todos los Proyectos",
+		"button-2": "Perfil de GitHub",
+		"button-visit": "Visitar Sitio Web",
+		"button-frontend": "Repositorio Frontend",
+		"button-backend": "Repositorio Backend",
+		"date": "Actualidad",
+		"test-account": "Cuenta de Prueba",
+		"email": "Correo: ",
+		"password": "Contraseña: "
 	},
-
 	"experiences": {
 		"above-heading": "Experiencias",
 		"heading": "Hitos",
-		"subheading": "Mis experiencias trabajando como desarrollador independiente"
+		"subheading": "Mis experiencias como desarrollador independiente",
+		"job-type-1": "Freelance",
+		"job-title-1": "Desarrollador de Aplicaciones Full Stack",
+		"job-business-1": "Spare Parts Trade",
+		"job-location-1": "Santiago, Chile",
+		"job-description-1": "Desarrollé un portal B2B personalizado, optimicé el rendimiento del sitio web e integré una API externa."
 	},
-
 	"technologies": {
-		"heading": "Tecnologías que uso",
-		"subheading": "Con el tiempo, he trabajado con una variedad de tecnologías adaptándome a las necesidades de cada proyecto. Estas son algunas de las tecnologías que utilizo en mi stack:",
+		"heading": "Tecnologías que utilizo",
+		"subheading": "Con el tiempo he trabajado con varias tecnologías, adaptándome a las necesidades de cada proyecto. Este es el stack tecnológico actual que utilizo para crear aplicaciones modernas y escalables.",
 		"databases": "Bases de Datos",
-		"other": "Herramientas que uso"
+		"other": "Herramientas que utilizo"
 	},
-
 	"contact": {
 		"heading": "Contáctame",
-		"subheading": "Siempre estoy en búsqueda de nuevas oportunidades y listo para comenzar proyectos emocionantes. Si tienes una idea o algo que te gustaría compartir, ¡no dudes en contactarme!",
+		"subheading": "Siempre estoy en búsqueda de nuevas oportunidades y listo para embarcarme en proyectos emocionantes. Si tienes una idea en mente o algo que te gustaría compartir, ¡no dudes en escribirme!",
 		"label-1": "Nombre",
 		"placeholder-1": "Ingresa tu Nombre (Ej. Thomas)",
 		"label-2": "Correo",
 		"placeholder-2": "Ingresa tu Correo (Ej. john@doe.com)",
 		"label-3": "Mensaje",
-		"placeholder-3": "Hola, me preguntaba si habría alguna posibilidad de que tú...",
+		"placeholder-3": "Hola, me preguntaba si hay alguna posibilidad de que...",
 		"limit": "caracteres",
 		"button-1": "Enviar",
-		"option": "O también puedes contactarme a través de..."
+		"option": "O también puedes contactarme por..."
 	},
-
 	"footer": {
 		"name": "Thomas Schrödinger",
+		"developed": "Desarrollado por",
+		"copyright": "Derechos reservados",
 		"links-1": "Enlaces Importantes",
 		"link-home": "Inicio",
 		"link-projects": "Proyectos",
 		"link-blog": "Blog",
-		"links-2": "Mis Redes Sociales",
+		"links-2": "Mis Redes",
 		"link-github": "GitHub",
 		"link-instagram": "Instagram",
 		"links-3": "Otros",

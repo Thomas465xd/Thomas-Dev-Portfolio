@@ -2,6 +2,7 @@ import { ArrowRight, AtSign, Send } from "lucide-react";
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
 
@@ -56,15 +57,16 @@ export default function ContactSection() {
         }
     };
 
+    const { t } = useTranslation();
+
     return (
         <section className="mt-20 space-y-4">
             <h1 className="text-3xl font-bold">
-                Contact Me<span className="text-yellow-500">.</span>
+                {`${t("contact.heading")}`}<span className="text-yellow-500">.</span>
             </h1>
 
             <p className="dark:text-gray-400 text-gray-700">
-                I'm always in search of new opportunities and ready to embark on exciting new projects.
-                If you have an idea in mind or something you'd like to share, feel free to reach out to me!
+                {`${t("contact.subheading")}`}
             </p>
 
             <form 
@@ -78,14 +80,14 @@ export default function ContactSection() {
                         <label 
                             htmlFor="name"
                         >
-                            Name<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
+                            {`${t("contact.label-1")}`}<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <input 
                             id="name"
                             type="text"
                             name="name"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your Name (Ex. Thomas)"
+                            placeholder={`${t("contact.placeholder-1")}`}
                             maxLength={60}
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -96,14 +98,14 @@ export default function ContactSection() {
                         <label 
                             htmlFor="email"
                         >
-                            Email<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
+                            {`${t("contact.label-2")}`}<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <input 
                             id="email"
                             type="email"
                             name="email"
                             className="border border-gray-600 rounded-md px-4 py-2 dark:bg-neutral-950 dark:text-white dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your Email (Ex. john@doe.com) "
+                            placeholder={`${t("contact.placeholder-2")}`}
                             maxLength={40}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -114,7 +116,7 @@ export default function ContactSection() {
                         <label 
                             htmlFor="message"
                         >
-                            Message<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
+                            {`${t("contact.label-3")}`}<span className="text-xs text-red-500 relative -top-1 left-0.5">*</span>
                         </label>
                         <textarea
                             id="message"
@@ -124,7 +126,7 @@ export default function ContactSection() {
                             value={message}
                             onChange={handleMessage}
                             className={`border border-gray-600 rounded-lg px-4 py-2 dark:bg-neutral-950 dark:placeholder-gray-400 placeholder:gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 ${characters === 650 ? "text-red-400 border-red-400" : "dark:text-white"}`}
-                            placeholder="Hey there, i was wondering if there was any possibility that you..."
+                            placeholder={`${t("contact.placeholder-3")}`}
                         />
                     </div>
                 </div>
@@ -134,7 +136,7 @@ export default function ContactSection() {
                 
                 <div className="flex justify-between">
                     <p className={`text-xs font-bold ${characters === 650 ? "text-red-400 opacity-50" : "text-gray-500"}`}>
-                        {characters}/650 characters
+                        {characters}/650 {`${t("contact.limit")}`}
                     </p>
 
                     <button 
@@ -142,13 +144,13 @@ export default function ContactSection() {
                         className={`flex items-center gap-2 group text-white bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-neutral-800`}
                         type="submit" 
                     >
-                        <Send className="group-hover:scale-105 transition-all duration-300" />Send
+                        <Send className="group-hover:scale-105 transition-all duration-300" />{`${t("contact.button-1")}`}
                     </button>
                 </div>
             </form>
 
             <p className="">
-                Or you can also contact me via...
+                {`${t("contact.option")}`}
             </p>
 
             <div className="group border border-gray-600 max-w-32 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-yellow-600 dark:hover:bg-gray-800 dark:hover:border-gray-400 hover:shadow-lg transition-all duration-300">

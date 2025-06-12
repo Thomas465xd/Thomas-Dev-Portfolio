@@ -1,7 +1,7 @@
 import { NotebookPen } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
 
 export default function PresentationCard() {
@@ -22,19 +22,19 @@ export default function PresentationCard() {
         >
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
                 <div className="flex items-center gap-4 group/header">
-                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-xl shadow-lg group-hover/header:rotate-12 transition-transform duration-300">
+                    <div className="bg-gradient-to-br dark:from-blue-900 from-blue-500 dark:to-purple-500 to-cyan-500 p-3 rounded-xl shadow-lg group-hover/header:rotate-12 transition-transform duration-300">
                         <NotebookPen size={20} className="text-white"/>
                     </div>
                     <div>
                         <h2 className="uppercase font-bold text-gray-700 dark:text-gray-300 tracking-wider text-sm">
                             {t("presentation.subtitle")}
                         </h2>
-                        <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-1"></div>
+                        <div className="w-16 h-1 bg-gradient-to-r dark:from-blue-700 from-blue-500 dark:to-purple-600 to-cyan-500 rounded-full mt-1"></div>
                     </div>
                 </div>
 
-                <span className="text-blue-400 uppercase text-sm tracking-wide">
-                    Full Stack Web Developer
+                <span className="dark:text-blue-400 text-blue-600 uppercase text-sm tracking-wide">
+                    {t("presentation.title")}
                 </span>
             </div>
 
@@ -87,6 +87,8 @@ export default function PresentationCard() {
                     <SiTypescript size={24} />
                     <SiTailwindcss size={24} />
                     <SiNodedotjs size={24} />
+                    <SiExpress size={24} />
+                    <SiMongodb size={24} />
                 </div>
 
                 <p className="text-center animate-bounce text-slate-400">

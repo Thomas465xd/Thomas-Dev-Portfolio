@@ -56,15 +56,14 @@ export default function ResumeCard() {
                             <GraduationCap className="text-white" size={28}/>
                         </div>
                         <div>
-                            <p className="uppercase font-bold text-sm tracking-wider text-gray-500 dark:text-gray-400">My Studio</p>
+                            <p className="uppercase font-bold text-sm tracking-wider text-gray-500 dark:text-gray-400">{t("resume.heading-2")}</p>
                             <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-1"></div>
                         </div>
                     </div>
 
                     {/* Description */}
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                        thomas.dev is more than just a portfolio; it's a window into my own world, where passion meets purpose. 
-                        Discover my journey and my work.
+                        {t("resume.p-resume")}
                     </p>
 
                     {/* Action Buttons */}
@@ -74,14 +73,14 @@ export default function ResumeCard() {
                             download
                             className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 rounded-xl text-center transition-all duration-300 hover:border-blue-400 hover:shadow-md transform hover:scale-105"
                         >
-                            <span className="font-medium">Download CV</span>
+                            <span className="font-medium">{t("resume.button-resume")}</span>
                         </a>
 
                         <Link
                             to="/blog"
                             className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-purple-50 hover:to-cyan-50 dark:hover:from-purple-900/20 dark:hover:to-cyan-900/20 rounded-xl text-center transition-all duration-300 hover:border-purple-400 hover:shadow-md transform hover:scale-105"
                         >
-                            <span className="font-medium">View my Blog</span>
+                            <span className="font-medium">{t("resume.button-blog")}</span>
                         </Link>
                     </div>
 
@@ -94,10 +93,10 @@ export default function ResumeCard() {
                                     <GitCompareArrows className="text-white" size={20}/>
                                 </div>
                                 <h3 className="font-bold text-gray-800 dark:text-gray-200">
-                                    Web Development
+                                    {t("resume.heading-web")}
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                                    Delivering fast, scalable, and SEO-optimized web apps with clean code.
+                                    {t("resume.p-web")}
                                 </p>
                             </div>
                         </div>
@@ -109,10 +108,10 @@ export default function ResumeCard() {
                                     <Container className="text-white" size={20}/>
                                 </div>
                                 <h3 className="font-bold text-gray-800 dark:text-gray-200">
-                                    DevOps
+                                    {t("resume.heading-devops")}
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                                    Building robust infrastructure and dockerized apps for efficient delivery.
+                                    {t("resume.p-devops")}
                                 </p>
                             </div>
                         </div>

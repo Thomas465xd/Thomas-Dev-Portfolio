@@ -3,11 +3,15 @@
         "home": "Home", 
         "projects": "Projects", 
         "blog": "Blog", 
-        "language": "Change Language"
+        "language": "Change Language", 
+        "spanish": "Spanish", 
+        "english": "English", 
+        "german": "German"
     }, 
 
     "presentation": {
         "subtitle": "About Me",
+        "title": "Full Stack Web Developer",
         "heading-1": "Hello, I'm Thomas 👋",
         "heading-2": "Welcome to my Portfolio 📋",
         "p-1": "I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.",
@@ -15,12 +19,20 @@
     }, 
 
     "resume": {
-        "heading": "My History", 
+        "heading": "My History",
+        "heading-2": "My Studio",  
+        "heading-web": "Web Development",
+        "heading-devops": "Dev Ops",
         "p-1": "I have been coding for 2 years, starting my journey doing online courses on how to build simple websites with HTML, CSS, JavaScript & PHP.", 
         "p-2": "My love for Web Development started with a simple HTML & CSS website when i saw how some weird words translated into actual things. Since then, i just couldn't stop.", 
         "p-3": "As i went deeper & deeper, i started focusing heavily in the React.js ecosystem. Now i specialize in building Modern Aplications using Next.js or MERN Stack.",
+        "p-resume": "thomas.dev is more than just a portfolio; it's a window into my own world, where passion meets purpose. Discover my journey and my work.",
+        "p-web": "Delivering fast, scalable, and SEO-optimized web apps with clean code.",
+        "p-devops": "Building robust infrastructure and dockerized apps for efficient delivery.",
         "button-1": "View my Github", 
-        "button-2": "Contact Me"
+        "button-2": "Contact Me", 
+        "button-resume": "Download CV", 
+        "button-blog": "View my Blog"
     }, 
 
     "projects": {
@@ -31,18 +43,30 @@
         "above-button-1": "More Projects coming soon!!!", 
         "above-button-2": "Want to see more?",
         "button-1": "View all Projects", 
-        "button-2": "GitHub Profile"
+        "button-2": "GitHub Profile",
+        "button-visit": "Visit Website", 
+        "button-frontend": "Frontend Repo", 
+        "button-backend": "Backend Repo", 
+        "date": "Now", 
+        "test-account": "Test Account", 
+        "email": "Email: ", 
+        "password": "Password: "
     }, 
 
     "experiences": {
         "above-heading": "Experiences", 
         "heading": "Milestones", 
-        "subheading": "My experiences working as a solo-dev"
+        "subheading": "My experiences working as a solo-dev", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Full Stack App Developer", 
+        "job-business-1": "Spare Parts Trade", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Developed a custom B2B partner portal, optimized website performance, integrated with external API."
     },
 
     "technologies": {
         "heading": "Technologies I use", 
-        "subheading": "Over time, I have worked with a variety of technologies accomodating to the needs of every single project. Here are some of the technologies that i use in my stack:", 
+        "subheading": "Over time, I have worked with a variety of technologies, adapting to the needs of every project. Here's my current tech stack that I use to build modern, scalable applications.", 
         "databases": "Databases", 
         "other": "Tools that i use"
     }, 
@@ -62,7 +86,9 @@
     }, 
 
     "footer": {
-        "name": "Thomas Schrödinger", 
+        "name": "Thomas Schrödinger",
+        "developed": "Developed by",
+        "copyright": "Copyright",
         "links-1": "Important Links", 
         "link-home": "Home", 
         "link-projects": "Projects", 

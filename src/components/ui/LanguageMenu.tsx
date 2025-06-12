@@ -32,9 +32,9 @@ export default function LanguageMenu({
     const { i18n, t } = useTranslation();
     
     const languages: Language[] = [
-        { code: 'en', name: 'English', flag: '🇺🇸' },
-        { code: 'es', name: 'Spanish', flag: '🇪🇸' },
-        { code: 'de', name: 'German', flag: '🇩🇪' }
+        { code: 'en', name: `${t("nav.english")}`, flag: '🇺🇸' },
+        { code: 'es', name: `${t("nav.spanish")}`, flag: '🇪🇸' },
+        { code: 'de', name: `${t("nav.german")}`, flag: '🇩🇪' }
     ];
 
     // Handle body overflow when menu is open

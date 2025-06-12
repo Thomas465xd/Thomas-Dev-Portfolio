@@ -24,9 +24,9 @@ type ProjectsListProps = {
 
 const projects = [
     { 
-        title: "UpTask", 
+        title: "UpTask – MERN To-Do & Project Manager", 
         date: "January 22, 2025 - Now", 
-        description: "A Task Management App with teams functionality", 
+        description: "UpTask is a full-featured task and project management web app built with the MERN stack. It lets users manage teams, delegate tasks, and track project progress with role-based access, JWT-authenticated accounts, and a clean, responsive UI powered by Headless UI. Designed for efficiency, collaboration, and productivity.", 
         images: [
             { name: "uptask1" }, 
             { name: "uptask2" }, 
@@ -52,9 +52,9 @@ const projects = [
         backend_repo: "https://github.com/Thomas465xd/uptask_backend", 
     }, 
     {
-        title: "NextCRM", 
+        title: "NextCRM – Client & Inventory Management System", 
         date: "May 23, 2025 - Now", 
-        description: "A client management app with analytics", 
+        description: "NextCRM is a modern client and inventory management app featuring built-in analytics, real-time updates, and a secure JWT-based authentication system. It allows you to manage products, orders, and clients with ease, all within a sleek, responsive UI that supports both light and dark mode.", 
         images: [
             { name: "nextcrm1" }, 
             { name: "nextcrm2" }, 
@@ -82,9 +82,9 @@ const projects = [
         backend_repo: "https://github.com/Thomas465xd/Backend-GraphQL-CRM", 
     },
     {
-        title: "Portal SPT", 
+        title: "Portal SPT – Private B2B Partner Platform", 
         date: "March 17, 2025 - Now", 
-        description: "A private B2B Partner Portal", 
+        description: "Portal SPT is a secure B2B web app built with the MERN stack, featuring JWT-authenticated access and integration with the Bsale API. It allows partners to browse products by SKU, place orders, manage profiles, and access exclusive discounts—all within a fast, intuitive interface.", 
         images: [
             { name: "portalspt1" }, 
             { name: "portalspt2" }, 

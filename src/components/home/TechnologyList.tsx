@@ -22,6 +22,7 @@ import {
     SiNextdotjs
 } from "react-icons/si";
 import TechnologyCard from "./TechnologyCard";
+import { useTranslation } from "react-i18next";
 
 
 const technologies = [
@@ -62,17 +63,18 @@ export default function TechnologyList() {
     const databases = technologies.filter(tech => tech.type === "DB")
     const otherTools = technologies.filter(tech => tech.type === "Other");
 
+    const { t } = useTranslation();
+
     return (
         <section className="space-y-10">
 
             <div className="space-y-4">
                 <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-                    Technologies I use
+                    {`${t("technologies.heading")}`}
                     <span className="font-black text-indigo-600 dark:text-indigo-400">.</span>
                 </h1>
                 <p className="text-gray-600 dark:text-gray-300 max-w-3xl leading-relaxed">
-                    Over time, I have worked with a variety of technologies, adapting to the needs of every project. 
-                    Here's my current tech stack that I use to build modern, scalable applications.
+                    {`${t("technologies.subheading")}`}
                 </p>
             </div>
 
@@ -109,7 +111,7 @@ export default function TechnologyList() {
             </div>
 
             <h2 className="text-2xl font-bold">
-                Databases<span className="font-black text-blue-500">:</span>
+                {`${t("technologies.databases")}`}<span className="font-black text-blue-500">:</span>
             </h2>
 
             <div className="flex flex-wrap gap-4">
@@ -125,7 +127,7 @@ export default function TechnologyList() {
             </div>
 
             <h2 className="text-2xl font-bold">
-                Tools that i use<span className="font-black text-blue-500">:</span>
+                {`${t("technologies.other")}`}<span className="font-black text-blue-500">:</span>
             </h2>
 
             <div className="flex flex-wrap gap-4">

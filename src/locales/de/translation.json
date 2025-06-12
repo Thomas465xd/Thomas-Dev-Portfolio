@@ -2,70 +2,89 @@
 	"nav": {
 		"home": "Startseite",
 		"projects": "Projekte",
-		"blog": "Blog", 
-        "language": "Ändern Sprache"
+		"blog": "Blog",
+		"language": "Sprache ändern", 
+        "spanish": "Spanien", 
+        "english": "Englische", 
+        "german": "Deutsche"
 	},
-
 	"presentation": {
 		"subtitle": "Über mich",
+		"title": "Full Stack Webentwickler",
 		"heading-1": "Hallo, ich bin Thomas 👋",
 		"heading-2": "Willkommen in meinem Portfolio 📋",
-		"p-1": "Ich bin ein leidenschaftlicher Full-Stack-Webentwickler aus Chile, spezialisiert auf die Erstellung robuster und skalierbarer Anwendungen, die den Best Practices der Softwareentwicklung folgen.",
-		"p-2": "Mit einem Fokus auf Frontend- und Backend-Technologien strebe ich danach, hochwertige Lösungen zu liefern, die den Benutzerbedürfnissen und Geschäftsanforderungen entsprechen."
+		"p-1": "Ich bin ein leidenschaftlicher Full Stack Webentwickler aus Chile, spezialisiert auf die Erstellung robuster und skalierbarer Anwendungen, die den besten Praktiken der Softwareentwicklung folgen.",
+		"p-2": "Mit Fokus auf Frontend- und Backend-Technologien strebe ich danach, hochwertige Lösungen zu liefern, die sowohl Nutzerbedürfnisse als auch Geschäftsziele erfüllen."
 	},
-
 	"resume": {
 		"heading": "Meine Geschichte",
-		"p-1": "Ich programmiere seit 2 Jahren. Ich begann mit Online-Kursen, um einfache Webseiten mit HTML, CSS, JavaScript und PHP zu erstellen.",
-		"p-2": "Meine Leidenschaft für Webentwicklung begann mit einer einfachen HTML- und CSS-Seite, als ich sah, wie sich komische Wörter in echte Dinge verwandelten. Seitdem konnte ich nicht mehr aufhören.",
-		"p-3": "Je tiefer ich einstieg, desto mehr konzentrierte ich mich auf das React.js-Ökosystem. Heute spezialisiere ich mich auf moderne Anwendungen mit Next.js oder dem MERN-Stack.",
-		"button-1": "Meinen Github ansehen",
-		"button-2": "Kontaktieren Sie mich"
+		"heading-2": "Mein Studio",
+		"p-1": "Ich programmiere seit 2 Jahren, angefangen mit Online-Kursen über den Bau einfacher Webseiten mit HTML, CSS, JavaScript & PHP.",
+		"p-2": "Meine Leidenschaft für Webentwicklung begann mit einer einfachen HTML & CSS Seite, als ich sah, wie sich merkwürdige Wörter in echte Dinge verwandelten. Seitdem konnte ich nicht mehr aufhören.",
+		"p-3": "Mit der Zeit habe ich mich stark auf das React.js-Ökosystem konzentriert. Jetzt spezialisiere ich mich auf moderne Anwendungen mit Next.js oder dem MERN Stack.",
+		"p-resume": "thomas.dev ist mehr als nur ein Portfolio; es ist ein Fenster in meine Welt, wo Leidenschaft auf Zielsetzung trifft. Entdecke meine Reise und meine Arbeit.",
+		"p-web": "Bereitstellung schneller, skalierbarer und SEO-optimierter Webanwendungen mit sauberem Code.",
+		"p-devops": "Aufbau robuster Infrastrukturen und containerisierter Anwendungen für eine effiziente Bereitstellung.",
+		"button-1": "Mein Github ansehen",
+		"button-2": "Kontaktiere mich",
+		"button-resume": "CV herunterladen",
+		"button-blog": "Meinen Blog ansehen"
 	},
-
 	"projects": {
-        "heading-1": "Meine Projekte",
-        "heading-2": "Meine aktuellen Projekte",
-		"p-2": "Entdecke einige meiner Projekte. Für mehr Details besuche mein GitHub-Profil.",
-		"above-button": "Willst du mehr sehen?",
-		"button-1": "Alle Projekte ansehen", 
-        "button-2": "GitHub Profile"
+		"heading-1": "Meine Projekte",
+		"heading-2": "Meine neuesten Projekte",
+		"p-1": "Ich programmiere seit 2 Jahren und habe an vielen Projekten gearbeitet. Hier sind einige der neuesten – für mehr Infos besuche mein GitHub-Profil.",
+		"p-2": "Entdecke einige meiner Projekte. Für weitere Details besuche mein GitHub-Profil.",
+		"above-button-1": "Mehr Projekte bald verfügbar!",
+		"above-button-2": "Willst du mehr sehen?",
+		"button-1": "Alle Projekte ansehen",
+		"button-2": "GitHub-Profil",
+		"button-visit": "Website besuchen",
+		"button-frontend": "Frontend-Repo",
+		"button-backend": "Backend-Repo",
+		"date": "Jetzt",
+		"test-account": "Testkonto",
+		"email": "E-Mail: ",
+		"password": "Passwort: "
 	},
-
 	"experiences": {
 		"above-heading": "Erfahrungen",
 		"heading": "Meilensteine",
-		"subheading": "Meine Erfahrungen als unabhängiger Entwickler"
+		"subheading": "Meine Erfahrungen als Solo-Entwickler",
+		"job-type-1": "Freelance",
+		"job-title-1": "Full Stack App Entwickler",
+		"job-business-1": "Spare Parts Trade",
+		"job-location-1": "Santiago, Chile",
+		"job-description-1": "Entwicklung eines B2B-Partnerportals, Optimierung der Website-Performance, Integration mit externer API."
 	},
-
 	"technologies": {
-		"heading": "Technologien, die ich verwende",
-		"subheading": "Im Laufe der Zeit habe ich mit verschiedenen Technologien gearbeitet, um mich an die Anforderungen jedes Projekts anzupassen. Hier sind einige der Technologien, die ich in meinem Stack verwende:",
+		"heading": "Technologien, die ich nutze",
+		"subheading": "Im Laufe der Zeit habe ich mit vielen Technologien gearbeitet und mich den Projektanforderungen angepasst. Hier ist mein aktueller Tech-Stack für moderne, skalierbare Anwendungen.",
 		"databases": "Datenbanken",
-		"other": "Tools, die ich benutze"
+		"other": "Weitere Tools"
 	},
-
 	"contact": {
 		"heading": "Kontaktiere mich",
-		"subheading": "Ich bin immer auf der Suche nach neuen Möglichkeiten und bereit, spannende Projekte zu starten. Wenn du eine Idee hast oder etwas teilen möchtest, zögere nicht, mich zu kontaktieren!",
+		"subheading": "Ich bin stets offen für neue Chancen und bereit, spannende Projekte anzugehen. Wenn du eine Idee hast oder etwas teilen möchtest – schreib mir gerne!",
 		"label-1": "Name",
-		"placeholder-1": "Gib deinen Namen ein (z. B. Thomas)",
+		"placeholder-1": "Dein Name (z.B. Thomas)",
 		"label-2": "E-Mail",
-		"placeholder-2": "Gib deine E-Mail ein (z. B. john@doe.com)",
+		"placeholder-2": "Deine E-Mail (z.B. john@doe.com)",
 		"label-3": "Nachricht",
-		"placeholder-3": "Hallo, ich wollte fragen, ob es eine Möglichkeit gäbe, dass du...",
+		"placeholder-3": "Hallo, ich wollte fragen, ob es eine Möglichkeit gibt...",
 		"limit": "Zeichen",
 		"button-1": "Senden",
-		"option": "Oder du kannst mich auch kontaktieren über..."
+		"option": "Oder kontaktiere mich über..."
 	},
-
 	"footer": {
 		"name": "Thomas Schrödinger",
+		"developed": "Entwickelt von",
+		"copyright": "Urheberrecht",
 		"links-1": "Wichtige Links",
 		"link-home": "Startseite",
 		"link-projects": "Projekte",
 		"link-blog": "Blog",
-		"links-2": "Meine sozialen Netzwerke",
+		"links-2": "Meine sozialen Medien",
 		"link-github": "GitHub",
 		"link-instagram": "Instagram",
 		"links-3": "Sonstiges",
