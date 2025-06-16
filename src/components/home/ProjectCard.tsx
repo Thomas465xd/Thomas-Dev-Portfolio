@@ -110,7 +110,7 @@ export default function ProjectCard({ title, date, description, images, account,
                                 key={index}
                             >
                                 <img 
-                                    src={`/website/${img.name}.png`} 
+                                    src={`/website/${img.name}.webp`} 
                                     alt="Website Photo" 
                                     className="w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-75 group-hover:scale-105"
                                 />
