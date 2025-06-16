@@ -9,7 +9,7 @@ type TechnologyCardProps = {
 
 export default function TechnologyCard({ icon: Icon, name, color }: TechnologyCardProps) {
     return (
-        <div className="group relative bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 px-3 py-3 transition-all duration-300 hover:shadow-md hover:shadow-gray-200/40 dark:hover:shadow-gray-900/40 hover:-translate-y-0.5 hover:border-gray-300 dark:hover:border-gray-600">
+        <div className="w-20 group relative bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700 px-3 py-3 transition-all duration-300 hover:shadow-md hover:shadow-gray-200/40 dark:hover:shadow-gray-900/40 hover:-translate-y-0.5 hover:border-gray-300 dark:hover:border-gray-600">
             {/* Subtle gradient overlay on hover */}
             <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-transparent via-transparent to-gray-50/30 dark:to-gray-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             

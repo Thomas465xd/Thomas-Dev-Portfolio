@@ -149,7 +149,7 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
             {allProjects && (
                 <div className="flex justify-center">
                     <div className="flex flex-col items-center gap-2 text-center">
-                        <p className="text-gray-400">
+                        <p className="dark:text-gray-400 text-gray-700">
                             { t("projects.above-button-1")}
                         </p>
                         <div className="group border border-blue-800 max-w-52 px-3 py-2 rounded-md hover:bg-gray-100 hover:border-blue-500 dark:hover:bg-gray-800 dark:hover:border-blue-600 hover:shadow-lg transition-all duration-300 mb-8">
@@ -172,7 +172,7 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
             {!allProjects && (
                 <div className="flex justify-center">
                     <div className="flex flex-col items-center gap-2 text-center">
-                        <p className="text-gray-400">
+                        <p className="dark:text-gray-400 text-gray-700">
                             { t("projects.above-button-2")}
                         </p>
                         <Link

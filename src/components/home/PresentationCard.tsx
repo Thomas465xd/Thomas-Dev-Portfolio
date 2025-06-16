@@ -94,6 +94,7 @@ export default function PresentationCard() {
                 <p className="text-center animate-bounce text-slate-400">
                     ↓
                 </p>
+
             </div>
 
 

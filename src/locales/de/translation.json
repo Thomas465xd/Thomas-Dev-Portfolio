@@ -90,5 +90,12 @@
 		"links-3": "Sonstiges",
 		"link-contact": "Kontakt",
 		"link-photography": "Fotografie"
-	}
+	}, 
+
+    "error": {
+        "header": "Seite nicht gefunden",
+        "message": "Entschuldigung, die Seite, die Sie suchen, existiert nicht :(",
+        "button-home": "Zurück zur Startseite",
+        "button-report": "Fehler melden"
+    }
 }

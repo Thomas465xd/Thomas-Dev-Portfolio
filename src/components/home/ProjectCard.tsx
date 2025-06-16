@@ -64,16 +64,25 @@ export default function ProjectCard({ title, date, description, images, account,
                 </div>
 
                 {account ? (
-                    <div className="">
-                        <h3 className="flex items-center gap-2 font-bold text-lg mb-2">
-                            <UserCircle2 />{`${t("projects.test-account")}`}: 
+                    <div className='mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-950 rounded-xl border border-blue-100 dark:border-slate-700'>
+                        <h3 className="flex items-center gap-2 font-semibold text-slate-800 dark:text-slate-200 mb-3">
+                            <UserCircle2 className="text-blue-600 dark:text-blue-400" size={20} />
+                            {t("projects.test-account")}
                         </h3>
-                        <p className="ml-4 list-item">
-                            {`${t("projects.email")}`} <span className="font-bold">{ account.email } </span>
-                        </p>
-                        <p className="ml-4 list-item">
-                            {`${t("projects.password")}`} <span className="font-bold">{ account.password }</span>
-                        </p>
+                        <div className="space-y-2 text-sm">
+                            <div className="flex items-center gap-2">
+                                <span className="text-slate-600 dark:text-slate-400 min-w-16">{t("projects.email")}</span>
+                                <code className="bg-white dark:bg-slate-700 px-2 py-1 rounded font-mono text-blue-700 dark:text-blue-300 border border-slate-200 dark:border-slate-600">
+                                    {account.email}
+                                </code>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-slate-600 dark:text-slate-400 min-w-16">{t("projects.password")}</span>
+                                <code className="bg-white dark:bg-slate-700 px-2 py-1 rounded font-mono text-blue-700 dark:text-blue-300 border border-slate-200 dark:border-slate-600">
+                                    {account.password}
+                                </code>
+                            </div>
+                        </div>
                     </div>
                 ) : (
                     <div className="">
@@ -117,8 +126,8 @@ export default function ProjectCard({ title, date, description, images, account,
             <div className="flex flex-wrap gap-2 mt-8">
                 {technologies.map((tech, i) => (
                     <div key={i} className="flex items-center gap-1 text-sm px-2 py-1 rounded-full" style={{ backgroundColor: tech.color + "20", color: tech.color }}>
-                    <tech.icon className="w-4 h-4" />
-                    {tech.name}
+                        <tech.icon className="w-4 h-4" />
+                        <span className="">{tech.name}</span>
                     </div>
                 ))}
             </div>

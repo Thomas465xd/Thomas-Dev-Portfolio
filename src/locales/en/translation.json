@@ -99,5 +99,12 @@
         "links-3": "Other", 
         "link-contact": "Contact", 
         "link-photography": "Photography"
+    }, 
+
+    "error": {
+        "header": "Page not found", 
+        "message": "Sorry, the page you are looking does not exist :(",
+        "button-home": "Go back home", 
+        "button-report": "Report Error"
     }
 }

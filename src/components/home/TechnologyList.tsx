@@ -19,7 +19,8 @@ import {
     SiCanva,
     SiApollographql,
     SiPrettier,
-    SiNextdotjs
+    SiNextdotjs,
+    SiPostman
 } from "react-icons/si";
 import TechnologyCard from "./TechnologyCard";
 import { useTranslation } from "react-i18next";
@@ -39,7 +40,7 @@ const technologies = [
     { icon: SiNodedotjs, type: "Backend", name: "Node.js", color: "#339933"},
     { icon: SiExpress, type: "Backend", name: "Express.js", color: "#000000"},
     { icon: SiGraphql, type: "Backend", name: "GraphQL", color: "#E10098"},
-    { icon: SiApollographql, type: "Backend", name: "Apollo Server", color: "#311C87"},
+    { icon: SiApollographql, type: "Backend", name: "Apollo", color: "#311C87"},
 
     //~ Databases
     { icon: SiMongodb, type: "DB", name: "MongoDB", color: "#47A248"},
@@ -54,6 +55,7 @@ const technologies = [
     { icon: SiPrettier, type: "Other", name: "Prettier", color: "#F7B93E"},
     { icon: SiCanva, type: "Other", name: "Canva", color: "#00C4CC"},
     { icon: SiVercel, type: "Other", name: "Vercel", color: "#000000"},
+    { icon: SiPostman, type: "Other", name: "Postman", color: "#F05032"},
 ];
 
 export default function TechnologyList() {
@@ -82,7 +84,7 @@ export default function TechnologyList() {
                 Frontend<span className="font-black text-yellow-500">:</span>
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center lg:justify-start flex-wrap gap-4 border-b pb-8 border-gray-400 dark:border-gray-700">
                 {frontendTechs.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -98,7 +100,7 @@ export default function TechnologyList() {
                 Backend<span className="font-black text-indigo-500">:</span>
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center lg:justify-start flex-wrap gap-4 border-b pb-8 border-gray-400 dark:border-gray-700">
                 {backendTechs.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -114,7 +116,7 @@ export default function TechnologyList() {
                 {`${t("technologies.databases")}`}<span className="font-black text-blue-500">:</span>
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center lg:justify-start flex-wrap gap-4 border-b pb-8 border-gray-400 dark:border-gray-700">
                 {databases.map((tech, index) => (
                     <TechnologyCard
                         key={index}
@@ -130,7 +132,7 @@ export default function TechnologyList() {
                 {`${t("technologies.other")}`}<span className="font-black text-blue-500">:</span>
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center lg:justify-start flex-wrap gap-4 border-b pb-8 border-gray-400 dark:border-gray-700">
                 {otherTools.map((tech, index) => (
                     <TechnologyCard
                         key={index}
