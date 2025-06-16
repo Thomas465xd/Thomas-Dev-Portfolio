@@ -2,7 +2,7 @@ import ProjectsList from "../../components/home/ProjectsList";
 
 export default function ProjectsView() {
     return (
-        <div className="mb-20">
+        <div className="max-w-6xl mb-20">
             <ProjectsList allProjects />
         </div>
     )

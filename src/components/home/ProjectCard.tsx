@@ -94,8 +94,8 @@ export default function ProjectCard({ title, date, description, images, account,
             </div>
 
             {/* Fixed image container */}
-            <div className="relative w-full max-w-6xl mx-auto rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-300 overflow-hidden group cursor-pointer shadow-[10px_10px_#00000020] dark:shadow-[10px_10px_#ffffff30] dark:border-gray-600">
-                <div className="relative w-full max-w-6xl mx-auto rounded-2xl overflow-visible z-10">
+            <div className="relative w-full max-w-5xl xl:max-w-6xl max-h-[650px] mx-auto rounded-2xl bg-gradient-to-bl dark:from-neutral-950 dark:via-slate-900 dark:to-gray-950 border border-gray-300 overflow-hidden group cursor-pointer shadow-[10px_10px_#00000020] dark:shadow-[10px_10px_#ffffff30] dark:border-gray-600">
+                <div className="relative w-full max-w-5xl xl:max-w-6xl mx-auto rounded-2xl overflow-visible z-10">
                     <Swiper
                         // install Swiper modules
                         modules={[Navigation, Pagination, A11y]}

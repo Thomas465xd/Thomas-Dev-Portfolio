@@ -1,8 +1,9 @@
-import { NotebookPen } from "lucide-react";
+import { CodeXml, NotebookPen } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "motion/react"
 
 export default function PresentationCard() {
 
@@ -15,8 +16,12 @@ export default function PresentationCard() {
     }, [i18n.language]);
 
     return (
-        <section
-            className="w-full mx-auto p-6 bg-white dark:bg-slate-800 rounded-2xl 
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1}}
+
+            className="w-full mx-auto p-6 bg-gradient-to-bl from-white dark:from-gray-900 dark:via-slate-950 dark:to-slate-900 rounded-2xl 
                 shadow-[10px_10px_#00000020] dark:shadow-[10px_10px_#ffffff30] 
                 border dark:border-gray-600 border-gray-200"
         >
@@ -72,8 +77,8 @@ export default function PresentationCard() {
                     <div className="relative">
                         <div className="w-48 h-48 bg-gradient-to-br from-blue-400/20 via-blue-400/20 to-cyan-400/20 rounded-full blur-2xl animate-pulse"></div>
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="text-6xl font-black text-gray-200 dark:text-gray-700 opacity-99">
-                                &lt;/&gt;
+                            <div className="">
+                                <CodeXml className="text-gray-300 dark:text-gray-700 opacity-99" size={80} />
                             </div>
                         </div>
                     </div>
@@ -98,6 +103,6 @@ export default function PresentationCard() {
             </div>
 
 
-        </section>
+        </motion.section>
     )
 }

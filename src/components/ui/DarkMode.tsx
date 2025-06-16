@@ -30,7 +30,7 @@ export default function DarkMode() {
 
 	return (
 		<div className="flex items-center justify-center">
-			<div className="bg-gray-200 dark:bg-gray-700 rounded-lg p-1 flex gap-1">
+			<div className="rounded-lg p-1 flex gap-1">
 				<button
 					onClick={() => setTheme("light")}
 					className={`flex items-center justify-center p-2 rounded-md transition-all duration-200 ${

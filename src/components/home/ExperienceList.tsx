@@ -1,6 +1,7 @@
 import { Zap } from "lucide-react";
 import ExperienceCard from "./ExperienceCard";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react"
 
 
 export default function ExperienceList() {
@@ -35,7 +36,12 @@ export default function ExperienceList() {
     ];
 
 	return (
-		<section className="my-20">
+		<motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="my-20"
+        >
 			<span className="flex gap-2 text-cyan-500 font-light">
 				<Zap />
 				{`${t("experiences.above-heading")}`}
@@ -52,6 +58,6 @@ export default function ExperienceList() {
 			</div>
 
             
-		</section>
+		</motion.section>
 	);
 }

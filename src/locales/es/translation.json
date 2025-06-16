@@ -2,6 +2,7 @@
 	"nav": {
 		"home": "Inicio",
 		"projects": "Proyectos",
+        "contact": "Contacto", 
 		"blog": "Blog",
 		"language": "Cambiar Idioma", 
         "spanish": "Español", 
@@ -19,6 +20,8 @@
 	"resume": {
 		"heading": "Mi Historia",
 		"heading-2": "Mi Estudio",
+        "heading-web": "Desarrollo Web",
+        "heading-devops": "DevOps",
 		"p-1": "Llevo 2 años programando, comenzando con cursos en línea sobre cómo crear sitios web simples con HTML, CSS, JavaScript y PHP.",
 		"p-2": "Mi amor por el desarrollo web comenzó con un sitio hecho en HTML y CSS, cuando vi cómo palabras extrañas se convertían en cosas reales. Desde entonces, no pude parar.",
 		"p-3": "A medida que profundizaba, comencé a enfocarme en el ecosistema de React.js. Ahora me especializo en construir Aplicaciones Modernas usando Next.js o MERN Stack.",
@@ -30,23 +33,31 @@
 		"button-resume": "Descargar CV",
 		"button-blog": "Ver mi Blog"
 	},
-	"projects": {
-		"heading-1": "Mis Proyectos",
-		"heading-2": "Mis Proyectos Recientes",
-		"p-1": "He estado programando durante 2 años y he trabajado en muchos proyectos. A continuación se muestran algunos de los más recientes; para más detalles, visita mi perfil de GitHub.",
-		"p-2": "Explora algunos de mis proyectos. Para más detalles, visita mi perfil de GitHub.",
-		"above-button-1": "¡Más proyectos muy pronto!",
-		"above-button-2": "¿Quieres ver más?",
-		"button-1": "Ver todos los Proyectos",
-		"button-2": "Perfil de GitHub",
-		"button-visit": "Visitar Sitio Web",
-		"button-frontend": "Repositorio Frontend",
-		"button-backend": "Repositorio Backend",
-		"date": "Actualidad",
-		"test-account": "Cuenta de Prueba",
-		"email": "Correo: ",
-		"password": "Contraseña: "
-	},
+
+    "projects": {
+        "heading-1": "Mis Proyectos",
+        "heading-2": "Mis Proyectos Recientes",
+        "p-1": "He estado programando por 2 años y he trabajado en muchos proyectos. Aquí algunos de los más recientes. Para más detalles, visita mi perfil de GitHub.",
+        "p-2": "Explora algunos de mis proyectos. Para más detalles, visita mi perfil de GitHub.",
+        "uptask-title": "UpTask – Gestor de Tareas y Proyectos MERN",
+        "uptask-description": "UpTask es una aplicación web completa de gestión de tareas y proyectos construida con el stack MERN. Permite administrar equipos, delegar tareas y seguir el progreso con acceso por roles, autenticación JWT y una interfaz limpia y responsiva.",
+        "nextcrm-title": "NextCRM – Sistema de Gestión de Clientes e Inventario",
+        "nextcrm-description": "NextCRM es una app moderna para gestionar clientes e inventario, con analíticas integradas, actualizaciones en tiempo real y un sistema seguro basado en JWT. Todo en una interfaz elegante que soporta modos claro y oscuro.",
+        "portalspt-title": "Portal SPT – Plataforma Privada para Socios B2B",
+        "portalspt-description": "Portal SPT es una app web B2B segura con autenticación JWT e integración con la API de Bsale. Permite navegar por productos, hacer pedidos, gestionar perfiles y acceder a descuentos exclusivos.",
+        "above-button-1": "¡Más proyectos pronto!",
+        "above-button-2": "¿Quieres ver más?",
+        "button-1": "Ver todos los proyectos",
+        "button-2": "Perfil de GitHub",
+        "button-visit": "Visitar Sitio Web",
+        "button-frontend": "Repo Frontend",
+        "button-backend": "Repo Backend",
+        "date": "Ahora",
+        "test-account": "Cuenta de Prueba",
+        "email": "Correo: ",
+        "password": "Contraseña: "
+    },
+    
 	"experiences": {
 		"above-heading": "Experiencias",
 		"heading": "Hitos",

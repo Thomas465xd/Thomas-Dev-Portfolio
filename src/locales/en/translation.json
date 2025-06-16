@@ -3,6 +3,7 @@
         "home": "Home", 
         "projects": "Projects", 
         "blog": "Blog", 
+        "contact": "Contact", 
         "language": "Change Language", 
         "spanish": "Spanish", 
         "english": "English", 
@@ -32,6 +33,7 @@
         "button-1": "View my Github", 
         "button-2": "Contact Me", 
         "button-resume": "Download CV", 
+        "button-work": "View my Work",
         "button-blog": "View my Blog"
     }, 
 
@@ -40,6 +42,12 @@
         "heading-2": "My Recent Projects", 
         "p-1": "I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.",
         "p-2": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
+        "uptask-title": "UpTask – MERN To-Do & Project Manager", 
+        "uptask-description": "UpTask is a full-featured task and project management web app built with the MERN stack. It lets users manage teams, delegate tasks, and track project progress with role-based access, JWT-authenticated accounts, and a clean, responsive UI powered by Headless UI. Designed for efficiency, collaboration, and productivity.",
+        "nextcrm-title": "NextCRM – Client & Inventory Management System", 
+        "nextcrm-description": "NextCRM is a modern client and inventory management app featuring built-in analytics, real-time updates, and a secure JWT-based authentication system. It allows you to manage products, orders, and clients with ease, all within a sleek, responsive UI that supports both light and dark mode.",
+        "portalspt-title": "Portal SPT – Private B2B Partner Platform", 
+        "portalspt-description": "Portal SPT is a secure B2B web app built with the MERN stack, featuring JWT-authenticated access and integration with the Bsale API. It allows partners to browse products by SKU, place orders, manage profiles, and access exclusive discounts—all within a fast, intuitive interface.", 
         "above-button-1": "More Projects coming soon!!!", 
         "above-button-2": "Want to see more?",
         "button-1": "View all Projects", 

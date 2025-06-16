@@ -17,102 +17,109 @@ import {
 } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react"
 
 type ProjectsListProps = {
     allProjects?: boolean;
 }
 
-const projects = [
-    { 
-        title: "UpTask – MERN To-Do & Project Manager", 
-        date: "January 22, 2025 - Now", 
-        description: "UpTask is a full-featured task and project management web app built with the MERN stack. It lets users manage teams, delegate tasks, and track project progress with role-based access, JWT-authenticated accounts, and a clean, responsive UI powered by Headless UI. Designed for efficiency, collaboration, and productivity.", 
-        images: [
-            { name: "uptask1" }, 
-            { name: "uptask2" }, 
-            { name: "uptask3" }
-        ], 
-        account: {
-            email: "test@test.com",
-            password: "password", 
-        }, 
-        technologies: [
-            { name: "React", icon: SiReact, color: "#61DAFB" },
-            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-            { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
-            { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
-            { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
-            { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-            { name: "Vercel", icon: SiVercel, color: "#000000"},
-            { name: "Render", icon: SiRender, color: "#311C87"},
-            { name: "Docker", icon: SiDocker, color: "#2496ED"}
-        ],
-        url: "https://uptask-react-ts.vercel.app/", 
-        frontend_repo: "https://github.com/Thomas465xd/uptask_frontend", 
-        backend_repo: "https://github.com/Thomas465xd/uptask_backend", 
-    }, 
-    {
-        title: "NextCRM – Client & Inventory Management System", 
-        date: "May 23, 2025 - Now", 
-        description: "NextCRM is a modern client and inventory management app featuring built-in analytics, real-time updates, and a secure JWT-based authentication system. It allows you to manage products, orders, and clients with ease, all within a sleek, responsive UI that supports both light and dark mode.", 
-        images: [
-            { name: "nextcrm1" }, 
-            { name: "nextcrm2" }, 
-            { name: "nextcrm3" }
-        ], 
-        account: {
-            email: "test@test.com", 
-            password: "password", 
-        }, 
-            technologies: [
-            { name: "React", icon: SiReact, color: "#61DAFB" },
-            { name: "Next.js", icon: SiNextdotjs, color: "#a9a9a9" },
-            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-            { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
-            { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
-            { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
-            { name: "Apollo Server", icon: SiApollographql, color: "#311C87" },
-            { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-            { name: "Vercel", icon: SiVercel, color: "#000000"},
-            { name: "Render", icon: SiRender, color: "#311C87"},
-            { name: "Docker", icon: SiDocker, color: "#2496ED"}
-        ],
-        url: "https://next-crm-graphql.vercel.app", 
-        frontend_repo: "https://github.com/Thomas465xd/Frontend-Apollo-Client_CRM-NextJS", 
-        backend_repo: "https://github.com/Thomas465xd/Backend-GraphQL-CRM", 
-    },
-    {
-        title: "Portal SPT – Private B2B Partner Platform", 
-        date: "March 17, 2025 - Now", 
-        description: "Portal SPT is a secure B2B web app built with the MERN stack, featuring JWT-authenticated access and integration with the Bsale API. It allows partners to browse products by SKU, place orders, manage profiles, and access exclusive discounts—all within a fast, intuitive interface.", 
-        images: [
-            { name: "portalspt1" }, 
-            { name: "portalspt2" }, 
-            { name: "portalspt3" }
-        ], 
-        technologies: [
-            { name: "React", icon: SiReact, color: "#61DAFB" },
-            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-            { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
-            { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
-            { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
-            { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-            { name: "Vercel", icon: SiVercel, color: "#000000"},
-            { name: "Render", icon: SiRender, color: "#311C87"},
-            { name: "Docker", icon: SiDocker, color: "#2496ED"}
-        ], 
-        url: "https://www.portalspt.cl", 
-        frontend_repo: "https://github.com/Thomas465xd/spt_frontend", 
-        backend_repo: "https://github.com/Thomas465xd/spt_backend", 
-    }
-];
 
 export default function ProjectsList({ allProjects } : ProjectsListProps) {
-
+    
     const { t } = useTranslation(); 
 
+    const projects = [
+        { 
+            title: `${t("projects.uptask-title")}`, 
+            date: "January 22, 2025 - Now", 
+            description: `${t("projects.uptask-description")}`, 
+            images: [
+                { name: "uptask1" }, 
+                { name: "uptask2" }, 
+                { name: "uptask3" }
+            ], 
+            account: {
+                email: "test@test.com",
+                password: "password", 
+            }, 
+            technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ],
+            url: "https://uptask-react-ts.vercel.app/", 
+            frontend_repo: "https://github.com/Thomas465xd/uptask_frontend", 
+            backend_repo: "https://github.com/Thomas465xd/uptask_backend", 
+        }, 
+        {
+            title: `${t("projects.nextcrm-title")}`, 
+            date: "May 23, 2025 - Now", 
+            description: `${t("projects.nextcrm-description")}`, 
+            images: [
+                { name: "nextcrm1" }, 
+                { name: "nextcrm2" }, 
+                { name: "nextcrm3" }
+            ], 
+            account: {
+                email: "test@test.com", 
+                password: "password", 
+            }, 
+                technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "Next.js", icon: SiNextdotjs, color: "#a9a9a9" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "GraphQL", icon: SiGraphql, color: "#E535AB" },
+                { name: "Apollo Server", icon: SiApollographql, color: "#311C87" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ],
+            url: "https://next-crm-graphql.vercel.app", 
+            frontend_repo: "https://github.com/Thomas465xd/Frontend-Apollo-Client_CRM-NextJS", 
+            backend_repo: "https://github.com/Thomas465xd/Backend-GraphQL-CRM", 
+        },
+        {
+            title: `${t("projects.portalspt-title")}`, 
+            date: "March 17, 2025 - Now", 
+            description: `${t("projects.portalspt-description")}`, 
+            images: [
+                { name: "portalspt1" }, 
+                { name: "portalspt2" }, 
+                { name: "portalspt3" }
+            ], 
+            technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ], 
+            url: "https://www.portalspt.cl", 
+            frontend_repo: "https://github.com/Thomas465xd/spt_frontend", 
+            backend_repo: "https://github.com/Thomas465xd/spt_backend", 
+        }
+    ];
+
     return (
-        <div className="my-10 space-y-10">
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }} 
+            className="my-10 space-y-10"
+        >
             <div className="">
                 {allProjects ? (
                     <>
@@ -184,6 +191,6 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
                     </div>
                 </div>
             )}
-        </div>
+        </motion.section>
     )
 }

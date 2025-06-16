@@ -24,6 +24,7 @@ import {
 } from "react-icons/si";
 import TechnologyCard from "./TechnologyCard";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react"
 
 
 const technologies = [
@@ -68,7 +69,12 @@ export default function TechnologyList() {
     const { t } = useTranslation();
 
     return (
-        <section className="space-y-10">
+        <motion.section 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="space-y-10"
+        >
 
             <div className="space-y-4">
                 <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
@@ -143,6 +149,6 @@ export default function TechnologyList() {
                     />
                 ))}
             </div>
-        </section>
+        </motion.section>
     )
 }

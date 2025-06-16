@@ -37,7 +37,7 @@ export default function Footer({ dark }: FooterProps) {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 items-start text-center md:text-left">
                 <div className="space-y-2">
                     <h3 className='font-bold'>{`${t("footer.links-1")}`}</h3>
 

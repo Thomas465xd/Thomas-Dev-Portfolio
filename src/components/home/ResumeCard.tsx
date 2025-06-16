@@ -2,13 +2,19 @@ import { ArrowRight, CodeXml, Container, GitCompareArrows, GraduationCap } from 
 import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react"
 
 export default function ResumeCard() {
 
     const { t } = useTranslation() 
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-20 mx-auto max-w-6xl">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-20 mx-auto max-w-6xl"
+        >
             {/* Left Content Section */}
             <div className="space-y-8">
                 <h2 className="text-2xl lg:text-4xl font-bold flex items-center gap-3">
@@ -118,6 +124,6 @@ export default function ResumeCard() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };

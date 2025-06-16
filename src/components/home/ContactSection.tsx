@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react"
 
 export default function ContactSection() {
 
@@ -60,7 +61,12 @@ export default function ContactSection() {
     const { t } = useTranslation();
 
     return (
-        <section className="mt-20 space-y-4">
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="mt-20 space-y-4"
+        >
             <h1 className="text-3xl font-bold">
                 {`${t("contact.heading")}`}<span className="text-yellow-500">.</span>
             </h1>
@@ -163,6 +169,6 @@ export default function ContactSection() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-all duration-500" />
                 </a>
             </div>
-        </section>
+        </motion.section>
     )
 }
