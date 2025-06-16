@@ -19,20 +19,20 @@ export default function Footer({ dark }: FooterProps) {
     return (
         <footer className={`w-full max-w-[480px] sm:max-w-xl md:max-w-4xl xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t-2 dark:border-gray-700 border-gray-300 mb-16`}>
             <div className="flex flex-col md:flex-row justify-between items-center">
-                <p className={`text-center md:truncate py-4 ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"}`}>
-                    Thomas Schrödinger Dev Portfolio - {`${t("footer.copyright")}`} &copy; {year ?? '----'}
+                <p className={`text-center md:truncate py-4 ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-500"}`}>
+                    Thomas Dev Portfolio - {`${t("footer.copyright")}`} &copy; {year ?? '----'}
                 </p>
-                <p className={`text-center md:truncate ${dark ? "text-gray-400" : "text-gray-400 dark:text-gray-600"} text-sm flex items-center justify-center gap-2`}>
+                <p className={`text-center md:truncate ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-500"} text-sm flex items-center justify-center gap-2`}>
                     <CodeXml size={18}/>
                     {`${t("footer.developed")}`}{' '}
                     <a
                         className={`${dark ? "text-gray-700 hover:text-amber-500" : "text-gray-500 dark:text-gray-500 hover:text-blue-500 dark:hover:text-yellow-500 hover:underline "} font-semibold transition-colors duration-300`}
-                        href="https://github.csom/Thomas465xd"
+                        href="https://github.com/Thomas465xd/Thomas-Dev-Portfolio"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Thomas Schrödinger GitHub Profile"
                     >
-                        Thomas Schrödinger
+                        {`${t("footer.name")}`}
                     </a>
                 </p>
             </div>

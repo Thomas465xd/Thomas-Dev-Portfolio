@@ -12,11 +12,10 @@ export default function AppLayout() {
 
     const { i18n } = useTranslation();
 
-    const supportedLangs = ['en', 'es', 'de'];
-
     const location = useLocation();
 
     useEffect(() => {
+        const supportedLangs = ['en', 'es', 'de'];
         const searchParams = new URLSearchParams(location.search);
         const lang = searchParams.get("lang");
 
@@ -65,7 +64,7 @@ export default function AppLayout() {
     }, [lastScrollY]);
 
     return (
-        <div className="flex flex-col min-h-screen dark:bg-slate-950 overflow-auto scrollbar dark:scrollbar-thumb-cyan-300 scrollbar-thumb-indigo-900 dark:scrollbar-track-neutral-800 scrollbar-track-gray-100">
+        <div className="flex flex-col min-h-screen dark:bg-slate-950 overflow-auto">
             {/* Fixed Header with scroll-responsive animation */}
             <header 
                 className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${

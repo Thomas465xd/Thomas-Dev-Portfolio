@@ -12,7 +12,7 @@
 	"presentation": {
 		"subtitle": "Sobre Mí",
 		"title": "Desarrollador Web Full Stack",
-		"heading-1": "Hola, soy Thomas 👋",
+		"heading-1": "Hola, soy Iñigo 👋",
 		"heading-2": "Bienvenido a mi Portafolio 📋",
 		"p-1": "Soy un apasionado Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables siguiendo las mejores prácticas del desarrollo de software.",
 		"p-2": "Con un enfoque tanto en tecnologías frontend como backend, me esfuerzo por entregar soluciones de alta calidad que cumplan con las necesidades del usuario y los objetivos del negocio."
@@ -88,7 +88,7 @@
 		"option": "O también puedes contactarme por..."
 	},
 	"footer": {
-		"name": "Thomas Schrödinger",
+		"name": "Iñigo Del Campo",
 		"developed": "Desarrollado por",
 		"copyright": "Derechos reservados",
 		"links-1": "Enlaces Importantes",

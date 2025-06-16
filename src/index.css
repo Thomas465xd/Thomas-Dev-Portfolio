@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-@plugin "tailwind-scrollbar";
-
-@theme {
-	--color-scrollbar-thumb: #ff0088;
-	--color-scrollbar-track: #f0f0f0;
-}
 
 /* Opcional: regla directa si no instalas el plugin */
 @layer utilities {

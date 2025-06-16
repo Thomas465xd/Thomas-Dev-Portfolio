@@ -1,37 +1,43 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
-import HomeView from "./views/home/HomeView";
-import ProjectsView from "./views/home/ProjectsView";
-import BlogView from "./views/home/BlogView";
-import ContactView from "./views/home/ContactView";
-import PhotographyView from "./views/home/PhotographyView";
 import Loader from "./components/ui/Loader";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import ErrorBoundary from "./components/ui/ErrorBoundary";
-import NotFound from "./views/404/NotFound";
+
+// Lazy load route components
+const HomeView = lazy(() => import("./views/home/HomeView"));
+const ProjectsView = lazy(() => import("./views/home/ProjectsView"));
+const BlogView = lazy(() => import("./views/home/BlogView"));
+const ContactView = lazy(() => import("./views/home/ContactView"));
+const PhotographyView = lazy(() => import("./views/home/PhotographyView"));
+const NotFound = lazy(() => import("./views/404/NotFound"));
 
 export default function Router() {
-    return (
-        <BrowserRouter>
-            <ErrorBoundary>
-                <Suspense fallback={<Loader />}>
-                    <Routes>
-                        <Route element={<AppLayout />}>
-                            <Route path="/" element={<HomeView />} />
-                            <Route path="/projects" element={<ProjectsView />} />
-                            <Route path="/blog" element={<BlogView />} />
-                            <Route path="/contact" element={<ContactView />} />
-                            <Route path="/photography" element={<PhotographyView />} />
+	return (
+		<BrowserRouter>
+			<ErrorBoundary>
+				<Suspense fallback={<Loader />}>
+					<Routes>
+						<Route element={<AppLayout />}>
+							<Route path="/" element={<HomeView />} />
+							<Route
+								path="/projects"
+								element={<ProjectsView />}
+							/>
+							<Route path="/blog" element={<BlogView />} />
+							<Route path="/contact" element={<ContactView />} />
+							<Route
+								path="/photography"
+								element={<PhotographyView />}
+							/>
 
-                            {/* Optional: Direct 404 page */}
-                            <Route path="/404" element={<NotFound />} />
-
-                            {/* This is the key route to catch all unrecognized URLs */}
-                            <Route path="*" element={<NotFound />} />
-                        </Route>
-                    </Routes>
-                </Suspense>
-            </ErrorBoundary>
-        </BrowserRouter>
-    )
-} 
+							{/* 404 routes */}
+							<Route path="/404" element={<NotFound />} />
+							<Route path="*" element={<NotFound />} />
+						</Route>
+					</Routes>
+				</Suspense>
+			</ErrorBoundary>
+		</BrowserRouter>
+	);
+}

@@ -47,7 +47,7 @@ export default function ExperienceList() {
 				{`${t("experiences.above-heading")}`}
 			</span>
 			<h2 className="text-4xl font-bold mt-2">{`${t("experiences.heading")}`}</h2>
-			<p className="text-gray-500">
+			<p className="text-gray-700 dark:text-gray-400">
 				{`${t("experiences.subheading")}`}
 			</p>
 
