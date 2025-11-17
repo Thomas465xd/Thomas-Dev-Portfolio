@@ -57,7 +57,7 @@ export default function ProjectCard({ title, date, description, images, account,
                 </p>
 
                 <div className="relative dark:bg-slate-950 bg-gray-100 rounded py-1">
-                    <div className="absolute left- top-0 w-1 h-full bg-gradient-to-b from-purple-500 to-cyan-500 rounded-full"></div>
+                    <div className="absolute left- top-0 w-1 h-full bg-gradient-to-b from-purple-500 to-blue-500 rounded-full"></div>
                     <p className="dark:text-gray-100 leading-relaxed pl-6">
                         { description }
                     </p>
@@ -112,7 +112,7 @@ export default function ProjectCard({ title, date, description, images, account,
                                 <img 
                                     src={`/website/${img.name}.webp`} 
                                     alt="Website Photo" 
-                                    className="w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-75 group-hover:scale-105"
+                                    className="w-full h-full object-cover object-top"
                                 />
                             </SwiperSlide>
                         ))}

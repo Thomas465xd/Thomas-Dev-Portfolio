@@ -1,32 +1,50 @@
 import { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Monitor } from "lucide-react";
+
+type Theme = "light" | "dark" | "system";
 
 export default function DarkMode() {
-	const [theme, setTheme] = useState(() => {
-		// Check localStorage or default to light
-		if (typeof window !== 'undefined') {
-			return localStorage.getItem('theme') || 'light';
+	const [theme, setTheme] = useState<Theme>(() => {
+		if (typeof window !== "undefined") {
+			const saved = localStorage.getItem("theme") as Theme | null;
+			return saved || "system";
 		}
-		return 'light';
+		return "system";
 	});
 
 	useEffect(() => {
-		// Apply theme to document
-		if (theme === 'dark') {
-			document.documentElement.classList.add('dark');
-			document.documentElement.classList.remove('light');
-		} else {
-			document.documentElement.classList.add('light');
-			document.documentElement.classList.remove('dark');
-		}
+		const root = document.documentElement;
 		
-		// Save to localStorage
-		localStorage.setItem('theme', theme);
-	}, [theme]);
+		const applyTheme = (currentTheme: Theme) => {
+			if (currentTheme === "system") {
+				const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+				if (prefersDark) {
+					root.classList.add("dark");
+					root.classList.remove("light");
+				} else {
+					root.classList.add("light");
+					root.classList.remove("dark");
+				}
+			} else if (currentTheme === "dark") {
+				root.classList.add("dark");
+				root.classList.remove("light");
+			} else {
+				root.classList.add("light");
+				root.classList.remove("dark");
+			}
+		};
 
-	const toggleTheme = () => {
-		setTheme(prev => prev === 'light' ? 'dark' : 'light');
-	};
+		applyTheme(theme);
+		localStorage.setItem("theme", theme);
+
+		// Listen for system theme changes when in system mode
+		if (theme === "system") {
+			const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+			const handleChange = () => applyTheme("system");
+			mediaQuery.addEventListener("change", handleChange);
+			return () => mediaQuery.removeEventListener("change", handleChange);
+		}
+	}, [theme]);
 
 	return (
 		<div className="flex items-center justify-center">
@@ -35,7 +53,7 @@ export default function DarkMode() {
 					onClick={() => setTheme("light")}
 					className={`flex items-center justify-center p-2 rounded-md transition-all duration-200 ${
 						theme === "light"
-							? "bg-white text-yellow-500 shadow-md"
+							? "bg-white dark:bg-gray-800 text-yellow-500 shadow-md"
 							: "text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600"
 					}`}
 					aria-label="Light mode"
@@ -44,7 +62,19 @@ export default function DarkMode() {
 				</button>
 
 				<button
-					onClick={() => toggleTheme()}   
+					onClick={() => setTheme("system")}
+					className={`flex items-center justify-center p-2 rounded-md transition-all duration-200 ${
+						theme === "system"
+							? "bg-white dark:bg-gray-800 text-blue-500 dark:text-blue-400 shadow-md"
+							: "text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600"
+					}`}
+					aria-label="System theme"
+				>
+					<Monitor size={18} />
+				</button>
+
+				<button
+					onClick={() => setTheme("dark")}
 					className={`flex items-center justify-center p-2 rounded-md transition-all duration-200 ${
 						theme === "dark"
 							? "bg-gray-800 text-blue-400 shadow-md"

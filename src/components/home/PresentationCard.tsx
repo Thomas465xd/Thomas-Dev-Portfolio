@@ -43,7 +43,7 @@ export default function PresentationCard() {
                 </span>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center py-4 min-h-[120px] sm:min-h-[100px] md:min-h-[80px]">
                 <TypeAnimation
                     key={key} // ← esto reinicia el componente al cambiar idioma
                     sequence={[
@@ -55,7 +55,7 @@ export default function PresentationCard() {
                     ]}
                     wrapper="h1"
                     speed={50}
-                    className="text-3xl md:text-3xl lg:text-4xl"
+                    className="text-3xl md:text-3xl lg:text-4xl0"
                     repeat={Infinity}
                 />
             </div>

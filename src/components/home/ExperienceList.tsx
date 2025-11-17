@@ -18,20 +18,20 @@ export default function ExperienceList() {
                 `${t("experiences.job-description-1")}`,
         },
         {
-            type: "Internship",
-            title: "Frontend Developer Intern",
-            businessName: "TechWave Solutions",
-            location: "San Francisco, CA",
+            type: "Integration Developer",
+            title: "Backend & Systems Engineer",
+            businessName: "Obsox",
+            location: "Santiago, Chile & Lima, Peru",
             description:
-                "Implemented responsive UI components using React, collaborated with designers to improve UX, and performed cross-browser testing.",
+                "Worked on a spare-parts obsolescence marketplace built on a microservices architecture with asynchronous event-based communication. Implemented and maintained service integrations with providers such as Bsale and Microsoft Dynamics..",
         },
         {
-            type: "Full-time",
-            title: "Software Engineer",
-            businessName: "InnoSoft Corp",
-            location: "New York, NY",
+            type: "Freelance",
+            title: "Real Estate Brokerage Platform",
+            businessName: "Javiera Urbina & Asociados",
+            location: "Santiago, Chile",
             description:
-                "Designed and built RESTful APIs, improved database queries for better performance, and worked closely with product teams on feature development.",
+                "Designed and developed a modern real estate brokerage platform featuring Clerk authentication and a custom REST API for comprehensive property and category management.",
         },
     ];
 
