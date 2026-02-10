@@ -5,12 +5,15 @@ import Footer from "../components/ui/Footer";
 import NavBar from "../components/ui/NavBar";
 import BackToTopButton from "../components/ui/BackToTop";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../hooks/useTheme";
 
 export default function AppLayout() {
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
     const { i18n } = useTranslation();
+
+    const { resolvedTheme } = useTheme();
 
     const location = useLocation();
 
@@ -64,37 +67,62 @@ export default function AppLayout() {
     }, [lastScrollY]);
 
     return (
-        <div className="flex flex-col min-h-screen dark:bg-slate-950 overflow-auto">
-            {/* Fixed Header with scroll-responsive animation */}
-            <header 
-                className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
-                    isNavVisible ? 'translate-y-0' : '-translate-y-full'
-                }`}
+        <>
+            <div 
+                className={`
+                    flex flex-col min-h-screen 
+                    ${resolvedTheme === "dark" ? 
+                        "bg-radial-[at_50%_75%] from-slate-900 to-slate-950" :
+                        ""
+                    }
+                    overflow-hidden
+                `}
             >
-                <nav className="">
-                    <NavBar />
-                </nav>
-            </header>
+                {resolvedTheme === "dark" && (
+                    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+                        <div className="stars" />
+                        <div className="stars2" />
+                        <div className="stars3" />
+                        <div className="stars2" />
+                        <div className="stars3" />
+                    </div>
+                )}
 
-            {/* Main Content Area - with top padding to account for fixed navbar */}
-            <main className="pt-28 md:pt-36 flex-1 max-w-screen-2xl md:mx-10 lg:mx-30 xl:mx-auto p-4 mt-0">
-                <Outlet />
-            </main>
+                <div className="relative z-10 flex flex-col min-h-screen">
+                    {/* Fixed Header with scroll-responsive animation */}
+                    <header 
+                        className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+                            isNavVisible ? 'translate-y-0' : '-translate-y-full'
+                        }`}
+                    >
+                        <nav className="">
+                            <NavBar />
+                        </nav>
+                    </header>
 
-            <BackToTopButton />
+                    {/* Main Content Area - with top padding to account for fixed navbar */}
+                    <main className="pt-28 md:pt-36 flex-1 max-w-screen-2xl md:mx-10 lg:mx-30 xl:mx-auto p-4 mt-0">
+                        <Outlet />
+                    </main>
 
-            {/* Footer */}
-            <footer className="mt-auto">
-                <Footer />
-            </footer>
 
-            {/* Toast Notifications */}
-            <ToastContainer
-                position="top-right"
-                autoClose={4000}
-                pauseOnFocusLoss={false}
-                pauseOnHover={false}
-            />
-        </div>
+
+                    <BackToTopButton />
+
+                    {/* Footer */}
+                    <footer className="mt-auto">
+                        <Footer />
+                    </footer>
+                </div>
+
+                {/* Toast Notifications */}
+                <ToastContainer
+                    position="top-right"
+                    autoClose={4000}
+                    pauseOnFocusLoss={false}
+                    pauseOnHover={false}
+                />
+            </div>
+        </>
     );
 }

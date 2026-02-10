@@ -1,50 +1,8 @@
-import { useEffect, useState } from "react";
 import { Moon, Sun, Monitor } from "lucide-react";
-
-type Theme = "light" | "dark" | "system";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function DarkMode() {
-	const [theme, setTheme] = useState<Theme>(() => {
-		if (typeof window !== "undefined") {
-			const saved = localStorage.getItem("theme") as Theme | null;
-			return saved || "system";
-		}
-		return "system";
-	});
-
-	useEffect(() => {
-		const root = document.documentElement;
-		
-		const applyTheme = (currentTheme: Theme) => {
-			if (currentTheme === "system") {
-				const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-				if (prefersDark) {
-					root.classList.add("dark");
-					root.classList.remove("light");
-				} else {
-					root.classList.add("light");
-					root.classList.remove("dark");
-				}
-			} else if (currentTheme === "dark") {
-				root.classList.add("dark");
-				root.classList.remove("light");
-			} else {
-				root.classList.add("light");
-				root.classList.remove("dark");
-			}
-		};
-
-		applyTheme(theme);
-		localStorage.setItem("theme", theme);
-
-		// Listen for system theme changes when in system mode
-		if (theme === "system") {
-			const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-			const handleChange = () => applyTheme("system");
-			mediaQuery.addEventListener("change", handleChange);
-			return () => mediaQuery.removeEventListener("change", handleChange);
-		}
-	}, [theme]);
+	const { theme, setTheme } = useTheme();
 
 	return (
 		<div className="flex items-center justify-center">
