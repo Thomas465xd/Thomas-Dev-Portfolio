@@ -56,7 +56,7 @@ export default function ProjectCard({ title, date, description, images, account,
                     <Calendar size={20} />{ date }
                 </p>
 
-                <div className="relative dark:bg-slate-950 bg-gray-100 rounded py-1">
+                <div className="relative dark:bg-slate-900/40 bg-gray-100 rounded py-1">
                     <div className="absolute left- top-0 w-1 h-full bg-gradient-to-b from-purple-500 to-blue-500 rounded-full"></div>
                     <p className="dark:text-gray-100 leading-relaxed pl-6">
                         { description }

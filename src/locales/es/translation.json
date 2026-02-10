@@ -1,5 +1,6 @@
 {
 	"nav": {
+        "menu": "Menu",
 		"home": "Inicio",
 		"projects": "Proyectos",
         "contact": "Contacto", 
@@ -31,6 +32,7 @@
 		"button-1": "Ver mi Github",
 		"button-2": "Contáctame",
 		"button-resume": "Descargar CV",
+        "button-resume-url": "es-resume", 
 		"button-blog": "Ver mi Blog"
 	},
 
@@ -43,8 +45,12 @@
         "uptask-description": "UpTask es una aplicación web completa de gestión de tareas y proyectos construida con el stack MERN. Permite administrar equipos, delegar tareas y seguir el progreso con acceso por roles, autenticación JWT y una interfaz limpia y responsiva.",
         "nextcrm-title": "NextCRM – Sistema de Gestión de Clientes e Inventario",
         "nextcrm-description": "NextCRM es una app moderna para gestionar clientes e inventario, con analíticas integradas, actualizaciones en tiempo real y un sistema seguro basado en JWT. Todo en una interfaz elegante que soporta modos claro y oscuro.",
-        "portalspt-title": "Portal SPT – Plataforma Privada para Socios B2B",
-        "portalspt-description": "Portal SPT es una app web B2B segura con autenticación JWT e integración con la API de Bsale. Permite navegar por productos, hacer pedidos, gestionar perfiles y acceder a descuentos exclusivos.",
+        "portalspt-title": "Portal SPT – Plataforma B2B Moderna para Socios", 
+        "portalspt-description": "Plataforma B2B segura que combina integración con Bsale y servicios backend personalizados para inventario en tiempo real, catálogo de productos y gestión de pedidos. Arquitectura híbrida con autenticación JWT, sistema dinámico de descuentos por fidelización (0-100% por socio) e interfaz profesional para operaciones comerciales fluidas.",
+        "morangojoyas-title": "Morango Jewels – E-commerce Full-Stack de Joyas",
+        "morangojoyas-description": "Plataforma e-commerce completa de joyas con tienda para clientes y panel administrativo usando Next.js 15, React 19 y TypeScript. Integración de pagos con MercadoPago y webhooks, autenticación JWT, seguimiento de pedidos, gestión administrativa de productos, soporte de modo oscuro y diseño responsive mobile.",
+        "jup-title": "JUP Propiedades – Plataforma Inmobiliaria Moderna",
+        "jup-description": "Plataforma inmobiliaria moderna para búsqueda y gestión de propiedades en Chile construida con Next.js 15 (SSR/SSG). Filtros avanzados de propiedades, galerías multimedia profesionales con Cloudinary, autenticación con Clerk, panel administrativo para CRUD de propiedades, integración WhatsApp, SEO optimizado y diseño responsive.",
         "above-button-1": "¡Más proyectos pronto!",
         "above-button-2": "¿Quieres ver más?",
         "button-1": "Ver todos los proyectos",
@@ -58,16 +64,27 @@
         "password": "Contraseña: "
     },
     
-	"experiences": {
-		"above-heading": "Experiencias",
-		"heading": "Hitos",
-		"subheading": "Mis experiencias como desarrollador independiente",
-		"job-type-1": "Freelance",
-		"job-title-1": "Desarrollador de Aplicaciones Full Stack",
-		"job-business-1": "Spare Parts Trade",
-		"job-location-1": "Santiago, Chile",
-		"job-description-1": "Desarrollé un portal B2B personalizado, optimicé el rendimiento del sitio web e integré una API externa."
-	},
+    "experiences": {
+        "above-heading": "Experiencias", 
+        "heading": "Trayectoria Profesional", 
+        "subheading": "Hitos clave en mi carrera como desarrollador full-stack", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Desarrollador Full Stack B2B", 
+        "job-business-1": "Portal SPT – Comercio de Repuestos", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Construí una plataforma B2B moderna combinando integración con Bsale y lógica de backend personalizada. Implementé arquitectura híbrida gestionando catálogo en tiempo real, carrito de compras, operaciones de inventario a través de API Bsale, más autenticación propia, gestión de pedidos y sistema dinámico de descuentos por fidelización (1-100% por empresa). Stack: MERN, TypeScript, JWT, REST APIs.",
+        "job-type-2": "Desarrollador de Integraciones", 
+        "job-title-2": "Ingeniero Backend & Sistemas", 
+        "job-business-2": "Obsox – Marketplace B2B", 
+        "job-location-2": "Santiago, Chile & Lima, Perú", 
+        "job-description-2": "Diseñé arquitectura de microservicios para marketplace de repuestos obsoletos con comunicación asincrónica orientada a eventos. Implementé integraciones críticas con Bsale y Microsoft Dynamics para sincronización de datos en tiempo real. Enfoque en confiabilidad del sistema, escalabilidad y gestión de integraciones con proveedores.",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Desarrollador Full Stack E-commerce", 
+        "job-business-3": "Morango Jewels – E-commerce de Joyas", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Desarrollé plataforma e-commerce full-stack de joyas con tienda para clientes y panel administrativo usando Next.js 15, React 19 y TypeScript. Integré procesamiento de pagos con MercadoPago con webhooks, implementé autenticación de usuarios con JWT, seguimiento de pedidos, gestión de productos, soporte para modo oscuro y diseño responsive mobile."
+    },
+
 	"technologies": {
 		"heading": "Tecnologías que utilizo",
 		"subheading": "Con el tiempo he trabajado con varias tecnologías, adaptándome a las necesidades de cada proyecto. Este es el stack tecnológico actual que utilizo para crear aplicaciones modernas y escalables.",

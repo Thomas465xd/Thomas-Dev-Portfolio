@@ -1,5 +1,6 @@
 {
 	"nav": {
+        "menu": "Menu",
 		"home": "Startseite",
 		"projects": "Projekte",
         "contact": "Kontact", 
@@ -31,6 +32,7 @@
 		"button-1": "Mein Github ansehen",
 		"button-2": "Kontaktiere mich",
 		"button-resume": "CV herunterladen",
+        "button-resume-url": "de-resume", 
 		"button-blog": "Meinen Blog ansehen"
 	},
     "projects": {
@@ -42,8 +44,12 @@
         "uptask-description": "UpTask ist eine umfassende Webanwendung zur Aufgaben- und Projektverwaltung mit dem MERN-Stack. Sie ermöglicht Teammanagement, Aufgabenverteilung und Fortschrittsverfolgung mit rollenbasiertem Zugriff, JWT-Authentifizierung und einer reaktionsschnellen Benutzeroberfläche.",
         "nextcrm-title": "NextCRM – Kunden- und Lagerverwaltungssystem",
         "nextcrm-description": "NextCRM ist eine moderne App zur Verwaltung von Kunden und Inventar mit integrierter Analyse, Echtzeit-Updates und sicherer JWT-Authentifizierung. Alles in einer modernen Oberfläche mit hellem und dunklem Modus.",
-        "portalspt-title": "Portal SPT – Private B2B-Partnerplattform",
-        "portalspt-description": "Portal SPT ist eine sichere B2B-Webanwendung mit JWT-Authentifizierung und Integration der Bsale-API. Sie ermöglicht Partnern die Produktsuche per SKU, das Aufgeben von Bestellungen, Profilverwaltung und Zugriff auf exklusive Rabatte.",
+        "portalspt-title": "Portal SPT – Moderne B2B-Partnerplattform", 
+        "portalspt-description": "Sichere B2B-Plattform mit Bsale-Integration und benutzerdefinierten Backend-Services für Echtzeitinventur, Produktkatalog und Auftragsverwaltung. Hybride Architektur mit JWT-Authentifizierung, dynamischem Loyalitätsrabattsystem (0-100% pro Partner) und professioneller Schnittstelle für reibungslose Geschäftsabläufe.",
+        "morangojoyas-title": "Morango Jewels – Vollständige Schmuck-E-Commerce-Plattform",
+        "morangojoyas-description": "Komplette Schmuck-E-Commerce-Plattform mit Kundenshop und Admin-Dashboard mit Next.js 15, React 19 und TypeScript. MercadoPago-Zahlungsverarbeitung mit Webhooks, JWT-Authentifizierung, Bestellverfolgung, Admin-Produktverwaltung, Dark-Mode-Unterstützung und responsives Mobile-Design.",
+        "jup-title": "JUP Propiedades – Moderne Immobilienplattform",
+        "jup-description": "Moderne Immobilienplattform zur Immobiliensuche und -verwaltung in Chile mit Next.js 15 (SSR/SSG). Erweiterte Immobilienfilter, professionelle Bildergalerien mit Cloudinary, Clerk-Authentifizierung, Admin-Dashboard für Immobilien-CRUD, WhatsApp-Integration, optimiertes SEO und responsives Design.",
         "above-button-1": "Weitere Projekte folgen bald!!!",
         "above-button-2": "Möchtest du mehr sehen?",
         "button-1": "Alle Projekte ansehen",
@@ -56,16 +62,26 @@
         "email": "E-Mail: ",
         "password": "Passwort: "
     },
-	"experiences": {
-		"above-heading": "Erfahrungen",
-		"heading": "Meilensteine",
-		"subheading": "Meine Erfahrungen als Solo-Entwickler",
-		"job-type-1": "Freelance",
-		"job-title-1": "Full Stack App Entwickler",
-		"job-business-1": "Spare Parts Trade",
-		"job-location-1": "Santiago, Chile",
-		"job-description-1": "Entwicklung eines B2B-Partnerportals, Optimierung der Website-Performance, Integration mit externer API."
-	},
+    "experiences": {
+        "above-heading": "Erfahrungen", 
+        "heading": "Berufliche Entwicklung", 
+        "subheading": "Wichtige Meilensteine in meiner Karriere als Full-Stack-Entwickler", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Full Stack B2B-Plattform-Entwickler", 
+        "job-business-1": "Portal SPT – Ersatzteilhandel", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Entwickelte moderne B2B-Partnerplattform mit Bsale-POS-Integration und benutzerdefinierter Backend-Logik. Implementierte hybride Architektur mit Echtzeitverwaltung von Produktkatalog, Warenkorb und Inventur durch Bsale-API, plus benutzerdefinierte Authentifizierung, Auftragsverwaltung und dynamisches Loyalitätsrabattsystem (1-100% pro Unternehmen). Tech-Stack: MERN, TypeScript, JWT, REST-APIs.",
+        "job-type-2": "Integrations-Entwickler", 
+        "job-title-2": "Backend- & Systemingenieur", 
+        "job-business-2": "Obsox – B2B-Marketplace", 
+        "job-location-2": "Santiago, Chile & Lima, Peru", 
+        "job-description-2": "Entwickelte Microservices-Architektur für Obsolescence-Marketplace mit asynchroner ereignisgestützter Kommunikation. Implementierte kritische Integrationen mit Bsale und Microsoft Dynamics für Echtzeitdatensynchronisierung. Fokus auf Systemzuverlässigkeit, Skalierbarkeit und Provider-Integrationsverwaltung.",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Full Stack E-Commerce-Entwickler", 
+        "job-business-3": "Morango Jewels – Schmuck-E-Commerce", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Entwickelte vollständige Schmuck-E-Commerce-Plattform mit Kundenshop und Admin-Dashboard mit Next.js 15, React 19 und TypeScript. Integrierte MercadoPago-Zahlungsverarbeitung mit Webhooks, implementierte Benutzerauthentifizierung mit JWT, Bestellverfolgung, Produktverwaltung, Dark-Mode-Unterstützung und responsives Mobile-Design."
+    },
 	"technologies": {
 		"heading": "Technologien, die ich nutze",
 		"subheading": "Im Laufe der Zeit habe ich mit vielen Technologien gearbeitet und mich den Projektanforderungen angepasst. Hier ist mein aktueller Tech-Stack für moderne, skalierbare Anwendungen.",

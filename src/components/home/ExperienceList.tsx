@@ -18,20 +18,20 @@ export default function ExperienceList() {
                 `${t("experiences.job-description-1")}`,
         },
         {
-            type: "Integration Developer",
-            title: "Backend & Systems Engineer",
-            businessName: "Obsox",
-            location: "Santiago, Chile & Lima, Peru",
+            type: `${t("experiences.job-type-2")}`,
+            title: `${t("experiences.job-title-2")}`,
+            businessName: `${t("experiences.job-business-2")}`,
+            location: `${t("experiences.job-location-2")}`,
             description:
-                "Worked on a spare-parts obsolescence marketplace built on a microservices architecture with asynchronous event-based communication. Implemented and maintained service integrations with providers such as Bsale and Microsoft Dynamics..",
+                `${t("experiences.job-description-2")}`,
         },
         {
-            type: "Freelance",
-            title: "Real Estate Brokerage Platform",
-            businessName: "Javiera Urbina & Asociados",
-            location: "Santiago, Chile",
+            type: `${t("experiences.job-type-3")}`,
+            title: `${t("experiences.job-title-3")}`,
+            businessName: `${t("experiences.job-business-3")}`,
+            location: `${t("experiences.job-location-3")}`,
             description:
-                "Designed and developed a modern real estate brokerage platform featuring Clerk authentication and a custom REST API for comprehensive property and category management.",
+                `${t("experiences.job-description-3")}`,
         },
     ];
 

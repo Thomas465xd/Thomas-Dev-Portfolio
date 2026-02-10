@@ -9,11 +9,11 @@ import {
     SiMongodb,
     SiDocker,
     SiVercel,
-    SiGraphql,
-    SiApollographql,
     SiNextdotjs,
     SiRender,
     SiGithub,
+    SiApollographql,
+    SiGraphql,
 } from "react-icons/si";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -25,10 +25,83 @@ type ProjectsListProps = {
 
 
 export default function ProjectsList({ allProjects } : ProjectsListProps) {
-    
     const { t } = useTranslation(); 
 
     const projects = [
+        {
+            title: `${t("projects.morangojoyas-title")}`, 
+            date: "February 10, 2026 - Now", 
+            description: `${t("projects.morangojoyas-description")}`, 
+            images: [
+                { name: "morangojoyas1" }, 
+                { name: "morangojoyas2" }, 
+                { name: "morangojoyas3" }
+            ], 
+            technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "Next.js", icon: SiNextdotjs, color: "#a9a9a9" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ], 
+            url: "https://morangojoyas.cl", 
+            frontend_repo: "https://github.com/Thomas465xd/morango-frontend", 
+            backend_repo: "https://github.com/Thomas465xd/morango-backend", 
+        },
+        {
+            title: `${t("projects.jup-title")}`, 
+            date: "December 3, 2025 - Now", 
+            description: `${t("projects.jup-description")}`, 
+            images: [
+                { name: "jup1" }, 
+                { name: "jup2" }, 
+                { name: "jup3" }
+            ], 
+            technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "Next.js", icon: SiNextdotjs, color: "#a9a9a9" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ], 
+            url: "https://jup.cl", 
+            frontend_repo: "https://github.com/Thomas465xd/JUP-RealEstate_Frontend", 
+            backend_repo: "https://github.com/Thomas465xd/JUP-RealEstate_Backend", 
+        },
+        {
+            title: `${t("projects.portalspt-title")}`, 
+            date: "March 17, 2025 - Now", 
+            description: `${t("projects.portalspt-description")}`, 
+            images: [
+                { name: "portalspt1" }, 
+                { name: "portalspt2" }, 
+                { name: "portalspt3" }
+            ], 
+            technologies: [
+                { name: "React", icon: SiReact, color: "#61DAFB" },
+                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
+                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
+                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+                { name: "Vercel", icon: SiVercel, color: "#000000"},
+                { name: "Render", icon: SiRender, color: "#311C87"},
+                { name: "Docker", icon: SiDocker, color: "#2496ED"}
+            ], 
+            url: "https://www.portalspt.cl", 
+            frontend_repo: "https://github.com/Thomas465xd/spt_frontend", 
+            backend_repo: "https://github.com/Thomas465xd/spt_backend", 
+        },
         { 
             title: `${t("projects.uptask-title")}`, 
             date: "January 22, 2025 - Now", 
@@ -87,31 +160,9 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
             frontend_repo: "https://github.com/Thomas465xd/Frontend-Apollo-Client_CRM-NextJS", 
             backend_repo: "https://github.com/Thomas465xd/Backend-GraphQL-CRM", 
         },
-        {
-            title: `${t("projects.portalspt-title")}`, 
-            date: "March 17, 2025 - Now", 
-            description: `${t("projects.portalspt-description")}`, 
-            images: [
-                { name: "portalspt1" }, 
-                { name: "portalspt2" }, 
-                { name: "portalspt3" }
-            ], 
-            technologies: [
-                { name: "React", icon: SiReact, color: "#61DAFB" },
-                { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-                { name: "TailwindCSS", icon: SiTailwindcss, color: "#38BDF8" },
-                { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
-                { name: "Express.js", icon: SiExpress, color: "#a9a9a9" },
-                { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-                { name: "Vercel", icon: SiVercel, color: "#000000"},
-                { name: "Render", icon: SiRender, color: "#311C87"},
-                { name: "Docker", icon: SiDocker, color: "#2496ED"}
-            ], 
-            url: "https://www.portalspt.cl", 
-            frontend_repo: "https://github.com/Thomas465xd/spt_frontend", 
-            backend_repo: "https://github.com/Thomas465xd/spt_backend", 
-        }
     ];
+
+    const displayedProjects = allProjects ? projects : projects.slice(0, 3);
 
     return (
         <motion.section
@@ -145,7 +196,7 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
             </div>
 
             <div className="grid grid-cols-1 gap-8">
-                {projects.map((project, index) => (
+                {displayedProjects.map((project, index) => (
                     <ProjectCard 
                         key={index} 
                         {...project} 
