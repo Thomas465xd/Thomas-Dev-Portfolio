@@ -75,7 +75,7 @@ export default function ResumeCard() {
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4">
                         <a
-                            href="/files/resume.pdf"
+                            href={`/files/${t("resume.button-resume-url")}.pdf`}
                             download
                             className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 rounded-xl text-center transition-all duration-300 hover:border-blue-400 hover:shadow-md transform hover:scale-105"
                         >

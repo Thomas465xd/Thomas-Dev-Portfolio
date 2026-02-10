@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
-import Loader from "./components/ui/Loader";
 import { Suspense, lazy } from "react";
 import ErrorBoundary from "./components/ui/ErrorBoundary";
+import HomePageSkeleton from "./components/skeletons/HomePageSkeleton";
 
 // Lazy load route components
 const HomeView = lazy(() => import("./views/home/HomeView"));
@@ -16,7 +16,7 @@ export default function Router() {
 	return (
 		<BrowserRouter>
 			<ErrorBoundary>
-				<Suspense fallback={<Loader />}>
+				<Suspense fallback={<HomePageSkeleton />}>
 					<Routes>
 						<Route element={<AppLayout />}>
 							<Route path="/" element={<HomeView />} />

@@ -48,6 +48,16 @@ export default function NavBar() {
                     >
                         <SiGithub size={32} />
                     </a>
+                    <Link
+                        to="/"
+                        className=" rounded-lg backdrop-blur-md bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/5"
+                    >
+                        <img
+                            src="/complete-circle.png"
+                            width={50}
+                            height={50}
+                        />
+                    </Link>
                 </div>
                 
                 <div className="flex gap-2 sm:gap-3 lg:gap-4 items-center flex-1 justify-center max-w-md mx-4">
