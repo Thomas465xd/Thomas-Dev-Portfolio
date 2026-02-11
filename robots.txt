@@ -1,4 +1,0 @@
-# Allow all crawlers to access the site, except certain paths
-User-agent: *
-Disallow: /admin/
-Disallow: /private/

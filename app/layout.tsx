@@ -1,0 +1,232 @@
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css";
+import { Nunito } from "next/font/google";
+import ReactQueryProvider from "@/components/providers/QueryClientProvider";
+import { Theme } from "@/components/providers/ThemeProvider";
+import ToastProvider from "@/components/providers/ToastProvider";
+import BackToTopButton from "@/components/ui/BackToTop";
+
+//! change for JetBrains font Font optimization
+const nunito = Nunito({
+	weight: ["400", "500", "600", "700"],
+	subsets: ["latin"],
+	variable: "--font-nunito",
+	display: "swap", // Ensures text remains visible during font loading
+});
+
+// Viewport configuration for responsive design and mobile optimization
+export const viewport: Viewport = {
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "#ffffff" },
+		{ media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+	],
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 5,
+	userScalable: true,
+};
+
+// SEO Configuration
+const siteConfig = {
+	name: "Thomas Portfolio",
+	title: "Thomas Portfolio",
+	description: "",
+	url: "https://thomas-dev-portfolio.vercel.app",
+	siteName: "Thomas Developer Portfolio",
+	locale: "es_CL",
+	type: "website",
+};
+
+//* This actually sets ups Next metadata
+export const metadata: Metadata = {
+	title: {
+        template: `%s | ${siteConfig.name}`,
+        default: siteConfig.title
+    },
+	description: siteConfig.description
+};
+
+export default function RootLayout({
+	children,
+}: Readonly<{
+	children: React.ReactNode;
+}>) {
+	return (
+		<html lang="en" suppressHydrationWarning className={nunito.variable}>
+            <head>
+                {/* DNS Prefetch & Preconnect */}
+                <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="" />
+                <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+				{/* Favicons */}
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                <link rel="icon" type="image/ico" href="/favicon.ico" />
+                <link rel="manifest" href="/manifest.json" />
+                <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+                <meta name="msapplication-TileColor" content="#ffffff" />
+
+                {/* Preload Critical Resources */}
+                {/* <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml"/> */}
+
+                {/* Security Headers */}
+                <meta name="referrer" content="origin-when-cross-origin" />
+
+                {/* Additional SEO Meta Tags */}
+                <meta name="geo.region" content="CL-RM" />
+                <meta name="geo.placename" content="Santiago, Chile" />
+                <meta name="geo.position" content="-33.4489;-70.6693" />
+                <meta name="ICBM" content="-33.4489, -70.6693" />
+            </head>
+			<body
+				suppressHydrationWarning
+				className="font-sans antialiased tracking-wide flex min-h-screen flex-col"
+			>
+                <ReactQueryProvider>
+                    <Theme>
+                        <ToastProvider />
+                            <Analytics />
+                            {children}
+                        <BackToTopButton />
+                    </Theme>
+                </ReactQueryProvider>
+			</body>
+		</html>
+	);
+}
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//         <!-- Basic Meta Tags -->
+//         <meta charset="UTF-8" />
+//         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+        
+//         <!-- Primary Meta Tags -->
+//         <title>Thomas Dev Portfolio</title>
+//         <meta name="title" content="Thomas Schrödinger Dev Portfolio">
+//         <meta name="description" content="Welcome to Thomas Schrödinger Dev Portfolio, have a look into my work & history.">
+//         <meta name="keywords" content="Full Stack Developer, Thomas Schrödinger, Web Portfolio, JavaScript Developer, Next.js, React, MERN Stack">
+//         <meta name="author" content="Thomas Schrödinger">
+//         <meta name="robots" content="index, follow">
+        
+//         <!-- Canonical URL -->
+//         <link rel="canonical" href="https://thomas-dev-portfolio.vercel.app">
+        
+//         <!-- Favicon and App Icons -->
+//         <link rel="icon" type="image/x-icon" href="/favicon.ico">
+//         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+//         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+//         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+//         <link rel="manifest" href="/site.webmanifest">
+        
+//         <!-- Open Graph / Facebook -->
+//         <meta property="og:type" content="website">
+//         <meta property="og:url" content="https://thomas-dev-portfolio.vercel.app">
+//         <meta property="og:title" content="Thomas Schrödinger Dev Portfolio">
+//         <meta property="og:description" content="Welcome to Thomas Schrödinger Dev Portfolio, have a look into my work & history.">
+//         <meta property="og:image" content="https://thomas-dev-portfolio.vercel.app/og-image.jpg">
+        
+//         <!-- Twitter -->
+//         <meta property="twitter:card" content="summary_large_image">
+//         <meta property="twitter:url" content="https://thomas-dev-portfolio.vercel.app">
+//         <meta property="twitter:title" content="Thomas Schrödinger Dev Portfolio">
+//         <meta property="twitter:description" content="Welcome to Thomas Schrödinger Dev Portfolio, have a look into my work & history.">
+//         <meta property="twitter:image" content="https://thomas-dev-portfolio.vercel.app/og-image.jpg">
+        
+//         <!-- Preload Critical Resources -->
+//         <link rel="preload" href="/dist/styles.css" as="style">
+//         <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml">
+//         <link rel="preload" href="/src/main.tsx" as="script">
+//         <link rel="preconnect" href="https://fonts.googleapis.com">
+//         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+//         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+                
+//         <!-- Structured Data (JSON-LD) -->
+//         <script type="application/ld+json">
+//             {
+//                 "@type": "Person",
+//                 "@id": "https://thomas-dev-portfolio.vercel.app/",
+//                 "sameAs": [
+//                     "https://github.com/Thomas465xd",
+//                     "https://linkedin.com/in/yourusername"
+//                 ],
+//                 "jobTitle": "Full Stack Developer",
+//                 "worksFor": {
+//                     "@type": "Organization",
+//                     "name": "Freelance"
+//                 }
+//             }
+//         </script>
+        
+//         <!-- Styles -->
+//         <link href="/dist/styles.css" rel="stylesheet">
+        
+//         <!-- DNS Prefetch and Preconnect -->
+//         <link rel="preconnect" href="https://api.yourwebsite.com">
+//         <link rel="dns-prefetch" href="https://api.yourwebsite.com">
+        
+//         <!-- Mobile Web App Capability -->
+//         <meta name="apple-mobile-web-app-capable" content="yes">
+//         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+//         <meta name="theme-color" content="#ffffff">
+//     </head>
+//     <body>
+//         <div id="root"></div>
+//         <!-- Application Entry Point -->
+//         <script type="module" src="/src/main.tsx"></script>
+//         <!-- Inline Critical JS for Performance (optional) -->
+//         <script>
+//             // Performance optimization: Detect user preferences
+//             const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+//             document.body.classList.toggle('dark-theme', prefersDarkMode);
+//         </script>
+//     </body>
+// </html>
+
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import AppLayout from "./layouts/AppLayout";
+// import { Suspense, lazy } from "react";
+// import ErrorBoundary from "./components/ui/ErrorBoundary";
+// import HomePageSkeleton from "./components/skeletons/HomePageSkeleton";
+
+// // Lazy load route components
+// const HomeView = lazy(() => import("./views/home/HomeView"));
+// const ProjectsView = lazy(() => import("./views/home/ProjectsView"));
+// const BlogView = lazy(() => import("./views/home/BlogView"));
+// const ContactView = lazy(() => import("./views/home/ContactView"));
+// const PhotographyView = lazy(() => import("./views/home/PhotographyView"));
+// const NotFound = lazy(() => import("./views/404/NotFound"));
+
+// export default function Router() {
+// 	return (
+// 		<BrowserRouter>
+// 			<ErrorBoundary>
+// 				<Suspense fallback={<HomePageSkeleton />}>
+// 					<Routes>
+// 						<Route element={<AppLayout />}>
+// 							<Route path="/" element={<HomeView />} />
+// 							<Route
+// 								path="/projects"
+// 								element={<ProjectsView />}
+// 							/>
+// 							<Route path="/blog" element={<BlogView />} />
+// 							<Route path="/contact" element={<ContactView />} />
+// 							<Route
+// 								path="/photography"
+// 								element={<PhotographyView />}
+// 							/>
+
+// 							{/* 404 routes */}
+// 							<Route path="/404" element={<NotFound />} />
+// 							<Route path="*" element={<NotFound />} />
+// 						</Route>
+// 					</Routes>
+// 				</Suspense>
+// 			</ErrorBoundary>
+// 		</BrowserRouter>
+// 	);
+// }
