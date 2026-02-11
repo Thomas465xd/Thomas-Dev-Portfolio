@@ -179,7 +179,7 @@ export default function ProjectsList({ allProjects } : ProjectsListProps) {
                         </h2>
 
                         <p className="text-gray-600 dark:text-gray-400 my-4">
-                            { t("projects.p-1")}
+                            { t("projects.p-1")} 
                         </p>
                     </>
                 ) : (
