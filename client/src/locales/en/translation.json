@@ -1,0 +1,134 @@
+{
+    "nav": {
+        "menu": "Menu",
+        "home": "Home", 
+        "projects": "Projects", 
+        "blog": "Blog", 
+        "contact": "Contact", 
+        "language": "Change Language", 
+        "spanish": "Spanish", 
+        "english": "English", 
+        "german": "German"
+    }, 
+
+    "presentation": {
+        "subtitle": "About Me",
+        "title": "Full Stack Web Developer",
+        "heading-1": "Hello, I'm Thomas 👋",
+        "heading-2": "Welcome to my Portfolio 📋",
+        "p-1": "I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.",
+        "p-2": "With a focus on both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
+    }, 
+
+    "resume": {
+        "heading": "My History",
+        "heading-2": "My Studio",  
+        "heading-web": "Web Development",
+        "heading-devops": "Dev Ops",
+        "p-1": "I have been coding for 2 years, starting my journey doing online courses on how to build simple websites with HTML, CSS, JavaScript & PHP.", 
+        "p-2": "My love for Web Development started with a simple HTML & CSS website when i saw how some weird words translated into actual things. Since then, i just couldn't stop.", 
+        "p-3": "As i went deeper & deeper, i started focusing heavily in the React.js ecosystem. Now i specialize in building Modern Aplications using Next.js or MERN Stack.",
+        "p-resume": "thomas.dev is more than just a portfolio; it's a window into my own world, where passion meets purpose. Discover my journey and my work.",
+        "p-web": "Delivering fast, scalable, and SEO-optimized web apps with clean code.",
+        "p-devops": "Building robust infrastructure and dockerized apps for efficient delivery.",
+        "button-1": "View my Github", 
+        "button-2": "Contact Me", 
+        "button-resume": "Download CV", 
+        "button-resume-url": "en-resume", 
+        "button-work": "View my Work",
+        "button-blog": "View my Blog"
+    }, 
+
+    "projects": {
+        "heading-1": "My Projects",
+        "heading-2": "My Recent Projects", 
+        "p-1": "I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.",
+        "p-2": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
+        "uptask-title": "UpTask – MERN To-Do & Project Manager", 
+        "uptask-description": "UpTask is a full-featured task and project management web app built with the MERN stack. It lets users manage teams, delegate tasks, and track project progress with role-based access, JWT-authenticated accounts, and a clean, responsive UI powered by Headless UI. Designed for efficiency, collaboration, and productivity.",
+        "nextcrm-title": "NextCRM – Client & Inventory Management System", 
+        "nextcrm-description": "NextCRM is a modern client and inventory management app featuring built-in analytics, real-time updates, and a secure JWT-based authentication system. It allows you to manage products, orders, and clients with ease, all within a sleek, responsive UI that supports both light and dark mode.",
+        "portalspt-title": "Portal SPT – Modern B2B Partner Platform", 
+        "portalspt-description": "Secure B2B platform combining Bsale POS integration with custom backend services for real-time inventory, product catalog, and order management. Features hybrid architecture with JWT authentication, dynamic loyalty discount system (0-100% per partner), and professional interface for seamless business operations.",
+        "morangojoyas-title": "Morango Jewels – Full-Stack Jewelry E-commerce",
+        "morangojoyas-description": "Complete jewelry e-commerce platform with customer storefront and admin dashboard using Next.js 15, React 19, and TypeScript. Integrated MercadoPago payment processing with webhooks, JWT authentication, order tracking, admin product management, dark mode support, and responsive mobile design.",
+        "jup-title": "JUP Propiedades – Modern Real Estate Platform",
+        "jup-description": "Modern real estate platform for property search and management in Chile built with Next.js 15 (SSR/SSG). Features advanced property filters, professional image galleries with Cloudinary, Clerk authentication, admin dashboard for property CRUD, WhatsApp integration, optimized SEO, and responsive design for all devices.",
+        "above-button-1": "More Projects coming soon!!!", 
+        "above-button-2": "Want to see more?",
+        "button-1": "View all Projects", 
+        "button-2": "GitHub Profile",
+        "button-visit": "Visit Website", 
+        "button-frontend": "Frontend Repo", 
+        "button-backend": "Backend Repo", 
+        "date": "Now", 
+        "test-account": "Test Account", 
+        "email": "Email: ", 
+        "password": "Password: "
+    }, 
+
+    "experiences": {
+        "above-heading": "Experiences", 
+        "heading": "Professional Journey", 
+        "subheading": "Key milestones in my career as a full-stack developer", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Full Stack B2B Platform Developer", 
+        "job-business-1": "Portal SPT – Spare Parts Trade", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Built a modern B2B partner platform combining Bsale POS integration with custom backend logic. Implemented hybrid architecture managing real-time product catalog, shopping cart, inventory operations through Bsale API, plus custom authentication, order management, and dynamic loyalty discount system (1-100% per business). Tech stack: MERN, TypeScript, JWT, REST APIs.",
+        "job-type-2": "Integration Developer", 
+        "job-title-2": "Backend & Systems Engineer", 
+        "job-business-2": "Obsox – B2B Marketplace", 
+        "job-location-2": "Santiago, Chile & Lima, Peru", 
+        "job-description-2": "Engineered microservices architecture for spare-parts obsolescence marketplace with asynchronous event-driven communication. Implemented critical integrations with Bsale and Microsoft Dynamics for real-time data synchronization. Focused on system reliability, scalability, and provider integration management.",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Full Stack E-commerce Developer", 
+        "job-business-3": "Morango Jewels – Jewelry E-commerce", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Developed full-stack jewelry e-commerce platform with customer storefront and admin dashboard using Next.js 15, React 19, and TypeScript. Integrated MercadoPago payment processing with webhooks, implemented user authentication with JWT, order tracking, product management, dark mode support, and responsive mobile design."
+    },
+
+    "technologies": {
+        "heading": "Technologies I use", 
+        "subheading": "Over time, I have worked with a variety of technologies, adapting to the needs of every project. Here's my current tech stack that I use to build modern, scalable applications.", 
+        "databases": "Databases", 
+        "other": "Tools that i use"
+    }, 
+
+    "contact": {
+        "heading": "Contact Me", 
+        "subheading": "I'm always in search of new opportunities and ready to embark on exciting new projects. If you have an idea in mind or something you'd like to share, feel free to reach out to me!", 
+        "label-1": "Name", 
+        "placeholder-1": "Enter your Name (Ex. Thomas)", 
+        "label-2": "Email", 
+        "placeholder-2": "Enter your Email (Ex. john@doe.com)", 
+        "label-3": "Message", 
+        "placeholder-3": "Hey there, i was wondering if there was any possibility that you...", 
+        "limit": "characters", 
+        "button-1": "Send", 
+        "option": "Or you can also contact me via..."
+    }, 
+
+    "footer": {
+        "name": "Thomas Schrödinger",
+        "developed": "Developed by",
+        "copyright": "Copyright",
+        "links-1": "Important Links", 
+        "link-home": "Home", 
+        "link-projects": "Projects", 
+        "link-blog": "Blog",
+        "links-2": "My Social Media", 
+        "link-github": "GitHub", 
+        "link-instagram": "Instagram", 
+        "links-3": "Other", 
+        "link-contact": "Contact", 
+        "link-photography": "Photography"
+    }, 
+
+    "error": {
+        "header": "Page not found", 
+        "message": "Sorry, the page you are looking does not exist :(",
+        "button-home": "Go back home", 
+        "button-report": "Report Error"
+    }
+}
