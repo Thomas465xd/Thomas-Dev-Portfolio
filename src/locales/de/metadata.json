@@ -1,0 +1,21 @@
+{
+    "title": {
+        "layout": "Thomas Portfolio",
+        "home": "Startseite",
+        "projects": "Projekte",
+        "contact": "Kontakt",
+        "photography": "Fotografie"
+    },
+
+    "description": {
+        "layout": "Willkommen in Thomas Schrödingers Portfolio. Full Stack Webentwickler aus Chile, spezialisiert auf die Erstellung robuster und skalierbarer Anwendungen unter Einhaltung bewährter Praktiken in der Softwareentwicklung.",
+        "home": "Entdecken Sie meine Reise als Full Stack Webentwickler. Sehen Sie sich meine Projekte, Erfahrungen und Technologien an.",
+        "projects": "Erkunden Sie meine neuesten Webentwicklungsprojekte mit modernen Technologien und bewährten Praktiken.",
+        "contact": "Kontaktieren Sie mich für neue Möglichkeiten und Zusammenarbeit bei spannenden Projekten.",
+        "photography": "Entdecken Sie meine Fotografie-Arbeiten und kreativen Projekte jenseits der Entwicklung."
+    },
+
+    "siteName": {
+        "layout": "Thomas Entwickler Portfolio"
+    }
+}

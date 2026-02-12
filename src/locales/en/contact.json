@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "heading": "Contact Me", 
+        "subheading": "I'm always in search of new opportunities and ready to embark on exciting new projects. If you have an idea in mind or something you'd like to share, feel free to reach out to me!", 
+        "label-1": "Name", 
+        "placeholder-1": "Enter your Name (Ex. Thomas)", 
+        "label-2": "Email", 
+        "placeholder-2": "Enter your Email (Ex. john@doe.com)", 
+        "label-3": "Message", 
+        "placeholder-3": "Hey there, i was wondering if there was any possibility that you...", 
+        "limit": "characters", 
+        "button-1": "Send", 
+        "option": "Or you can also contact me via..."
+    }
+}

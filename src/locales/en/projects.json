@@ -1,0 +1,29 @@
+{
+    "projects": {
+        "heading-1": "My Projects",
+        "heading-2": "My Recent Projects", 
+        "p-1": "I've been programming for 2 years now and have worked on many projects. Below are some of my latest projects; For more details, visit my GitHub Profile.",
+        "p-2": "Explore some of my Projects. For more details, visit my GitHub Profile.", 
+        "uptask-title": "UpTask – MERN To-Do & Project Manager", 
+        "uptask-description": "UpTask is a full-featured task and project management web app built with the MERN stack. It lets users manage teams, delegate tasks, and track project progress with role-based access, JWT-authenticated accounts, and a clean, responsive UI powered by Headless UI. Designed for efficiency, collaboration, and productivity.",
+        "nextcrm-title": "NextCRM – Client & Inventory Management System", 
+        "nextcrm-description": "NextCRM is a modern client and inventory management app featuring built-in analytics, real-time updates, and a secure JWT-based authentication system. It allows you to manage products, orders, and clients with ease, all within a sleek, responsive UI that supports both light and dark mode.",
+        "portalspt-title": "Portal SPT – Modern B2B Partner Platform", 
+        "portalspt-description": "Secure B2B platform combining Bsale POS integration with custom backend services for real-time inventory, product catalog, and order management. Features hybrid architecture with JWT authentication, dynamic loyalty discount system (0-100% per partner), and professional interface for seamless business operations.",
+        "morangojoyas-title": "Morango Jewels – Full-Stack Jewelry E-commerce",
+        "morangojoyas-description": "Complete jewelry e-commerce platform with customer storefront and admin dashboard using Next.js 15, React 19, and TypeScript. Integrated MercadoPago payment processing with webhooks, JWT authentication, order tracking, admin product management, dark mode support, and responsive mobile design.",
+        "jup-title": "JUP Propiedades – Modern Real Estate Platform",
+        "jup-description": "Modern real estate platform for property search and management in Chile built with Next.js 15 (SSR/SSG). Features advanced property filters, professional image galleries with Cloudinary, Clerk authentication, admin dashboard for property CRUD, WhatsApp integration, optimized SEO, and responsive design for all devices.",
+        "above-button-1": "More Projects coming soon!!!", 
+        "above-button-2": "Want to see more?",
+        "button-1": "View all Projects", 
+        "button-2": "GitHub Profile",
+        "button-visit": "Visit Website", 
+        "button-frontend": "Frontend Repo", 
+        "button-backend": "Backend Repo", 
+        "date": "Now", 
+        "test-account": "Test Account", 
+        "email": "Email: ", 
+        "password": "Password: "
+    }
+}

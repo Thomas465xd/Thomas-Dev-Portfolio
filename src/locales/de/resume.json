@@ -1,0 +1,59 @@
+{
+    "presentation": {
+        "subtitle": "Über mich",
+        "title": "Full Stack Webentwickler",
+        "heading-1": "Hallo, ich bin Thomas 👋",
+        "heading-2": "Willkommen in meinem Portfolio 📋",
+        "p-1": "Ich bin ein leidenschaftlicher Full Stack Webentwickler aus Chile, spezialisiert auf die Erstellung robuster und skalierbarer Anwendungen, die den besten Praktiken der Softwareentwicklung folgen.",
+        "p-2": "Mit Fokus auf Frontend- und Backend-Technologien strebe ich danach, hochwertige Lösungen zu liefern, die sowohl Nutzerbedürfnisse als auch Geschäftsziele erfüllen."
+    },
+
+    "resume": {
+        "heading": "Meine Geschichte",
+        "heading-2": "Mein Studio",
+        "heading-web": "Webentwicklung",
+        "heading-devops": "DevOps",
+        "p-1": "Ich programmiere seit 2 Jahren, angefangen mit Online-Kursen über den Bau einfacher Webseiten mit HTML, CSS, JavaScript & PHP.",
+        "p-2": "Meine Leidenschaft für Webentwicklung begann mit einer einfachen HTML & CSS Seite, als ich sah, wie sich merkwürdige Wörter in echte Dinge verwandelten. Seitdem konnte ich nicht mehr aufhören.",
+        "p-3": "Mit der Zeit habe ich mich stark auf das React.js-Ökosystem konzentriert. Jetzt spezialisiere ich mich auf moderne Anwendungen mit Next.js oder dem MERN Stack.",
+        "p-resume": "thomas.dev ist mehr als nur ein Portfolio; es ist ein Fenster in meine Welt, wo Leidenschaft auf Zielsetzung trifft. Entdecke meine Reise und meine Arbeit.",
+        "p-web": "Bereitstellung schneller, skalierbarer und SEO-optimierter Webanwendungen mit sauberem Code.",
+        "p-devops": "Aufbau robuster Infrastrukturen und containerisierter Anwendungen für eine effiziente Bereitstellung.",
+        "button-1": "Mein Github ansehen",
+        "button-2": "Kontaktiere mich",
+        "button-resume": "CV herunterladen",
+        "button-resume-url": "de-resume", 
+        "button-blog": "Meinen Blog ansehen"
+    },
+
+    "experiences": {
+        "above-heading": "Erfahrungen", 
+        "heading": "Berufliche Entwicklung", 
+        "subheading": "Wichtige Meilensteine in meiner Karriere als Full-Stack-Entwickler", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Full Stack B2B-Plattform-Entwickler", 
+        "job-business-1": "Portal SPT – Ersatzteilhandel", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Entwickelte moderne B2B-Partnerplattform mit Bsale-POS-Integration und benutzerdefinierter Backend-Logik. Implementierte hybride Architektur mit Echtzeitverwaltung von Produktkatalog, Warenkorb und Inventur durch Bsale-API, plus benutzerdefinierte Authentifizierung, Auftragsverwaltung und dynamisches Loyalitätsrabattsystem (1-100% pro Unternehmen). Tech-Stack: MERN, TypeScript, JWT, REST-APIs.",
+        "job-date-1": "März 17, 2025",
+        "job-type-2": "Integrations-Entwickler", 
+        "job-title-2": "Backend- & Systemingenieur", 
+        "job-business-2": "Obsox – B2B-Marketplace", 
+        "job-location-2": "Santiago, Chile & Lima, Peru", 
+        "job-description-2": "Entwickelte Microservices-Architektur für Obsolescence-Marketplace mit asynchroner ereignisgestützter Kommunikation. Implementierte kritische Integrationen mit Bsale und Microsoft Dynamics für Echtzeitdatensynchronisierung. Fokus auf Systemzuverlässigkeit, Skalierbarkeit und Provider-Integrationsverwaltung.",
+        "job-date-2": "Dezember 3, 2025",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Full Stack E-Commerce-Entwickler", 
+        "job-business-3": "Morango Jewels – Schmuck-E-Commerce", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Entwickelte vollständige Schmuck-E-Commerce-Plattform mit Kundenshop und Admin-Dashboard mit Next.js 15, React 19 und TypeScript. Integrierte MercadoPago-Zahlungsverarbeitung mit Webhooks, implementierte Benutzerauthentifizierung mit JWT, Bestellverfolgung, Produktverwaltung, Dark-Mode-Unterstützung und responsives Mobile-Design.",
+        "job-date-3": "Februar 10, 2026"
+    },
+
+    "technologies": {
+        "heading": "Technologien, die ich nutze",
+        "subheading": "Im Laufe der Zeit habe ich mit vielen Technologien gearbeitet und mich den Projektanforderungen angepasst. Hier ist mein aktueller Tech-Stack für moderne, skalierbare Anwendungen.",
+        "databases": "Datenbanken",
+        "other": "Weitere Tools"
+    }
+}

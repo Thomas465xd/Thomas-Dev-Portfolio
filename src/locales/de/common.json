@@ -1,0 +1,40 @@
+{
+    "nav": {
+        "menu": "Menu",
+        "home": "Startseite",
+        "projects": "Projekte",
+        "contact": "Kontact", 
+        "blog": "Blog",
+        "language": "Sprache ändern", 
+        "spanish": "Spanien", 
+        "english": "Englische", 
+        "german": "Deutsche"
+    },
+
+    "footer": {
+        "name": "Thomas Schrödinger",
+        "developed": "Entwickelt von",
+        "copyright": "Urheberrecht",
+        "links-1": "Wichtige Links",
+        "link-home": "Startseite",
+        "link-projects": "Projekte",
+        "link-blog": "Blog",
+        "links-2": "Meine sozialen Medien",
+        "link-github": "GitHub",
+        "link-instagram": "Instagram",
+        "links-3": "Sonstiges",
+        "link-contact": "Kontakt",
+        "link-photography": "Fotografie"
+    }, 
+
+    "error": {
+        "header": "Seite nicht gefunden",
+        "message": "Entschuldigung, die Seite, die Sie suchen, existiert nicht :(",
+        "button-home": "Zurück zur Startseite",
+        "button-report": "Fehler melden"
+    }, 
+    
+    "test": {
+        "title": "Spanien Übersetzung"
+    }
+}

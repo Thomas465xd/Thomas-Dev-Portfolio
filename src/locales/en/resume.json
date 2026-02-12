@@ -1,0 +1,60 @@
+{
+    "presentation": {
+        "subtitle": "About Me",
+        "title": "Full Stack Web Developer",
+        "heading-1": "Hello, I'm Thomas 👋",
+        "heading-2": "Welcome to my Portfolio 📋",
+        "p-1": "I'm a passionate Full Stack Web Developer from Chile, specializing in creating robust and scalable apps that follow the best practices in software development.",
+        "p-2": "With a focus on both front-end and back-end technologies, I strive to deliver high-quality solutions that meet user needs and business goals."
+    }, 
+
+    "resume": {
+        "heading": "My History",
+        "heading-2": "My Studio",  
+        "heading-web": "Web Development",
+        "heading-devops": "Dev Ops",
+        "p-1": "I have been coding for 2 years, starting my journey doing online courses on how to build simple websites with HTML, CSS, JavaScript & PHP.", 
+        "p-2": "My love for Web Development started with a simple HTML & CSS website when i saw how some weird words translated into actual things. Since then, i just couldn't stop.", 
+        "p-3": "As i went deeper & deeper, i started focusing heavily in the React.js ecosystem. Now i specialize in building Modern Aplications using Next.js or MERN Stack.",
+        "p-resume": "thomas.dev is more than just a portfolio; it's a window into my own world, where passion meets purpose. Discover my journey and my work.",
+        "p-web": "Delivering fast, scalable, and SEO-optimized web apps with clean code.",
+        "p-devops": "Building robust infrastructure and dockerized apps for efficient delivery.",
+        "button-1": "View my Github", 
+        "button-2": "Contact Me", 
+        "button-resume": "Download CV", 
+        "button-resume-url": "en-resume", 
+        "button-work": "View my Work",
+        "button-blog": "View my Blog"
+    }, 
+
+    "experiences": {
+        "above-heading": "Experiences", 
+        "heading": "Professional Journey", 
+        "subheading": "Key milestones in my career as a full-stack developer", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Full Stack B2B Platform Developer", 
+        "job-business-1": "Portal SPT – Spare Parts Trade", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Built a modern B2B partner platform combining Bsale POS integration with custom backend logic. Implemented hybrid architecture managing real-time product catalog, shopping cart, inventory operations through Bsale API, plus custom authentication, order management, and dynamic loyalty discount system (1-100% per business). Tech stack: MERN, TypeScript, JWT, REST APIs.",
+        "job-date-1": "March 17, 2025",
+        "job-type-2": "Integration Developer", 
+        "job-title-2": "Backend & Systems Engineer", 
+        "job-business-2": "Obsox – B2B Marketplace", 
+        "job-location-2": "Santiago, Chile & Lima, Peru", 
+        "job-description-2": "Engineered microservices architecture for spare-parts obsolescence marketplace with asynchronous event-driven communication. Implemented critical integrations with Bsale and Microsoft Dynamics for real-time data synchronization. Focused on system reliability, scalability, and provider integration management.",
+        "job-date-2": "December 3, 2025",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Full Stack E-commerce Developer", 
+        "job-business-3": "Morango Jewels – Jewelry E-commerce", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Developed full-stack jewelry e-commerce platform with customer storefront and admin dashboard using Next.js 15, React 19, and TypeScript. Integrated MercadoPago payment processing with webhooks, implemented user authentication with JWT, order tracking, product management, dark mode support, and responsive mobile design.",
+        "job-date-3": "February 10, 2026"
+    },
+
+    "technologies": {
+        "heading": "Technologies I use", 
+        "subheading": "Over time, I have worked with a variety of technologies, adapting to the needs of every project. Here's my current tech stack that I use to build modern, scalable applications.", 
+        "databases": "Databases", 
+        "other": "Tools that i use"
+    }
+}

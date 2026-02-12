@@ -1,0 +1,29 @@
+{
+    "projects": {
+        "heading-1": "Meine Projekte",
+        "heading-2": "Meine neuesten Projekte",
+        "p-1": "Ich programmiere seit 2 Jahren und habe an vielen Projekten gearbeitet. Hier sind einige meiner neuesten. Für mehr Details besuche bitte mein GitHub-Profil.",
+        "p-2": "Erkunde einige meiner Projekte. Für mehr Informationen, besuche mein GitHub-Profil.",
+        "uptask-title": "UpTask – MERN Aufgaben- und Projektmanager",
+        "uptask-description": "UpTask ist eine umfassende Webanwendung zur Aufgaben- und Projektverwaltung mit dem MERN-Stack. Sie ermöglicht Teammanagement, Aufgabenverteilung und Fortschrittsverfolgung mit rollenbasiertem Zugriff, JWT-Authentifizierung und einer reaktionsschnellen Benutzeroberfläche.",
+        "nextcrm-title": "NextCRM – Kunden- und Lagerverwaltungssystem",
+        "nextcrm-description": "NextCRM ist eine moderne App zur Verwaltung von Kunden und Inventar mit integrierter Analyse, Echtzeit-Updates und sicherer JWT-Authentifizierung. Alles in einer modernen Oberfläche mit hellem und dunklem Modus.",
+        "portalspt-title": "Portal SPT – Moderne B2B-Partnerplattform", 
+        "portalspt-description": "Sichere B2B-Plattform mit Bsale-Integration und benutzerdefinierten Backend-Services für Echtzeitinventur, Produktkatalog und Auftragsverwaltung. Hybride Architektur mit JWT-Authentifizierung, dynamischem Loyalitätsrabattsystem (0-100% pro Partner) und professioneller Schnittstelle für reibungslose Geschäftsabläufe.",
+        "morangojoyas-title": "Morango Jewels – Vollständige Schmuck-E-Commerce-Plattform",
+        "morangojoyas-description": "Komplette Schmuck-E-Commerce-Plattform mit Kundenshop und Admin-Dashboard mit Next.js 15, React 19 und TypeScript. MercadoPago-Zahlungsverarbeitung mit Webhooks, JWT-Authentifizierung, Bestellverfolgung, Admin-Produktverwaltung, Dark-Mode-Unterstützung und responsives Mobile-Design.",
+        "jup-title": "JUP Propiedades – Moderne Immobilienplattform",
+        "jup-description": "Moderne Immobilienplattform zur Immobiliensuche und -verwaltung in Chile mit Next.js 15 (SSR/SSG). Erweiterte Immobilienfilter, professionelle Bildergalerien mit Cloudinary, Clerk-Authentifizierung, Admin-Dashboard für Immobilien-CRUD, WhatsApp-Integration, optimiertes SEO und responsives Design.",
+        "above-button-1": "Weitere Projekte folgen bald!!!",
+        "above-button-2": "Möchtest du mehr sehen?",
+        "button-1": "Alle Projekte ansehen",
+        "button-2": "GitHub-Profil",
+        "button-visit": "Website besuchen",
+        "button-frontend": "Frontend-Repo",
+        "button-backend": "Backend-Repo",
+        "date": "Jetzt",
+        "test-account": "Testkonto",
+        "email": "E-Mail: ",
+        "password": "Passwort: "
+    }
+}

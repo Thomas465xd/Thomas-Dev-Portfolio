@@ -1,0 +1,40 @@
+{
+    "nav": {
+        "menu": "Menu",
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "contact": "Contacto", 
+        "blog": "Blog",
+        "language": "Cambiar Idioma", 
+        "spanish": "Español", 
+        "english": "Ingles", 
+        "german": "Alemán"
+    },
+
+    "footer": {
+        "name": "Iñigo Del Campo",
+        "developed": "Desarrollado por",
+        "copyright": "Derechos reservados",
+        "links-1": "Enlaces Importantes",
+        "link-home": "Inicio",
+        "link-projects": "Proyectos",
+        "link-blog": "Blog",
+        "links-2": "Mis Redes",
+        "link-github": "GitHub",
+        "link-instagram": "Instagram",
+        "links-3": "Otros",
+        "link-contact": "Contacto",
+        "link-photography": "Fotografía"
+    }, 
+
+    "error": {
+        "header": "Página no encontrada",
+        "message": "Lo sentimos, la página que estás buscando no existe :(",
+        "button-home": "Volver al inicio",
+        "button-report": "Reportar error"
+    }, 
+
+    "test": {
+        "title": "Traducción en Español"
+    }
+}
