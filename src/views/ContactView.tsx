@@ -1,4 +1,4 @@
-import ContactSection from "../../components/home/ContactSection";
+import ContactSection from "../../components/home/contact/ContactSection";
 
 export default function ContactView() {
     return (

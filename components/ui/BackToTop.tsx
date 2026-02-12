@@ -1,3 +1,5 @@
+"use client"; 
+
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react"; // optional: you can use any icon
 import { AnimatePresence, motion } from "framer-motion"

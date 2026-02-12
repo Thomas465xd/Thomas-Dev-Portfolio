@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LogoImage from "@/public/logo-no-bg.png"; // static import
+import LogoImage from "@/public/complete-circle.png"; // static import
 
 type LogoProps = {
     mini?: boolean;
