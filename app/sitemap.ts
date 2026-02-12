@@ -1,37 +1,57 @@
 import { MetadataRoute } from "next";
 import { config } from "@/lib/config";
-
-// TODO: make request to get different document ID's (products, orders, etc...)
-// This will allow to dynamically map out the available dynamic routes in the site
-// However that requires some complex react-query with SSR code... so for now only 
-// static pages will be set in sitemap.
+import i18nConfig from "@/i18nConfig";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    return [
+    const routes = [
         {
-            url: `${config.frontendURL}`,
-            changeFrequency: "weekly",
+            route: "",
+            changeFrequency: "weekly" as const,
             priority: 1.0,
         },
         {
-            url: `${config.frontendURL}/projects`,
-            changeFrequency: "weekly",
+            route: "/projects", 
+            changeFrequency: "weekly" as const,
             priority: 1.0,
         },
         {
-            url: `${config.frontendURL}/contact`,
-            changeFrequency: "yearly",
+            route: "/contact",
+            changeFrequency: "yearly" as const,
             priority: 0.6,
         },
         {
-            url: `${config.frontendURL}/blog`,
-            changeFrequency: "yearly",
+            route: "/blog",
+            changeFrequency: "yearly" as const,
             priority: 0.6,
         },
         {
-            url: `${config.frontendURL}/photography`,
-            changeFrequency: "yearly",
+            route: "/photography",
+            changeFrequency: "yearly" as const,
             priority: 0.6,
         },
     ];
+
+    const sitemap: MetadataRoute.Sitemap = [];
+
+    // Add routes for each locale
+    routes.forEach((route) => {
+        i18nConfig.locales.forEach((locale) => {
+            const localePrefix = locale === i18nConfig.defaultLocale ? "" : `/${locale}`;
+            sitemap.push({
+                url: `${config.frontendURL}${localePrefix}${route.route}`,
+                changeFrequency: route.changeFrequency,
+                priority: route.priority,
+                lastModified: new Date(),
+                alternates: {
+                    languages: i18nConfig.locales.reduce((acc, loc) => {
+                        const prefix = loc === i18nConfig.defaultLocale ? "" : `/${loc}`;
+                        acc[loc] = `${config.frontendURL}${prefix}${route.route}`;
+                        return acc;
+                    }, {} as Record<string, string>),
+                },
+            });
+        });
+    });
+
+    return sitemap;
 }
