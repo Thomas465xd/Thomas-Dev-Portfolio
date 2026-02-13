@@ -1,31 +1,33 @@
 import { CodeXml } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import RightsReserved from './RightsReserved';
+import initTranslations from '@/app/[locale]/i18n';
+import TranslationsProvider from '@/components/providers/TranslationsProvider';
 
 type FooterProps = {
     dark?: boolean; 
+    locale: string; 
 }
 
-export default function Footer({ dark }: FooterProps) {
-    const [year, setYear] = useState<number | null>(null);
-
-    useEffect(() => {
-        setYear(new Date().getFullYear());
-    }, []);
-
-    const { t } = useTranslation();
+export default async function Footer({ dark, locale }: FooterProps) {
+    const namespaces = ["common"]
+    const { t, resources } = await  initTranslations(locale, namespaces);
 
     return (
         <footer className={`w-full max-w-[480px] sm:max-w-xl md:max-w-4xl xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t-2 dark:border-gray-700 border-gray-300 mb-16`}>
             <div className="flex flex-col md:flex-row justify-between items-center">
-                <p className={`text-center md:truncate py-4 ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-500"}`}>
-                    Thomas Dev Portfolio - {`${t("footer.copyright")}`} &copy; {year ?? '----'}
-                </p>
+                <TranslationsProvider
+                    locale={locale}
+                    namespaces={namespaces}
+                    resources={resources}
+                >
+                    <RightsReserved />
+                </TranslationsProvider>
+
                 <p className={`text-center md:truncate ${dark ? "text-gray-400" : "text-gray-700 dark:text-gray-500"} text-sm flex items-center justify-center gap-2`}>
                     <CodeXml size={18}/>
                     {`${t("footer.developed")}`}{' '}
-                    <a
+                    <Link
                         className={`${dark ? "text-gray-700 hover:text-amber-500" : "text-gray-500 dark:text-gray-500 hover:text-blue-500 dark:hover:text-yellow-500 hover:underline "} font-semibold transition-colors duration-300`}
                         href="https://github.com/Thomas465xd/Thomas-Dev-Portfolio"
                         target="_blank"
@@ -33,7 +35,7 @@ export default function Footer({ dark }: FooterProps) {
                         title="Thomas Schrödinger GitHub Profile"
                     >
                         {`${t("footer.name")}`}
-                    </a>
+                    </Link>
                 </p>
             </div>
 
@@ -43,21 +45,21 @@ export default function Footer({ dark }: FooterProps) {
 
                     <div className="flex flex-col gap-2">
                         <Link
-                            to="/"
+                            href="/"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-home")}`}
                         </Link>
 
                         <Link
-                            to="/projects"
+                            href="/projects"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-projects")}`}
                         </Link>
 
                         <Link
-                            to="/blog"
+                            href="/blog"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-blog")}`}
@@ -70,14 +72,14 @@ export default function Footer({ dark }: FooterProps) {
 
                     <div className="flex flex-col gap-2">
                         <Link
-                            to="https://github.com/Thomas465xd"
+                            href="https://github.com/Thomas465xd"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-github")}`}
                         </Link>
 
                         <Link
-                            to="/"
+                            href="/"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-instagram")}`}
@@ -90,14 +92,14 @@ export default function Footer({ dark }: FooterProps) {
 
                     <div className="flex flex-col gap-2">
                         <Link
-                            to="/contact"
+                            href="/contact"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-contact")}`}
                         </Link>
 
                         <Link
-                            to="/photography"
+                            href="/photography"
                             className='text-gray-700 dark:text-gray-400 hover:underline dark:hover:text-gray-300 transition-colors duration-200'
                         >
                             {`${t("footer.link-photography")}`}
