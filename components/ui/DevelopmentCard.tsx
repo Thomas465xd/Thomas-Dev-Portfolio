@@ -16,33 +16,33 @@ export default function DevelopmentCard({
 }: DevelopmentCardProps) {
     return (
         <main className="mx-auto max-w-2xl px-4 pt-24 pb-24 sm:px-6 lg:px-8">
-            <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 p-6">
+            <div className="rounded-lg border border-slate-400 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 p-6">
 
                 <div className="flex items-center gap-2 mb-4">
                     {Icon && (
-                        <Icon className="text-zinc-600 dark:text-zinc-400" size={24} />
+                        <Icon className="text-slate-600 dark:text-slate-400" size={24} />
                     )}
 
-                    <h2 className="text-lg font-semibold text-zinc-900 dark:text-white">
+                    <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
                         {title}
                     </h2>
                 </div>
 
-                <div className="bg-zinc-50 dark:bg-zinc-700/50 rounded-lg p-8 sm:p-12 text-center border border-dashed border-zinc-300 dark:border-zinc-600">
+                <div className="bg-slate-50 dark:bg-slate-700/50 rounded-lg p-8 sm:p-12 text-center border border-dashed border-slate-300 dark:border-slate-600">
                     {/* Icon */}
                     {Icon && (
                         <div className="flex justify-center mb-4">
-                            <Icon className="w-12 h-12 text-amber-600 dark:text-amber-400" />
+                            <Icon className="w-12 h-12 text-blue-500 dark:text-amber-400" />
                         </div>
                     )}
 
                     {/* Title */}
-                    <h3 className="text-lg sm:text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                        📋 En desarrollo
+                    <h3 className="text-lg sm:text-xl font-semibold text-slate-900 dark:text-slate-100 mb-2">
+                        📋 Feature in Development
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-md mx-auto">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 max-w-md mx-auto">
                         {description}
                     </p>
 
@@ -50,7 +50,7 @@ export default function DevelopmentCard({
                     {showComingSoon && (
                         <div className="mt-4 inline-block px-3 py-1 bg-amber-100 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-full">
                             <span className="text-xs font-semibold text-amber-700 dark:text-amber-300">
-                                ⏳ Próximamente
+                                ⏳ Coming soon.
                             </span>
                         </div>
                     )}

@@ -34,7 +34,8 @@
         "button-report": "Report Error"
     }, 
 
-    "test": {
-        "title": "English Translation"
+    "development": {
+        "title": "In Development...", 
+        "description": "Sorry, the page you landed is currently on development, come back in the future to see the content."
     }
 }

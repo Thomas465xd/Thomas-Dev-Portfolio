@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
-import { ArrowRight, Calendar, Link, UserCircle2 } from "lucide-react";
+import { ArrowRight, Calendar, Link as LinkIcon, UserCircle2 } from "lucide-react";
+import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import ProjectImagesCarousel from './ProjectImagesCarousel';
 import { Image, Technology } from '@/src/types';
@@ -53,7 +54,7 @@ export default async function ProjectCard({
                     <div 
                         className="
                             absolute left- top-0 w-1 h-full 
-                            bg-gradient-to-b from-purple-900 via-cyan-100 to-blue-800 rounded-full
+                            bg-gradient-to-b from-purple-600 to-blue-800 rounded-full
                         "
                     />
                     <p className="dark:text-gray-100 leading-relaxed pl-6">
@@ -62,12 +63,12 @@ export default async function ProjectCard({
                 </div>
 
                 {account ? (
-                    <div className='mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-950 rounded-xl border border-blue-100 dark:border-slate-700'>
+                    <div className='max-w-6xl w-full mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-950 rounded-xl border border-blue-100 dark:border-slate-700'>
                         <h3 className="flex items-center gap-2 font-semibold text-slate-800 dark:text-slate-200 mb-3">
                             <UserCircle2 className="text-blue-600 dark:text-blue-400" size={20} />
                             {t("projects.test-account")}
                         </h3>
-                        <div className="space-y-2 text-sm">
+                        <div className="flex flex-col items-start md:flex-row md:items-center gap-2 md:gap-8 text-sm">
                             <div className="flex items-center gap-2">
                                 <span className="text-slate-600 dark:text-slate-400 min-w-16">{t("projects.email")}</span>
                                 <code className="bg-white dark:bg-slate-700 px-2 py-1 rounded font-mono text-blue-700 dark:text-blue-300 border border-slate-200 dark:border-slate-600">
@@ -105,46 +106,40 @@ export default async function ProjectCard({
 
             <div className="flex justify-center md:justify-start flex-wrap gap-4">
                 <div className="group border border-gray-600 w-auto px-3 py-2 rounded-md hover:bg-gray-100 hover:border-orange-500 dark:hover:bg-gray-800 dark:hover:border-orange-400 hover:shadow-lg transition-all duration-300 mb-8">
-                    <a
+                    <Link
                         href={url}
-                        rel="author"
                         target="_blank"
-                        type="website"
                         className="flex gap-2 justify-between items-center dark:text-white truncate"
                     >
-                        <Link className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
+                        <LinkIcon className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
                         {`${t("projects.button-visit")}`}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="group border border-cyan-800 w-auto px-3 py-2 rounded-md hover:bg-gray-100 hover:border-cyan-500 dark:hover:bg-gray-800 dark:hover:border-cyan-400 hover:shadow-lg transition-all duration-300 mb-8">
-                    <a
+                    <Link
                         href={frontend_repo}
-                        rel="author"
                         target="_blank"
-                        type="website"
                         className="flex justify-between items-center gap-2 dark:text-white truncate"
                     >
                         <SiGithub className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
                         {`${t("projects.button-frontend")}`}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
-                    </a>
+                    </Link>
                 </div>
 
                 {backend_repo && (
                     <div className="group border border-purple-800 w-auto px-3 py-2 rounded-md hover:bg-gray-100 hover:border-purple-500 dark:hover:bg-gray-800 dark:hover:border-purple-400 hover:shadow-lg transition-all duration-300 mb-8">
-                        <a
+                        <Link
                             href={backend_repo}
-                            rel="author"
                             target="_blank"
-                            type="website"
                             className="flex justify-between items-center gap-2 dark:text-white truncate"
                         >
                             <SiGithub className="size-5 group-hover:rotate-[360deg] transition-all duration-600" />
                             {`${t("projects.button-backend")}`}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-500 pr-1" />
-                        </a>
+                        </Link>
                     </div>
                 )}
             </div>

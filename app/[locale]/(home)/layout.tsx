@@ -14,7 +14,17 @@ export default async function RootLayout({
     return (
         <div className="relative z-10 flex flex-col min-h-screen">
             <NavBar locale={locale} />
-            {children}
+
+            <main className="
+                    pt-28 p-4 md:pt-36
+                    flex-1 max-w-[74rem] w-full
+                    mx-auto mt-0 mb-20
+                    min-h-screen
+                "
+            >
+                {children}
+            </main>
+            
             <Footer locale={locale} />
         </div>
     )
