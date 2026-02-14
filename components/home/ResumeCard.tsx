@@ -1,12 +1,16 @@
 import { ArrowRight, CodeXml, Container, GitCompareArrows, GraduationCap } from "lucide-react";
-import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { motion } from "motion/react"
+import * as motion from "motion/react-client"
+import Link from "next/link";
+import initTranslations from "@/app/[locale]/i18n";
 
-export default function ResumeCard() {
+type ResumeCardProps = {
+    locale: string; 
+}
 
-    const { t } = useTranslation() 
+export default async function ResumeCard({ locale } : ResumeCardProps) {
+    const namespaces = ["resume"]
+    const { t } = await initTranslations(locale, namespaces) 
 
     return (
         <motion.div
@@ -31,7 +35,7 @@ export default function ResumeCard() {
 
                 <div className="flex flex-col items-baseline lg:flex-row lg:items-center gap-4 mt-4 truncate">
                     <Link
-                        to="https://github.com/Thomas465xd"
+                        href="https://github.com/Thomas465xd"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Thomas Schrödinger GitHub Profile"
@@ -41,7 +45,7 @@ export default function ResumeCard() {
                     </Link>
 
                     <Link
-                        to="/contact"
+                        href="/contact"
                         className="bg-neutral-800 p-2 px-4 rounded-md text-white flex items-center gap-2 hover:bg-neutral-900 transition-colors duration-300"
                     >
                         {t("resume.button-2")} <ArrowRight size={15} />
@@ -74,16 +78,16 @@ export default function ResumeCard() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <a
+                        <Link
                             href={`/files/${t("resume.button-resume-url")}.pdf`}
                             download
                             className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 rounded-xl text-center transition-all duration-300 hover:border-blue-400 hover:shadow-md transform hover:scale-105"
                         >
                             <span className="font-medium">{t("resume.button-resume")}</span>
-                        </a>
+                        </Link>
 
                         <Link
-                            to="/blog"
+                            href="/blog"
                             className="group flex-1 px-6 py-2 text-sm border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gradient-to-r hover:from-purple-50 hover:to-cyan-50 dark:hover:from-purple-900/20 dark:hover:to-cyan-900/20 rounded-xl text-center transition-all duration-300 hover:border-purple-400 hover:shadow-md transform hover:scale-105"
                         >
                             <span className="font-medium">{t("resume.button-blog")}</span>
