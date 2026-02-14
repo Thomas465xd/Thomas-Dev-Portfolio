@@ -1,0 +1,28 @@
+# Development and build files
+eslint.config.mjs
+postcss.config.mjs
+.eslintignore
+.eslintrc*
+.prettierignore
+.prettierrc*
+next-env.d.ts
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
