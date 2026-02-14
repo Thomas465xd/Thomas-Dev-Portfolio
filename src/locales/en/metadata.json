@@ -4,14 +4,16 @@
         "home": "Home",
         "projects": "Projects",
         "contact": "Contact",
-        "photography": "Photography"
+        "photography": "Photography",
+        "blog": "Blog"
     },
     "description": {
         "layout": "Welcome to Thomas Schrödinger's Portfolio. Full Stack Web Developer from Chile, specializing in creating robust and scalable applications following best practices in software development.",
         "home": "Discover my journey as a Full Stack Web Developer. Explore my projects, experiences, and technologies.",
         "projects": "Explore my latest web development projects built with modern technologies and best practices.",
         "contact": "Get in touch with me for new opportunities and collaboration on exciting projects.",
-        "photography": "Discover my photography work and creative projects beyond development."
+        "photography": "Discover my photography work and creative projects beyond development.",
+        "blog": "Read my thoughts and insights on web development, technology, and software engineering best practices."
     },
     "siteName": {
         "layout": "Thomas Developer Portfolio"

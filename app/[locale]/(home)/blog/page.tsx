@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 export async function generateMetadata({ params } : { params: Promise<{ locale: string }>}): Promise<Metadata> {
     const { locale } = await params; 
     
-    const namespaces = ["common"];
+    const namespaces = ["metadata"];
     const { t } = await initTranslations(locale, namespaces);
 
     return {
