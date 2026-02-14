@@ -25,7 +25,7 @@ export default function TypeWritingAnimation() {
 				]}
 				wrapper="h1"
 				speed={50}
-				className="text-3xl md:text-3xl lg:text-4xl0"
+				className="text-3xl md:text-3xl lg:text-4xl"
 				repeat={Infinity}
 			/>
 		</div>

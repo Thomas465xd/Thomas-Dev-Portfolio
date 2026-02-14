@@ -1,4 +1,3 @@
-"use server"
 import Link from 'next/link'
 import { SiGithub } from 'react-icons/si'
 import NavBarClient from './NavBarClient'

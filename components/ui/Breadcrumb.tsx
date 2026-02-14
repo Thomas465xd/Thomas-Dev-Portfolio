@@ -18,7 +18,7 @@ export default function Breadcrumb({ pages } : BreadcrumProps) {
 				<li>
 					<div>
 						<Link
-							href="/home"
+							href="/"
 							className="text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-300"
 						>
 							<HomeIcon

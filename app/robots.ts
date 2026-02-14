@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
                 ],
             },
         ],
-        sitemap: `${process.env.NEXT_PUBLIC_FRONTEND_URL}/sitemap.xml`,
+        sitemap: `${process.env.NEXT_PUBLIC_FRONTEND_URL ?? "https://thomas-dev-portfolio.vercel.app"}/sitemap.xml`,
     };
 }

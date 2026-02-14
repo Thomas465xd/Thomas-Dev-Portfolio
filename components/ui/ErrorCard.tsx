@@ -1,3 +1,4 @@
+"use client"; 
 import { LucideIcon } from 'lucide-react';
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
@@ -52,7 +53,7 @@ export default function ErrorCard({
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     {showHome && (
                         <Link
-                            href="/home"
+                            href="/"
                             className="button h-14 px-8 inline-flex items-center justify-center tracking-widest"
                         >
                             VOLVER AL INICIO
@@ -61,7 +62,7 @@ export default function ErrorCard({
 
                     {showContact && (
                         <Link
-                            href="/home/contact"
+                            href="/contact"
                             className="h-14 px-8 inline-flex items-center justify-center tracking-widest border border-zinc-300 dark:border-zinc-600 rounded-md text-zinc-900 dark:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
                         >
                             CONTACTAR SOPORTE

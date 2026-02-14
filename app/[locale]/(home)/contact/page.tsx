@@ -26,7 +26,7 @@ export async function generateMetadata({ params } : { params: Promise<{ locale: 
 export default async function page({ params } : { params: Promise<{ locale: string }>}) {
     const { locale } = await params; 
 
-    const namespaces = ["projects"]
+    const namespaces = ["contact"]
     const { resources } = await initTranslations(locale, namespaces)
 
     return (

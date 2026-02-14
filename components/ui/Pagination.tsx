@@ -1,3 +1,4 @@
+"use client"; 
 import { useSearchParams } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";

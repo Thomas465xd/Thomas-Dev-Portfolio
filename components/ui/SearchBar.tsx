@@ -1,3 +1,4 @@
+"use client"; 
 import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
 import { Search, LucideIcon } from "lucide-react";

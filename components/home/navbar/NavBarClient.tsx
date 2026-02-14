@@ -3,6 +3,7 @@
 import { useState, useEffect, ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
 
 type NavBarClientProps = {
     github: ReactNode
@@ -103,7 +104,15 @@ export default function NavBarClient({
                 {/* Mobile Header with hamburger trigger */}
                 <div className="flex justify-between items-center w-full p-3 px-4 sm:px-6 shadow-lg backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border-b border-white/20 dark:border-white/10 supports-[backdrop-filter]:bg-white/60 supports-[backdrop-filter]:dark:bg-gray-900/60">
                     <div className="flex items-center gap-3 flex-shrink-0">
-                        {github}
+                        <Link
+                            href="https://github.com/Thomas465xd"
+                            rel="author"
+                            target="_blank"
+                            type="website"
+                            className="p-2 rounded-lg backdrop-blur-md bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 hover:bg-white/20 dark:hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/5"
+                        >
+                            {github}
+                        </Link>
                     </div>
 
                     <div className="flex items-center gap-2 flex-shrink-0">
