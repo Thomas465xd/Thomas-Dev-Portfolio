@@ -4,7 +4,8 @@
         "home": "Startseite",
         "projects": "Projekte",
         "contact": "Kontakt",
-        "photography": "Fotografie"
+        "photography": "Fotografie",
+        "blog": "Blog"
     },
 
     "description": {
@@ -12,7 +13,8 @@
         "home": "Entdecken Sie meine Reise als Full Stack Webentwickler. Sehen Sie sich meine Projekte, Erfahrungen und Technologien an.",
         "projects": "Erkunden Sie meine neuesten Webentwicklungsprojekte mit modernen Technologien und bewährten Praktiken.",
         "contact": "Kontaktieren Sie mich für neue Möglichkeiten und Zusammenarbeit bei spannenden Projekten.",
-        "photography": "Entdecken Sie meine Fotografie-Arbeiten und kreativen Projekte jenseits der Entwicklung."
+        "photography": "Entdecken Sie meine Fotografie-Arbeiten und kreativen Projekte jenseits der Entwicklung.",
+        "blog": "Lesen Sie meine Einblicke zu Webentwicklung, bewährten Praktiken und Technologietrends."
     },
 
     "siteName": {
