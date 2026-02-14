@@ -1,12 +1,17 @@
-import { useContext } from "react";
-import { ThemeContext, type ThemeContextType, type Theme } from "../contexts/ThemeContext";
+import { useEffect, useState } from "react";
+import type { SweetAlertTheme } from "sweetalert2";
 
-export function useTheme(): ThemeContextType {
-    const context = useContext(ThemeContext);
-    if (!context) {
-        throw new Error("useTheme must be used within ThemeProvider");
-    }
-    return context;
-}
+/**
+ * Hook to safely get theme from localStorage after hydration
+ * Prevents hydration mismatch by only reading localStorage on client
+ */
+export const useThemeForModal = () => {
+    const [theme, setTheme] = useState<SweetAlertTheme | "light">("light");
 
-export type { Theme };
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme") as SweetAlertTheme | null;
+        setTheme(storedTheme || "light");
+    }, []);
+
+    return theme;
+};

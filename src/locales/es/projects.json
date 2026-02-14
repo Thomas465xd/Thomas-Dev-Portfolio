@@ -1,0 +1,29 @@
+{
+    "projects": {
+        "heading-1": "Mis Proyectos",
+        "heading-2": "Mis Proyectos Recientes",
+        "p-1": "He estado programando por 2 años y he trabajado en muchos proyectos. Aquí algunos de los más recientes. Para más detalles, visita mi perfil de GitHub.",
+        "p-2": "Explora algunos de mis proyectos. Para más detalles, visita mi perfil de GitHub.",
+        "uptask-title": "UpTask – Gestor de Tareas y Proyectos MERN",
+        "uptask-description": "UpTask es una aplicación web completa de gestión de tareas y proyectos construida con el stack MERN. Permite administrar equipos, delegar tareas y seguir el progreso con acceso por roles, autenticación JWT y una interfaz limpia y responsiva.",
+        "nextcrm-title": "NextCRM – Sistema de Gestión de Clientes e Inventario",
+        "nextcrm-description": "NextCRM es una app moderna para gestionar clientes e inventario, con analíticas integradas, actualizaciones en tiempo real y un sistema seguro basado en JWT. Todo en una interfaz elegante que soporta modos claro y oscuro.",
+        "portalspt-title": "Portal SPT – Plataforma B2B Moderna para Socios", 
+        "portalspt-description": "Plataforma B2B segura que combina integración con Bsale y servicios backend personalizados para inventario en tiempo real, catálogo de productos y gestión de pedidos. Arquitectura híbrida con autenticación JWT, sistema dinámico de descuentos por fidelización (0-100% por socio) e interfaz profesional para operaciones comerciales fluidas.",
+        "morangojoyas-title": "Morango Jewels – E-commerce Full-Stack de Joyas",
+        "morangojoyas-description": "Plataforma e-commerce completa de joyas con tienda para clientes y panel administrativo usando Next.js 15, React 19 y TypeScript. Integración de pagos con MercadoPago y webhooks, autenticación JWT, seguimiento de pedidos, gestión administrativa de productos, soporte de modo oscuro y diseño responsive mobile.",
+        "jup-title": "JUP Propiedades – Plataforma Inmobiliaria Moderna",
+        "jup-description": "Plataforma inmobiliaria moderna para búsqueda y gestión de propiedades en Chile construida con Next.js 15 (SSR/SSG). Filtros avanzados de propiedades, galerías multimedia profesionales con Cloudinary, autenticación con Clerk, panel administrativo para CRUD de propiedades, integración WhatsApp, SEO optimizado y diseño responsive.",
+        "above-button-1": "¡Más proyectos pronto!",
+        "above-button-2": "¿Quieres ver más?",
+        "button-1": "Ver todos los proyectos",
+        "button-2": "Perfil de GitHub",
+        "button-visit": "Visitar Sitio Web",
+        "button-frontend": "Repo Frontend",
+        "button-backend": "Repo Backend",
+        "date": "Ahora",
+        "test-account": "Cuenta de Prueba",
+        "email": "Correo: ",
+        "password": "Contraseña: "
+    }
+}

@@ -1,9 +1,4 @@
-{ 
-    "routes":[
-        {
-            "src": "/[^.]+",
-            "dest": "/", 
-            "status": 200 
-        }
-    ]
+{
+	"outputDirectory": ".next",
+	"buildCommand": "npm run build"
 }

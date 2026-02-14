@@ -1,0 +1,59 @@
+{
+    "presentation": {
+        "subtitle": "Sobre Mí",
+        "title": "Desarrollador Web Full Stack",
+        "heading-1": "Hola, soy Iñigo 👋",
+        "heading-2": "Bienvenido a mi Portafolio 📋",
+        "p-1": "Soy un apasionado Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables siguiendo las mejores prácticas del desarrollo de software.",
+        "p-2": "Con un enfoque tanto en tecnologías frontend como backend, me esfuerzo por entregar soluciones de alta calidad que cumplan con las necesidades del usuario y los objetivos del negocio."
+    },
+
+    "resume": {
+        "heading": "Mi Historia",
+        "heading-2": "Mi Estudio",
+        "heading-web": "Desarrollo Web",
+        "heading-devops": "DevOps",
+        "p-1": "Llevo 2 años programando, comenzando con cursos en línea sobre cómo crear sitios web simples con HTML, CSS, JavaScript y PHP.",
+        "p-2": "Mi amor por el desarrollo web comenzó con un sitio hecho en HTML y CSS, cuando vi cómo palabras extrañas se convertían en cosas reales. Desde entonces, no pude parar.",
+        "p-3": "A medida que profundizaba, comencé a enfocarme en el ecosistema de React.js. Ahora me especializo en construir Aplicaciones Modernas usando Next.js o MERN Stack.",
+        "p-resume": "thomas.dev es más que un portafolio; es una ventana a mi mundo, donde la pasión se encuentra con el propósito. Descubre mi viaje y mi trabajo.",
+        "p-web": "Entregando aplicaciones web rápidas, escalables y optimizadas para SEO con código limpio.",
+        "p-devops": "Construyendo infraestructura robusta y aplicaciones dockerizadas para una entrega eficiente.",
+        "button-1": "Ver mi Github",
+        "button-2": "Contáctame",
+        "button-resume": "Descargar CV",
+        "button-resume-url": "es-resume", 
+        "button-blog": "Ver mi Blog"
+    },
+
+    "experiences": {
+        "above-heading": "Experiencias", 
+        "heading": "Trayectoria Profesional", 
+        "subheading": "Hitos clave en mi carrera como desarrollador full-stack", 
+        "job-type-1": "Freelance", 
+        "job-title-1": "Desarrollador Full Stack B2B", 
+        "job-business-1": "Portal SPT – Comercio de Repuestos", 
+        "job-location-1": "Santiago, Chile", 
+        "job-description-1": "Construí una plataforma B2B moderna combinando integración con Bsale y lógica de backend personalizada. Implementé arquitectura híbrida gestionando catálogo en tiempo real, carrito de compras, operaciones de inventario a través de API Bsale, más autenticación propia, gestión de pedidos y sistema dinámico de descuentos por fidelización (1-100% por empresa). Stack: MERN, TypeScript, JWT, REST APIs.",
+        "job-date-1": "17 de Marzo, 2025", 
+        "job-type-2": "Desarrollador de Integraciones", 
+        "job-title-2": "Ingeniero Backend & Sistemas", 
+        "job-business-2": "Obsox – Marketplace B2B", 
+        "job-location-2": "Santiago, Chile & Lima, Perú", 
+        "job-description-2": "Diseñé arquitectura de microservicios para marketplace de repuestos obsoletos con comunicación asincrónica orientada a eventos. Implementé integraciones críticas con Bsale y Microsoft Dynamics para sincronización de datos en tiempo real. Enfoque en confiabilidad del sistema, escalabilidad y gestión de integraciones con proveedores.",
+        "job-date-2": "3 de Diciembre, 2025",
+        "job-type-3": "Freelance", 
+        "job-title-3": "Desarrollador Full Stack E-commerce", 
+        "job-business-3": "Morango Jewels – E-commerce de Joyas", 
+        "job-location-3": "Santiago, Chile", 
+        "job-description-3": "Desarrollé plataforma e-commerce full-stack de joyas con tienda para clientes y panel administrativo usando Next.js 15, React 19 y TypeScript. Integré procesamiento de pagos con MercadoPago con webhooks, implementé autenticación de usuarios con JWT, seguimiento de pedidos, gestión de productos, soporte para modo oscuro y diseño responsive mobile.",
+        "job-date-3": "10 de Febrero, 2026"
+    },
+
+    "technologies": {
+        "heading": "Tecnologías que utilizo",
+        "subheading": "Con el tiempo he trabajado con varias tecnologías, adaptándome a las necesidades de cada proyecto. Este es el stack tecnológico actual que utilizo para crear aplicaciones modernas y escalables.",
+        "databases": "Bases de Datos",
+        "other": "Herramientas que utilizo"
+    }
+}

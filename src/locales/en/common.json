@@ -1,0 +1,41 @@
+{
+    "nav": {
+        "menu": "Menu",
+        "home": "Home", 
+        "projects": "Projects", 
+        "blog": "Blog", 
+        "contact": "Contact", 
+        "language": "Change Language", 
+        "spanish": "Spanish", 
+        "english": "English", 
+        "german": "German"
+    }, 
+
+    "footer": {
+        "name": "Thomas Schrödinger",
+        "developed": "Developed by",
+        "copyright": "Copyright",
+        "links-1": "Important Links", 
+        "link-home": "Home", 
+        "link-projects": "Projects", 
+        "link-blog": "Blog",
+        "links-2": "My Social Media", 
+        "link-github": "GitHub", 
+        "link-instagram": "Instagram", 
+        "links-3": "Other", 
+        "link-contact": "Contact", 
+        "link-photography": "Photography"
+    }, 
+
+    "error": {
+        "header": "Page not found", 
+        "message": "Sorry, the page you are looking does not exist :(",
+        "button-home": "Go back home", 
+        "button-report": "Report Error"
+    }, 
+
+    "development": {
+        "title": "In Development...", 
+        "description": "Sorry, the page you landed is currently on development, come back in the future to see the content."
+    }
+}

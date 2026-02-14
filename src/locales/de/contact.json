@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "heading": "Kontaktiere mich",
+        "subheading": "Ich bin stets offen für neue Chancen und bereit, spannende Projekte anzugehen. Wenn du eine Idee hast oder etwas teilen möchtest – schreib mir gerne!",
+        "label-1": "Name",
+        "placeholder-1": "Dein Name (z.B. Thomas)",
+        "label-2": "E-Mail",
+        "placeholder-2": "Deine E-Mail (z.B. john@doe.com)",
+        "label-3": "Nachricht",
+        "placeholder-3": "Hallo, ich wollte fragen, ob es eine Möglichkeit gibt...",
+        "limit": "Zeichen",
+        "button-1": "Senden",
+        "option": "Oder kontaktiere mich über..."
+    }
+}

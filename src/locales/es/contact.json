@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "heading": "Contáctame",
+        "subheading": "Siempre estoy en búsqueda de nuevas oportunidades y listo para embarcarme en proyectos emocionantes. Si tienes una idea en mente o algo que te gustaría compartir, ¡no dudes en escribirme!",
+        "label-1": "Nombre",
+        "placeholder-1": "Ingresa tu Nombre (Ej. Thomas)",
+        "label-2": "Correo",
+        "placeholder-2": "Ingresa tu Correo (Ej. john@doe.com)",
+        "label-3": "Mensaje",
+        "placeholder-3": "Hola, me preguntaba si hay alguna posibilidad de que...",
+        "limit": "caracteres",
+        "button-1": "Enviar",
+        "option": "O también puedes contactarme por..."
+    }
+}
