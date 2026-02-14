@@ -19,7 +19,7 @@ export type InitTranslationsParams = {
 export type InitTranslationsReturn = {
 	i18n: i18n;
 	resources: Resource;
-	t: (key: string, options?: any) => string;
+	t: (key: string, options?: Record<string, unknown>) => string;
 };
 
 /**

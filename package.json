@@ -1,12 +1,12 @@
 {
-	"name": "tickets-app",
+	"name": "thomas-dev-portfolio",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build --turbopack",
 		"start": "next start",
-		"lint": "eslint"
+		"lint": "eslint app components src middleware.ts *.ts --max-warnings=0"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",

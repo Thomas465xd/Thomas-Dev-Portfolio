@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { config } from "@/lib/config";
 
 export default function robots(): MetadataRoute.Robots {
     return {
@@ -13,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
                 ],
             },
         ],
-        sitemap: `${config.frontendURL}/sitemap.xml`,
+        sitemap: `${process.env.FRONTEND_URL}/sitemap.xml`,
     };
 }

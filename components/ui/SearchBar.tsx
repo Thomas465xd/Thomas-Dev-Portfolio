@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
 import { Search, LucideIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { SearchForm } from "@/src/types";
 
 export type SelectOption = {
     value: string;
@@ -10,6 +9,10 @@ export type SelectOption = {
     icon?: LucideIcon;
     color?: string;
 };
+
+type SearchForm = {
+    search: string; 
+}
 
 type SearchBarProps = {
     route: string;

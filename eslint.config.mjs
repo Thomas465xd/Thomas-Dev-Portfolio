@@ -26,7 +26,7 @@ const eslintConfig = [
 	},
 ];
 
-// export default eslintConfig;
+export default eslintConfig;
 
 // import js from "@eslint/js";
 // import globals from "globals";

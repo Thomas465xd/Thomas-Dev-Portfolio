@@ -1,17 +1,16 @@
 import { MetadataRoute } from "next";
-import { config } from "@/lib/config";
 import i18nConfig from "@/i18nConfig";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const routes = [
         {
-            route: "",
-            changeFrequency: "weekly" as const,
+            route: "/",
+            changeFrequency: "monthly" as const,
             priority: 1.0,
         },
         {
             route: "/projects", 
-            changeFrequency: "weekly" as const,
+            changeFrequency: "monthly" as const,
             priority: 1.0,
         },
         {
@@ -38,14 +37,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         i18nConfig.locales.forEach((locale) => {
             const localePrefix = locale === i18nConfig.defaultLocale ? "" : `/${locale}`;
             sitemap.push({
-                url: `${config.frontendURL}${localePrefix}${route.route}`,
+                url: `${process.env.FRONTEND_URL}${localePrefix}${route.route}`,
                 changeFrequency: route.changeFrequency,
                 priority: route.priority,
                 lastModified: new Date(),
                 alternates: {
                     languages: i18nConfig.locales.reduce((acc, loc) => {
                         const prefix = loc === i18nConfig.defaultLocale ? "" : `/${loc}`;
-                        acc[loc] = `${config.frontendURL}${prefix}${route.route}`;
+                        acc[loc] = `${process.env.FRONTEND_URL}${prefix}${route.route}`;
                         return acc;
                     }, {} as Record<string, string>),
                 },
