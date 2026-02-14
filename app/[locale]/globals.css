@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Opcional: regla directa si no instalas el plugin */
 @layer utilities {
 	.custom-scrollbar::-webkit-scrollbar {
 		width: 8px;
@@ -29,6 +28,14 @@
 
 @utility flex-center-col {
     @apply flex flex-col justify-center items-center; 
+}
+
+@utility invisible-button {
+    @apply rounded-md px-3.5 py-2.5 text-sm font-semibold
+        bg-slate-900 text-white shadow-xs hover:bg-slate-800 
+        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400 
+        dark:bg-slate-800 dark:hover:bg-slate-700 dark:focus-visible:outline-slate-400 
+        transition-colors duration-200
 }
 
 :root {
