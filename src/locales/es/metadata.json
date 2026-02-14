@@ -4,14 +4,16 @@
         "home": "Inicio",
         "projects": "Proyectos", 
         "contact": "Contacto",
-        "photography": "Fotografía"
+        "photography": "Fotografía",
+        "blog": "Blog"
     },
     "description": {
         "layout": "Bienvenido al Portfolio de Thomas Schrödinger. Desarrollador Web Full Stack de Chile, especializado en crear aplicaciones robustas y escalables siguiendo las mejores prácticas en desarrollo de software.",
         "home": "Descubre mi trayectoria como Desarrollador Web Full Stack. Explora mis proyectos, experiencias y tecnologías.",
         "projects": "Explora mis últimos proyectos de desarrollo web construidos con tecnologías modernas y mejores prácticas.",
         "contact": "Ponte en contacto conmigo para nuevas oportunidades y colaboración en proyectos emocionantes.",
-        "photography": "Descubre mi trabajo fotográfico y proyectos creativos más allá del desarrollo."
+        "photography": "Descubre mi trabajo fotográfico y proyectos creativos más allá del desarrollo.",
+        "blog": "Lee mis reflexiones sobre desarrollo web, tendencias tecnológicas y mejores prácticas en ingeniería de software."
     },
     "siteName": {
         "layout": "Thomas Portfolio de Desarrollador"
