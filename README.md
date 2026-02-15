@@ -1,10 +1,11 @@
+  # 💾 Thomas Schrödinger Dev Portfolio
+  
 <div align="center">
   <img src="https://thomas-dev-portfolio.vercel.app/complete-circle.png" alt="Thomas Dev Portfolio Logo" width="200"/>
   
-  # Thomas Schrödinger Dev Portfolio
   
   <p align="center">
-    A modern, multilingual developer portfolio showcasing projects, skills, and professional experience
+    My own multilingual developer portfolio showcasing projects, skills, and professional experience along with my own personal touch.
   </p>
   
   [![Next.js](https://img.shields.io/badge/Next.js-15.5.9-black?style=flat&logo=next.js)](https://nextjs.org/)
@@ -136,57 +137,6 @@ Thomas-Dev-Portfolio/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 20.x or higher
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Thomas465xd/Thomas-Dev-Portfolio.git
-   cd Thomas-Dev-Portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Set up environment variables**
-   
-   Create a `.env.local` file in the root directory and add necessary environment variables for:
-   - EmailJS configuration
-   - Cloudinary credentials
-   - Any other API keys required
-
-4. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-5. **Open your browser**
-   
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📜 Available Scripts
-
-- `npm run dev` - Start development server with Turbopack
-- `npm run build` - Build the production application
-- `npm run start` - Start the production server
-- `npm run lint` - Run ESLint to check code quality
-
----
-
 ## 🌐 Internationalization
 
 The portfolio supports three languages:
@@ -202,23 +152,8 @@ Language routing is handled automatically via middleware, with translations stor
 
 This project is optimized for deployment on [Vercel](https://vercel.com):
 
-1. Push your code to GitHub
-2. Import the project in Vercel
-3. Configure environment variables
-4. Deploy!
-
 The site is currently deployed at: [https://thomas-dev-portfolio.vercel.app](https://thomas-dev-portfolio.vercel.app)
 
-### Docker Deployment
-
-Alternatively, you can deploy using Docker:
-
-```bash
-docker build -t thomas-portfolio .
-docker run -p 3000:3000 thomas-portfolio
-```
-
----
 
 ## 📸 Screenshots
 
@@ -238,23 +173,6 @@ This project is proprietary and confidential. All rights reserved.
 
 Unauthorized copying, modification, distribution, or use of this software,
 via any medium, is strictly prohibited without explicit permission from the owner.
-
----
-
-## 👤 Author
-
-**Thomas Schrödinger**
-
-- Portfolio: [thomas-dev-portfolio.vercel.app](https://thomas-dev-portfolio.vercel.app)
-- GitHub: [@Thomas465xd](https://github.com/Thomas465xd)
-
----
-
-## 🙏 Acknowledgments
-
-- Icons provided by [Lucide](https://lucide.dev/) and [React Icons](https://react-icons.github.io/react-icons/)
-- Fonts by [Google Fonts](https://fonts.google.com/)
-- Hosted on [Vercel](https://vercel.com)
 
 ---
 
