@@ -22,9 +22,9 @@
 
 ## 📖 About The Project
 
-This is a professional developer portfolio built with cutting-edge web technologies. It features a clean, modern design with dark mode support, smooth animations, and full internationalization support for English, German, and Spanish languages.
+My professional developer portfolio built with my favorite web technologies. It features a clean, modern design with dark mode support, smooth animations, and full internationalization support for English, German, and Spanish.
 
-The portfolio includes sections for projects, blog posts, photography, and a contact form, providing a comprehensive showcase of technical skills and creative work.
+The portfolio includes sections for projects, blog posts, photography, and a contact form, which provides with a showcase of technical skills and creative work.
 
 ### ✨ Key Features
 
@@ -139,7 +139,7 @@ Thomas-Dev-Portfolio/
 
 ## 🌐 Internationalization
 
-The portfolio supports three languages:
+It currently upports three languages (which are the ones that i know 🙃):
 - 🇬🇧 English (default)
 - 🇩🇪 German (Deutsch)
 - 🇪🇸 Spanish (Español)
@@ -150,20 +150,15 @@ Language routing is handled automatically via middleware, with translations stor
 
 ## 🚢 Deployment
 
-This project is optimized for deployment on [Vercel](https://vercel.com):
+This project was deployed using [Vercel](https://vercel.com):
 
 The site is currently deployed at: [https://thomas-dev-portfolio.vercel.app](https://thomas-dev-portfolio.vercel.app)
 
 
 ## 📸 Screenshots
 
-Visit the [live demo](https://thomas-dev-portfolio.vercel.app) to see the portfolio in action!
+Visit the [live demo](https://thomas-dev-portfolio.vercel.app) to see the portfolio page!
 
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Thomas465xd/Thomas-Dev-Portfolio/issues).
 
 ---
 
@@ -177,5 +172,5 @@ via any medium, is strictly prohibited without explicit permission from the owne
 ---
 
 <div align="center">
-  Made with ❤️ and ☕ by Thomas Schrödinger
+  Made with ❤️ by Thomas Schrödinger
 </div>
